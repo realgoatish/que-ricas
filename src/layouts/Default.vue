@@ -1,19 +1,20 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/story">Our Story</g-link>
-        <g-link class="nav__link" to="/menu">Menu</g-link>
-        <g-link class="nav__link" to="/contact">Contact Us</g-link>
-      </nav>
-    </header>
-    <slot/>
+  <div class="parallax">
+    <div class="layout">
+      <header class="header">
+        <g-image alt="Que Ricas Logo" class="header-logo" src="~/que-ricas-logo.png" width="200" />      
+        <nav class="nav">
+          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/story">Our Story</g-link>
+          <g-link class="nav__link" to="/menu">Menu</g-link>
+          <g-link class="nav__link" to="/contact">Contact Us</g-link>
+        </nav>
+      </header>
+      <slot/>
+    </div>
   </div>
 </template>
+
 
 <static-query>
 query {
@@ -23,7 +24,9 @@ query {
 }
 </static-query>
 
+
 <style>
+
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
@@ -31,8 +34,28 @@ body {
   line-height: 1.5;
 }
 
+body, html {
+  height: 100%;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url('~@/palm-leaves-bg.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .layout {
-  max-width: 760px;
+  background-color: white;
+  max-width: 1000px;
+  height: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -42,11 +65,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-top: 50px; */
+  margin-bottom: 100px;
   height: 80px;
+}
+
+.header-logo {
+  margin-top: 100px;
+}
+
+.nav {
+  margin-right: 37px;
 }
 
 .nav__link {
   margin-left: 20px;
 }
+
 </style>
