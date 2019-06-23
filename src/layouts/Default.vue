@@ -1,19 +1,25 @@
 <template>
-  <div class="parallax">
-    <div class="layout">
-      <header class="header">
-        <g-image alt="Que Ricas Logo" class="header-logo" src="~/que-ricas-logo.png" width="200" />      
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/story">Our Story</g-link>
-          <g-link class="nav__link" to="/menu">Menu</g-link>
-          <g-link class="nav__link" to="/contact">Contact Us</g-link>
-        </nav>
-      </header>
-      <slot/>
+  <div>
+    <Header />
+    <div class="parallax">
+      <div class="layout">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+
+import Header from '~/components/Header.vue'
+
+export default {
+  components: {
+    Header
+  }
+}
+
+</script>
 
 
 <static-query>
@@ -34,52 +40,38 @@ body {
   line-height: 1.5;
 }
 
-body, html {
-  height: 100%;
+body, html, .parallax {
+  max-height: 100vh;
 }
 
-.parallax { 
-  /* The image used */
-  background-image: url('~@/palm-leaves-bg.jpg');
+.parallax {
+  max-height: 100vh;
+}
 
+html {
+  /* The image used */
+  background: url('~@/palm4444.jpg');
   /* Full height */
   height: 100%; 
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
+
 
 .layout {
   background-color: white;
+  background-size: cover;
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* margin-top: 50px; */
-  margin-bottom: 100px;
-  height: 80px;
-}
-
-.header-logo {
-  margin-top: 100px;
-}
-
-.nav {
-  margin-right: 37px;
-}
-
-.nav__link {
-  margin-left: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 </style>
