@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Que Ricas',
+  icon: './src/que-ricas-logo.png',
   plugins: []
 }
