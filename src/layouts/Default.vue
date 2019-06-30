@@ -40,12 +40,13 @@ body {
   line-height: 1.5;
 }
 
-body, html, .parallax {
+body, html {
   max-height: 100vh;
 }
 
 .parallax {
-  max-height: 100vh;
+  /* max-height: 100vh; */
+  border-radius: 15px 15px 15px 15px;
 }
 
 html {
@@ -66,10 +67,11 @@ html {
 
 .layout {
   background-color: white;
-  background-size: cover;
+  /* background-size: cover; */
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
+  border-radius: 15px 15px 15px 15px;
   /* padding-left: 20px;
   padding-right: 20px; */
 }
