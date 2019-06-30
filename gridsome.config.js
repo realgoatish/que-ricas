@@ -7,5 +7,12 @@
 module.exports = {
   siteName: 'Que Ricas',
   icon: './src/que-ricas-logo.png',
-  plugins: []
+  plugins: [],
+  chainWebpack: config => {
+    config.module
+      .rule('pug')
+      .test(/\.pug$/)
+      .use('pug-plain-loader')
+      .loader('pug-plain-loader')
+  }
 }
