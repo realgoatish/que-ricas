@@ -32,11 +32,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 50px; */
   max-width: 100vw;
   height: 200px;
-  /* max-width: 1000px; */
-  /* height: 100%; */
+  border-radius: 0px 0px 15px 15px;
 }
 
 .header-logo {
