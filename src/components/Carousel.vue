@@ -23,7 +23,7 @@ export default {
     name: 'Carousel',
     data () {
         return {
-        images: [require('../spockspecs.jpg'), require('../cartoonspock.jpg'), require('../rockspock.jpg'), require('../concernedspock.jpg'), require('../dudespock.jpg')],
+        images: [require('../v-arepas.jpg'), require('../v-capacha.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
         currentNumber: 0,
         timer: null
     }
@@ -68,6 +68,8 @@ export default {
   width: 1000px;
   height: 700px;
   display: block;
+  border-radius: 15px 15px 15px 15px;
+
 }
 
 .fade-enter-active, .fade-leave-active {

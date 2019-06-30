@@ -7,6 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.6.4"
+    "bootstrap": "^4.3.1",
+    "gridsome": "^0.6.4",
+    "sharp": "^0.22.1",
+    "vue": "^2.6.10",
+    "vuetify": "^1.5.16"
+  },
+  "devDependencies": {
+    "webpack-node-externals": "^1.7.2"
   }
 }
