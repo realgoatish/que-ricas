@@ -2,9 +2,9 @@
   <div>
     <Header />
     <div class="parallax">
-      <div class="layout">
+      <!-- <div class="layout"> -->
         <slot />
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -65,15 +65,15 @@ html {
 }
 
 
-.layout {
+/* .layout {
   background-color: white;
-  /* background-size: cover; */
+  background-size: cover; 
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
   border-radius: 15px 15px 15px 15px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-}
+  padding-left: 20px;
+  padding-right: 20px; 
+} */
 
 </style>
