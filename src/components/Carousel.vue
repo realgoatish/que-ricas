@@ -7,7 +7,7 @@
         v-for="number in [currentNumber]"
         :key='number'
        >
-         <img
+         <v-img
              class="images"
              :src="currentImage"
              v-on:mouseover="stopRotation"
@@ -65,8 +65,8 @@ export default {
 <style>
 
 .slider, .images {
-  width: 1000px;
-  height: 700px;
+  width: 100%;
+  height: 350px;
   display: block;
   border-radius: 15px 15px 15px 15px;
 
