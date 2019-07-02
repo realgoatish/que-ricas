@@ -7,7 +7,16 @@
 module.exports = {
   siteName: 'Que Ricas',
   icon: './src/que-ricas-logo.png',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        typeName: 'Post',
+        route: '/blog/:slug'
+      }
+    }
+  ],
   chainWebpack: config => {
     config.module
       .rule('pug')
