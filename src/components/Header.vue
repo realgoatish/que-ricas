@@ -1,14 +1,14 @@
-<template>
-  <header class="header">
-    <g-image alt="Que Ricas Logo" class="header-logo" :src="logo" :width="width" />  
-    <nav class="nav">
-      <g-link class="nav__link" to="/">Home</g-link>
-      <g-link class="nav__link" to="/story">Our Story</g-link>
-      <g-link class="nav__link" to="/menu">Menu</g-link>
-      <g-link class="nav__link" to="/contact">Contact Us</g-link>
-    </nav>
-  </header>
+<template lang="pug">
+  header(class="header")
+    g-image(alt="Que Ricas Logo" class="header-logo" :src="logo" :width="width")
+    div(class="text-xs-center")
+      v-btn(outline color="orange" :to="{ path: '/' }") Home
+      v-btn(outline color="orange" :to="{ path: '/story' }") Our Story
+      v-btn(outline color="orange" :to="{ path: '/menu' }") Menu
+      v-btn(outline color="orange" :to="{ path: '/contact' }") Contact Us
 </template>
+
+
 
 <script>
 
@@ -30,7 +30,7 @@ export default {
   background-color: white;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100vw;
   height: 200px;
@@ -41,14 +41,6 @@ export default {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 200px;
-}
-
-.nav {
-  margin-right: 37px;
-}
-
-.nav__link {
-  margin-left: 20px;
 }
 
 </style>
