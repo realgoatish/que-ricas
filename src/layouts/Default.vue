@@ -47,7 +47,7 @@ body, html {
 
 html {
   /* The image used */
-  background: url('~@/palm4444.jpg');
+  background: url('~@/palm-bg.jpeg');
   /* Full height */
   height: 100%; 
   width: 100%;
