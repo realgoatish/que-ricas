@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     Header
-    div(class="parallax")
+    div(class="parent-content-container")
       slot
 </template>
 
@@ -40,8 +40,7 @@ body, html {
   max-height: 100vh;
 }
 
-.parallax {
-  /* max-height: 100vh; */
+.parent-content-container {
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -59,17 +58,5 @@ html {
   background-size: cover;
 
 }
-
-
-/* .layout {
-  background-color: white;
-  background-size: cover; 
-  max-width: 1000px;
-  height: 100%;
-  margin: 0 auto;
-  border-radius: 15px 15px 15px 15px;
-  padding-left: 20px;
-  padding-right: 20px; 
-} */
 
 </style>
