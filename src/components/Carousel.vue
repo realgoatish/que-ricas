@@ -1,20 +1,16 @@
-<template>
-
-    
-    <transition-group class='slider' name='fade' tag='div'>
-      <div
+<template lang="pug">
+  transition-group(class="slider" name="fade" tag="div")
+    div(
+      class="images"
+      v-for="number in [currentNumber]"
+      :key="number"
+    )
+      v-img(
         class="images"
-        v-for="number in [currentNumber]"
-        :key='number'
-       >
-         <v-img
-             class="images"
-             :src="currentImage"
-             v-on:mouseover="stopRotation"
-             v-on:mouseout="startRotation"
-             />
-      </div>
-    </transition-group>
+        :src="currentImage"
+        v-on:mouseover="stopRotation"
+        v-on:mouseout="startRotation"
+      )
 </template>
 
 <script>

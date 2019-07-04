@@ -1,12 +1,8 @@
-<template>
-  <div>
-    <Header />
-    <div class="parallax">
-      <!-- <div class="layout"> -->
-        <slot />
-      <!-- </div> -->
-    </div>
-  </div>
+<template lang="pug">
+  div
+    Header
+    div(class="parallax")
+      slot
 </template>
 
 <script>
