@@ -16,8 +16,7 @@
 
 <page-query>
 query {
-  allPost {
-    totalCount
+  allPost(filter: { title: { eq: "Honestly Delicious" }}) {
     edges {
       node {
         id
@@ -40,9 +39,6 @@ export default {
   computed: {
     posts() {
       return this.$page.allPost.edges
-    },
-    totalCount () {
-      return this.$page.allPost.totalCount
     }
   },
   components: {
@@ -55,10 +51,5 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
-
-/* .index-content-container {
-  padding-left: 20px;
-  padding-right: 20px;
-} */
 
 </style>
