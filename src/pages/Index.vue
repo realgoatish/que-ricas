@@ -12,6 +12,8 @@
         )
           v-card-title(primary-title)
             div(v-html="post.node.content")
+        InstagramFeed
+
 </template>
 
 <page-query>
@@ -31,6 +33,7 @@ query {
 
 <script>
 import Carousel from '~/components/Carousel.vue'
+import InstagramFeed from '~/components/InstagramFeed.vue'
 
 export default {
   metaInfo: {
@@ -42,14 +45,10 @@ export default {
     }
   },
   components: {
-    Carousel
+    Carousel,
+    InstagramFeed
   }
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
 
-</style>
