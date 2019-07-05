@@ -22,7 +22,7 @@ export default {
         images: [require('../v-arepas.jpg'), require('../v-capacha.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
         currentNumber: 0,
         timer: null
-    }
+      }
     },
 
     mounted: function () {
