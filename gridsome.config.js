@@ -15,6 +15,13 @@ module.exports = {
         typeName: 'Post',
         route: '/blog/:slug'
       }
+    },
+    {
+      use: '@zefman/gridsome-source-instagram',
+      options: {
+        username: 'quericas_haddon',
+        typeName: 'InstagramPhoto'
+      }
     }
   ],
   chainWebpack: config => {
