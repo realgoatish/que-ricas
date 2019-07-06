@@ -1,16 +1,12 @@
 <template lang="pug">
 
-  //- v-flex(xs12 sm6 offset-sm3)
-  //-   v-card(
-  //-     v-for="(post, index) in $static.allInstagramPhoto.edges"
-  //-     :key="index"
-  //-   )
-  //-     v-card-title(primary-title)
-  //-       v-img(
-  //-         :src="post.node.display_url"
-  //-       )
   v-flex(xs12 sm6 offset-sm3)
     v-card
+      v-toolbar(flat color="orange" dark)
+        v-toolbar-title FOLLOW US ON INSTAGRAM
+        v-spacer
+        v-btn(flat icon color="pink")
+          v-icon favorite
       v-container( v-bind="{ [`grid-list-md`]: true }" fluid)
         v-layout(row wrap)
           v-flex(
@@ -26,10 +22,26 @@
 
 <static-query>
 query {
-  allInstagramPhoto {
+  allInstagramPhoto(
+    filter: {
+      shortcode: {
+        in: [
+          "By-p7czAsLe"
+          "By-r3OZg2lW"
+          "BzdN3uUHjWT"
+          "BzdOF-0nN1_"
+          "Bzj1MXlgqIu"
+        ]
+      }
+    }
+  )
+  {
     edges {
       node {
+        id
+        shortcode
         display_url
+        thumbnail_src
         edge_media_to_caption {
           edges {
             node {
