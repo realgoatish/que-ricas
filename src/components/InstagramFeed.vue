@@ -2,6 +2,11 @@
 
   v-flex(xs12 sm6 offset-sm3)
     v-card
+      v-toolbar(flat color="orange" dark)
+        v-toolbar-title FOLLOW US ON INSTAGRAM
+        v-spacer
+        v-btn(flat icon color="pink")
+          v-icon favorite
       v-container( v-bind="{ [`grid-list-md`]: true }" fluid)
         v-layout(row wrap)
           v-flex(
