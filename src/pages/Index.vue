@@ -12,7 +12,7 @@
         )
           v-card-title(primary-title)
             div(v-html="post.node.content")
-        InstagramFeed
+      InstagramFeed
 
 </template>
 
