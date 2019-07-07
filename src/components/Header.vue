@@ -34,7 +34,6 @@ export default {
   align-items: center;
   max-width: 100vw;
   height: 200px;
-  border-radius: 0px 0px 15px 15px;
 }
 
 .header-logo {
