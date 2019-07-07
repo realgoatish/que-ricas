@@ -1,23 +1,21 @@
 <template lang="pug">
-
-  v-flex(xs12 sm6 offset-sm3)
-    v-card
-      v-toolbar(flat color="orange" dark)
-        v-toolbar-title FOLLOW US ON INSTAGRAM
-        v-spacer
-        v-btn(flat icon color="pink")
-          v-icon favorite
-      v-container( v-bind="{ [`grid-list-md`]: true }" fluid)
-        v-layout(row wrap)
-          v-flex(
-            v-for="(post, index) in $static.allInstagramPhoto.edges"
-            :key="index"
-            xs4
-          )
-            v-card(flat tile)
-              v-img(
-                :src="post.node.display_url"
-              )
+  v-flex(xs12)
+    v-toolbar(flat color="white")
+      v-toolbar-title(class="orange--text text--darken-2") FOLLOW US ON INSTAGRAM
+      v-spacer
+      v-btn(flat icon color="pink")
+        v-icon favorite
+    v-container(v-bind="{ [`grid-list-md`]: true }" fluid xs10)    
+      v-layout(row wrap)
+        v-flex(
+          v-for="(post, index) in $static.allInstagramPhoto.edges"
+          :key="index"
+          xs4
+        )
+          v-card(flat tile)
+            v-img(
+              :src="post.node.display_url"
+            )
 </template>
 
 <static-query>
