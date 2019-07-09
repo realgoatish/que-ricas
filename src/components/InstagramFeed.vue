@@ -12,7 +12,11 @@
           :key="index"
           xs4
         )
-          v-card(flat tile)
+          v-card(
+            flat
+            tile
+            :href="post.node.thumbnail_src"
+          )
             v-img(
               :src="post.node.display_url"
             )
