@@ -22,14 +22,16 @@
 
             v-card-text
               v-btn(
-                v-for="(icon, index) in icons"
-                :key="index"
+                v-for="item in icons"
+                :key="item.id"
                 class="white--text"
                 flat
                 icon
+                :href="item.link"
+                target="_blank"
                 color="orange darken-2"
               )
-                font-awesome(:icon="icon" size="2x")
+                font-awesome(:icon="item.config" size="2x")
 
         //- v-divider(vertical inset=true)    
 
@@ -54,10 +56,19 @@ export default {
         return {
             logo: require("~/que-ricas-logo.png"),
             width: "300px",
-            icons: [
-                ['fab', 'facebook'],
-                ['fab', 'instagram']
-            ]
+            icons: {
+                facebook: {
+                    id: 1,
+                    config: ['fab', 'facebook'],
+                    link: 'https://www.facebook.com/quericashaddon/'
+                },
+                instagram: {
+                    id: 2,
+                    config: ['fab', 'instagram'],
+                    link: 'https://www.instagram.com/quericas_haddon/?hl=en'
+                },
+            }
+            
         }
     },
     components: {
