@@ -5,8 +5,9 @@
       v-for="number in [currentNumber]"
       :key="number"
     )
-      v-img(
+      v-parallax(
         class="images"
+        style="height:400px"
         :src="currentImage"
         v-on:mouseover="stopRotation"
         v-on:mouseout="startRotation"
@@ -62,10 +63,9 @@ export default {
 
 .slider, .images {
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: block;
   border-radius: 0px 0px 15px 15px;
-
 }
 
 .fade-enter-active, .fade-leave-active {
