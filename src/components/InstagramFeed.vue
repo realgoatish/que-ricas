@@ -15,6 +15,7 @@
           v-card(
             flat
             tile
+            target="_blank"
             :href="post.node.thumbnail_src"
           )
             v-img(
