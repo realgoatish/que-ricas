@@ -7,7 +7,7 @@
     )
       v-parallax(
         class="images"
-        style="height:400px"
+        style="height:400px;"
         :src="currentImage"
         v-on:mouseover="stopRotation"
         v-on:mouseout="startRotation"
@@ -20,7 +20,7 @@ export default {
     name: 'Carousel',
     data () {
         return {
-        images: [require('../v-arepas.jpg'), require('../v-capacha.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
+        images: [require('../v-loaded-arepas.jpg'), require('../v-dinner.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
         currentNumber: 0,
         timer: null
       }
@@ -61,7 +61,7 @@ export default {
 
 <style>
 
-.slider, .images {
+.slider, .images, .image-wrapper {
   width: 100%;
   height: 400px;
   display: block;
