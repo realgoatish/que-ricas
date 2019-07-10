@@ -5,7 +5,7 @@
       v-spacer
       v-btn(flat icon color="pink")
         v-icon favorite
-    v-container(v-bind="{ [`grid-list-md`]: true }" fluid xs10)    
+    v-container(grid-list-xs fluid xs10)    
       v-layout(row wrap)
         v-flex(
           v-for="(post, index) in $static.allInstagramPhoto.edges"

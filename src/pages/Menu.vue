@@ -1,7 +1,13 @@
 <template lang="pug">
   layout
-    h1 Menu
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repellendus omnis eius, asperiores hic natus. Ut, dolor aspernatur ipsa sapiente est veritatis quo iste expedita dolores vitae nemo rem modi asperiores
+    .index-content-container
+      .title.mb-3
+    
+
+      v-flex(xs12 md8 offset-md2)
+        v-card
+          v-card-title(primary-title)
+            v-img(:src="menuImage" width="auto" height="auto" fit="fill")
 
 </template>
 
@@ -9,6 +15,11 @@
 export default {
   metaInfo: {
     title: 'Menu'
+  },
+  data () {
+    return {
+      menuImage: require("../menu.jpg")
+    }
   }
 }
 </script>
