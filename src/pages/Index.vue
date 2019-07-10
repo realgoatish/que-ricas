@@ -5,13 +5,23 @@
       .title.mb-3
     
 
-      v-flex(xs12 sm6 offset-sm3)
+      v-flex(xs12 md8 offset-md2)
         v-card(
           v-for="(post, index) in posts"
           :key="index"
         )
           v-card-title(primary-title)
-            div(v-html="post.node.content")
+            g-image(
+              :src="hdImage"
+              class="hd-image-class"
+              width="auto"
+              height="auto"
+              fit="outside"
+            )
+            div(
+              v-html="post.node.content"
+              style="font-size:20px;"
+            )
 
 </template>
 
@@ -37,6 +47,11 @@ export default {
   metaInfo: {
     title: 'Bienvenidos!'
   },
+  data () {
+    return {
+      hdImage: require("../hd.png")
+    }
+  },
   computed: {
     posts() {
       return this.$page.allPost.edges
@@ -47,5 +62,13 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.hd-image-class {
+  margin: 0 auto;
+}
+
+</style>
 
 
