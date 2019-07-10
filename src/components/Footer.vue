@@ -1,9 +1,9 @@
 <template lang="pug">
   v-footer(
-    class="white orange--text text--darken-2 text-xs-center"
+    class="orange--text text--darken-2 text-xs-center footer"
     height="auto"
   )
-    v-container(grid-list-xl style="max-width:1300px")
+    v-container(grid-list-sm style="max-width:1300px")
       v-layout(row wrap)
         v-flex(xs12 md4 order-xs1)
           v-card(
@@ -77,4 +77,14 @@ export default {
 }
 
 </script>
+
+<style>
+
+.v-footer {
+  background-color: white!important;
+  border-top-style: outset;
+  border-color: #4f86f7!important;
+}
+
+</style>
 

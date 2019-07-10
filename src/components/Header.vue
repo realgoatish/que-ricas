@@ -34,6 +34,8 @@ export default {
   align-items: center;
   max-width: 100vw;
   height: 200px;
+  border-bottom-style: outset;
+  border-color: #4f86f7;
 }
 
 .header-logo {
