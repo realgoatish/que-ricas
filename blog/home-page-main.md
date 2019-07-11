@@ -3,17 +3,18 @@ slug: home-page-main
 title: Honestly Delicious
 ---
 
-# Honestly Delicious
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, at blanditiis temporibus voluptatem quia perferendis magnam eaque voluptates culpa recusandae porro illo praesentium reprehenderit ab, quaerat, quod dolorem deserunt doloribus consequuntur in rerum aliquid consectetur illum odio? Eum cumque illo, saepe cum ad, architecto magni, numquam iure voluptates ullam sequi libero voluptas deleniti ducimus incidunt laboriosam sed quas porro! Magni amet nobis nulla explicabo in. Repudiandae beatae saepe impedit laboriosam alias reiciendis amet voluptatibus quod, quibusdam, quo debitis explicabo sapiente sunt nobis ullam mollitia quaerat repellendus. 
+<br>
+Que Ricas brings to you authentic and inspired South American cuisine using only the best ingredients. We feature specialties like Venezuelan-Style Empanadas, Arepas, Pabellón Bowls, Churros and more, which are all made here in our kitchen from scratch! Those new to South American food will find some surprisingly familiar flavor profiles on the menu to help you test the beautiful waters of this little-known cuisine. We take pride in our selection of pasture-raised and grass-fed meats, organic and non-GMO fruits and vegetables, and locally sourced ingredients.
+<br>
+<br>
+<br>
+<br>
 
-> This is a blockquote.  Fancy!
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, at blanditiis temporibus voluptatem quia perferendis magnam eaque voluptates culpa recusandae porro illo praesentium reprehenderit ab, quaerat, quod dolorem deserunt doloribus consequuntur in rerum aliquid consectetur illum odio? Eum cumque illo, saepe cum ad, architecto magni, numquam iure voluptates ullam sequi libero voluptas deleniti.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, at blanditiis temporibus voluptatem quia perferendis magnam eaque voluptates culpa recusandae porro illo praesentium reprehenderit ab, quaerat, quod dolorem deserunt doloribus consequuntur in rerum aliquid consectetur illum odio? Eum cumque illo, saepe cum ad, architecto magni, numquam iure voluptates ullam sequi libero voluptas deleniti.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, at blanditiis temporibus voluptatem quia perferendis magnam eaque voluptates culpa recusandae porro illo praesentium reprehenderit ab, quaerat, quod dolorem deserunt doloribus consequuntur in rerum aliquid consectetur illum odio? Eum cumque illo, saepe cum ad, architecto magni, numquam iure voluptates ullam sequi libero voluptas deleniti.
+As a business, we have the responsibility to serve food that brings health and prosperity to the individual as well as to our community and planet. This belief translates clearly in our menu that offers many healthy farm-to-table options that are free from harmful chemicals. We also do our best to reduce waste in our kitchen and have swapped out Styrofoam for biodegradable containers. This is our commitment to you, to treat you like we would our family, because you are. 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
