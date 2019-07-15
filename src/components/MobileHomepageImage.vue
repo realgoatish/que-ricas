@@ -1,6 +1,6 @@
 <template lang="pug">
   div(
-    class="mobile-view-img hidden-md-and-up"
+    class="mobile-view-img"
   )
     v-img(
       :src="mobileImage"
@@ -24,7 +24,7 @@ export default {
 
 .mobile-view-img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   display: block;
   border-radius: 0px 0px 15px 15px;
 }
