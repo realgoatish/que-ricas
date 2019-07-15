@@ -10,7 +10,10 @@
           :key="index"
         )
           v-card-title(primary-title)
-            div(v-html="post.node.content")
+            div(
+              v-html="post.node.content"
+              style="font-size:20px;"
+            )
 </template>
 
 <page-query>
