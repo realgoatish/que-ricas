@@ -1,5 +1,5 @@
 <template lang="pug">
-  transition-group(class="slider hidden-sm-and-down" name="fade" tag="div")
+  transition-group(class="slider" name="fade" tag="div")
     div(
       class="images"
       v-for="number in [currentNumber]"
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-// import { setTimeout } from 'timers';
+
 export default {
     name: 'Carousel',
     data () {
@@ -48,7 +48,6 @@ export default {
         }
       },
     },
-    
     computed: {
     	currentImage: function() {
       	return this.carouselImages[Math.abs(this.currentNumber) % this.carouselImages.length];

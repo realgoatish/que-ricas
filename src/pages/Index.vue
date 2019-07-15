@@ -1,7 +1,11 @@
 <template lang="pug">
   layout
-    MobileHomepageImage
-    Carousel
+    Carousel(
+      class="hidden-sm-and-down"
+    )
+    MobileHomepageImage(
+      class="hidden-md-and-up"
+    )
     .index-content-container 
       .title.mb-3
     
@@ -42,8 +46,9 @@ query {
 </page-query>
 
 <script>
-import Carousel from '~/components/Carousel.vue'
+
 import MobileHomepageImage from '~/components/MobileHomepageImage.vue'
+import Carousel from '~/components/Carousel.vue'
 
 export default {
   metaInfo: {
@@ -60,8 +65,8 @@ export default {
     }
   },
   components: {
-    MobileHomepageImage,
-    Carousel
+    Carousel,
+    MobileHomepageImage
   }
 }
 </script>
