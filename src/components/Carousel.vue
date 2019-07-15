@@ -1,5 +1,5 @@
 <template lang="pug">
-  transition-group(class="slider" name="fade" tag="div")
+  transition-group(class="slider hidden-sm-and-down" name="fade" tag="div")
     div(
       class="images"
       v-for="number in [currentNumber]"
@@ -20,7 +20,7 @@ export default {
     name: 'Carousel',
     data () {
         return {
-        images: [require('../v-loaded-arepas.jpg'), require('../v-dinner.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
+        carouselImages: [require('../v-loaded-arepas.jpg'), require('../v-dinner.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
         currentNumber: 0,
         timer: null
       }
@@ -41,7 +41,7 @@ export default {
         },
 
         next: function() {
-          if (this.currentNumber === (this.images.length - 1)) {
+          if (this.currentNumber === (this.carouselImages.length - 1)) {
             this.currentNumber = 0
         } else {
             this.currentNumber += 1            
@@ -51,7 +51,7 @@ export default {
     
     computed: {
     	currentImage: function() {
-      	return this.images[Math.abs(this.currentNumber) % this.images.length];
+      	return this.carouselImages[Math.abs(this.currentNumber) % this.carouselImages.length];
       }
     }
 }
