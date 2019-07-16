@@ -62,7 +62,7 @@ html {
 
 }
 
-@media only screen and (min-device-width : 700px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 1024px) {
   html {
     background-attachment: scroll!important;
   }
