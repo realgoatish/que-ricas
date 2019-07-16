@@ -3,7 +3,11 @@
     v-toolbar(flat color="white")
       v-toolbar-title(class="orange--text text--darken-2") FOLLOW US ON INSTAGRAM
       v-spacer
-      v-btn(flat icon color="pink")
+      v-btn(
+        flat
+        icon
+        color="pink"
+      )
         v-icon favorite
     v-container(grid-list-xs fluid xs10)    
       v-layout(row wrap)
@@ -16,7 +20,7 @@
             flat
             tile
             target="_blank"
-            :href="post.node.thumbnail_src"
+            :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
           )
             v-img(
               :src="post.node.display_url"
@@ -66,3 +70,11 @@ export default {
 }
 
 </script>
+
+<style>
+
+.v-toolbar__title {
+  white-space: pre-wrap!important;
+}
+
+</style>
