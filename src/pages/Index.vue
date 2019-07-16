@@ -7,7 +7,7 @@
       class="hidden-md-and-up"
     )
     .index-content-container 
-      .title.mb-3
+      //- .title.mb-3
     
 
       v-flex(xs12 md8 offset-md2)
@@ -25,7 +25,7 @@
             )
             div(
               v-html="post.node.content"
-              style="font-size:20px;"
+              class="text-content-styles"
             )
 
 </template>
@@ -75,6 +75,11 @@ export default {
 
 .hd-image-class {
   margin: 0 auto;
+}
+
+.text-content-styles {
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 </style>

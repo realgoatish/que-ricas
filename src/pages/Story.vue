@@ -1,7 +1,7 @@
 <template lang="pug">
   layout
-    .index-content-container 
-      .title.mb-3
+    .story-content-container 
+      //- .title.mb-3
     
 
       v-flex(xs12 sm6 offset-sm3)
@@ -12,7 +12,7 @@
           v-card-title(primary-title)
             div(
               v-html="post.node.content"
-              style="font-size:20px;"
+              class="text-content-styles"
             )
 </template>
 
@@ -43,3 +43,12 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.text-content-styles {
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+</style>
