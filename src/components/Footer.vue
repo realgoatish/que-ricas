@@ -18,7 +18,7 @@
               strong CONTACT
               br
               br
-              span 1234 Xxxxxx Avenue Xxxxxx Township, New Jersey #[br] #[br] 90210 quericas2019@gmail.com | 123 456 7891 #[br] #[br] Sunday – Thursday 5 pm to 9 pm #[br] #[br] Friday – Saturday 5 pm to 10 pm
+              div 1234 Xxxxxx Avenue #[br] #[br] Xxxxxx Township, New Jersey 90210 #[br] #[br]quericas2019@gmail.com | 123 456 7891 #[br] #[br] Sunday – Thursday 5 pm to 9 pm #[br] #[br] Friday – Saturday 5 pm to 10 pm
 
             v-card-text
               v-btn(
