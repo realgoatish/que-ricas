@@ -21,6 +21,7 @@
             tile
             target="_blank"
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
+            class="igImages"
           )
             v-img(
               :src="post.node.display_url"
@@ -75,6 +76,10 @@ export default {
 
 .v-toolbar__title {
   white-space: pre-wrap!important;
+}
+
+.igImages :hover {
+  opacity: 0.85;
 }
 
 </style>
