@@ -1,6 +1,8 @@
 <template lang="pug">
 layout
-  div(v-html="$page.post.content")
+  div(
+    v-html="$page.post.content"
+  )
 </template>
 
 <page-query>
