@@ -67,6 +67,12 @@ export default {
   border-radius: 0px 0px 15px 15px;
 }
 
+/* .images {
+  border-bottom-style: outset;
+  border-bottom: 20px;
+  border-color: #4f86f7;
+} */
+
 .fade-enter-active, .fade-leave-active {
   transition: all 0.8s ease;
   overflow: hidden;
