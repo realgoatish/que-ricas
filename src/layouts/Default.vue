@@ -1,7 +1,9 @@
 <template lang="pug">
   div
     Header
-    div(class="parent-content-container")
+    div(
+      class="parent-content-container"
+    )
       slot
     Footer
 </template>
@@ -47,24 +49,20 @@ body, html {
   border-radius: 15px 15px 15px 15px;
 }
 
-html {
-  /* The image used */
+ html {
   background: url('~@/palm-bg.jpeg');
-  /* Full height */
   height: 100%; 
   width: 100%;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-@media only screen and (min-device-width : 300px) and (max-device-width : 1024px) {
+@supports (-webkit-overflow-scrolling: touch) {
   html {
-    background-attachment: scroll!important;
+  background-attachment: scroll;
   }
 }
 
