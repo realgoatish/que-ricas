@@ -1,5 +1,7 @@
 <template lang="pug">
-  div
+  div(
+    data-app
+  )
     Header
     div(
       class="parent-content-container"

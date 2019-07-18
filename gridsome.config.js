@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Que Ricas',
+  siteDescription: 'Traditional and inspired South American fare with a funky vibe',
+  siteUrl: 'https://modest-leakey-1f0828.netlify.com/',
   icon: './src/que-ricas-logo.png',
   plugins: [
     {
@@ -13,7 +15,31 @@ module.exports = {
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
-        route: '/blog/:slug'
+        route: '/blog/:slug',
+        remark: {
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+        },
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000
+        // config: {
+        //   '/': {
+        //     changefreq: 'weekly',
+        //     priority: 0.5
+        //   },
+        //   '/menu': {
+        //     changefreq: 'weekly',
+        //     priority: 0.7
+        //   },
+        //   '/story': {
+        //     changefreq: 'monthly',
+        //     priority: 0.4
+        //   }
+        // }
       }
     },
     {
