@@ -25,21 +25,25 @@ module.exports = {
     {
       use: '@gridsome/plugin-sitemap',
       options: {
-        cacheTime: 600000
-        // config: {
-        //   '/': {
-        //     changefreq: 'weekly',
-        //     priority: 0.5
-        //   },
-        //   '/menu': {
-        //     changefreq: 'weekly',
-        //     priority: 0.7
-        //   },
-        //   '/story': {
-        //     changefreq: 'monthly',
-        //     priority: 0.4
-        //   }
-        // }
+        cacheTime: 600000,
+        config: {
+          '/': {
+            changefreq: 'weekly',
+            priority: 1.0
+          },
+          '/menu': {
+            changefreq: 'weekly',
+            priority: 0.9
+          },
+          '/story': {
+            changefreq: 'monthly',
+            priority: 0.6
+          },
+          '/blog/*': {
+            changefreq: 'weekly',
+            priority: 0.0
+          }
+        }
       }
     },
     {
