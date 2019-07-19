@@ -52,7 +52,7 @@ body, html {
 }
 
  html {
-  background: url('~@/palm-bg.jpeg');
+  background: url('../../static/uploads/palm-bg.jpeg');
   height: 100%; 
   width: 100%;
 

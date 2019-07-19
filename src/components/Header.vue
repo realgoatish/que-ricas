@@ -34,7 +34,7 @@ export default {
     data () {
         return {
             width: "200px",
-            logo: require("~/que-ricas-logo.png")
+            logo: require("../../static/uploads/que-ricas-logo.png")
         }
     }
 }

@@ -54,7 +54,7 @@ export default {
     name: 'Footer',
     data () {
         return {
-            logo: require("~/que-ricas-logo.png"),
+            logo: require("../../static/uploads/que-ricas-logo.png"),
             width: "300px",
             icons: {
                 facebook: {
