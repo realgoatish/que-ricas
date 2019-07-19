@@ -56,7 +56,7 @@ export default {
   },
   data () {
     return {
-      hdImage: require("../hd.png")
+      hdImage: require("../../static/uploads/hd.png")
     }
   },
   computed: {

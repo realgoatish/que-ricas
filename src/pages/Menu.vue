@@ -18,7 +18,7 @@ export default {
   },
   data () {
     return {
-      menuImage: require("../menu.jpg")
+      menuImage: require("../../static/uploads/menu.jpg")
     }
   }
 }

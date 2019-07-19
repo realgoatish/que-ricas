@@ -13,7 +13,7 @@ export default {
     name: 'MobileHomepageImage',
     data () {
         return {
-          mobileImage: require('../table.jpg')
+          mobileImage: require('../../static/uploads/table.jpg')
         }
     }
 }

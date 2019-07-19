@@ -20,7 +20,7 @@ export default {
     name: 'Carousel',
     data () {
         return {
-        carouselImages: [require('../v-loaded-arepas.jpg'), require('../v-dinner.jpg'), require('../v-emp.jpg'), require('../v-yoyos.jpg')],
+        carouselImages: [require('../../static/uploads/v-loaded-arepas.jpg'), require('../../static/uploads/v-dinner.jpg'), require('../../static/uploads/v-emp.jpg'), require('../../static/uploads/v-yoyos.jpg')],
         currentNumber: 0,
         timer: null
       }
