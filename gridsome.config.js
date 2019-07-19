@@ -9,17 +9,33 @@ module.exports = {
   siteDescription: 'Traditional and inspired South American fare with a funky vibe',
   siteUrl: 'https://modest-leakey-1f0828.netlify.com/',
   icon: './src/que-ricas-logo.png',
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global remark plugins
+      ]
+    }
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
+        path: 'posts/**/*.md',
         typeName: 'Post',
-        route: '/blog/:slug',
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-        },
+          plugins: [
+            // ...local remark plugins
+          ]
+        }
+      }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
       }
     },
     {
@@ -39,7 +55,7 @@ module.exports = {
             changefreq: 'monthly',
             priority: 0.6
           },
-          '/blog/*': {
+          '/posts/*': {
             changefreq: 'weekly',
             priority: 0.0
           }
