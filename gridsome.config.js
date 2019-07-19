@@ -39,6 +39,12 @@ module.exports = {
       }
     },
     {
+      use: `gridsome-plugin-netlify-cms-paths`,
+      options: {
+        contentTypes: ['Post']
+      }
+    },
+    {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
