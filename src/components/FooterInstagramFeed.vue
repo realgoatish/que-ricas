@@ -23,7 +23,7 @@
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
             class="igImages"
           )
-            g-image(
+            v-img(
               :src="post.node.display_url"
               style="max-width:100%;"
             )
