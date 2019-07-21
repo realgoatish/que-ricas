@@ -9,6 +9,7 @@
         class="images"
         style="height:400px;"
         :src="currentImage"
+        alt="Large slider images of Venezuelan food"
         v-on:mouseover="stopRotation"
         v-on:mouseout="startRotation"
       )
