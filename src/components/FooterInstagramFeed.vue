@@ -7,6 +7,7 @@
         flat
         icon
         color="pink"
+        aria-label="Heart Icon"
       )
         v-icon favorite
     v-container(grid-list-xs fluid xs10)    
@@ -20,6 +21,7 @@
             flat
             tile
             target="_blank"
+            rel="noopener"
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
             aria-label="Instagram Image.  Click to visit in a new Tab"
             class="igImages"

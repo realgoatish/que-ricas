@@ -32,6 +32,7 @@
         :aria-label="item.a11yTitle"
         :href="item.link"
         target="_blank"
+        rel="noopener"
         color="orange darken-2"
       )
         font-awesome(:icon="item.config" size="2x")
