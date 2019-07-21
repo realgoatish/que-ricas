@@ -9,7 +9,11 @@
     LazyHydrate(when-visible)
       v-menu(class="hidden-md-and-up")
         v-toolbar-side-icon(slot="activator")
-          v-icon(x-large color="black") reorder
+          v-icon(
+            x-large
+            color="black"
+            aria-label="Hamburger Menu"
+          ) reorder
         v-list
           v-list-tile(:to="{ path: '/' }")
             v-list-tile-content
