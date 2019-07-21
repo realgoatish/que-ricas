@@ -47,8 +47,8 @@ query {
 
 <script>
 
-import MobileHomepageImage from '~/components/MobileHomepageImage.vue'
-import Carousel from '~/components/Carousel.vue'
+// import MobileHomepageImage from '~/components/MobileHomepageImage.vue'
+// import Carousel from '~/components/Carousel.vue'
 
 export default {
   metaInfo: {
@@ -65,8 +65,8 @@ export default {
     }
   },
   components: {
-    Carousel,
-    MobileHomepageImage
+    Carousel: () => import('~/components/Carousel.vue'),
+    MobileHomepageImage: () => import('~/components/MobileHomepageImage.vue')
   }
 }
 </script>

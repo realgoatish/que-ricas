@@ -21,33 +21,20 @@
 
 <script>
 
-import FooterContact from '~/components/FooterContact.vue'
-import FooterInstagramFeed from '~/components/FooterInstagramFeed.vue'
+// import FooterContact from '~/components/FooterContact.vue'
+// import FooterInstagramFeed from '~/components/FooterInstagramFeed.vue'
 
 export default {
     name: 'Footer',
     data () {
         return {
             logo: require("../../static/uploads/que-ricas-logo.png"),
-            width: "300px"
-            // icons: {
-            //     facebook: {
-            //         id: 1,
-            //         config: ['fab', 'facebook'],
-            //         link: 'https://www.facebook.com/quericashaddon/'
-            //     },
-            //     instagram: {
-            //         id: 2,
-            //         config: ['fab', 'instagram'],
-            //         link: 'https://www.instagram.com/quericas_haddon/?hl=en'
-            //     }
-            // }
-            
+            width: "300px" 
         }
     },
     components: {
-      FooterContact,
-      FooterInstagramFeed
+      FooterContact: () => import('~/components/FooterContact.vue'),
+      FooterInstagramFeed: () => import('~/components/FooterInstagramFeed.vue')
     }
 }
 
