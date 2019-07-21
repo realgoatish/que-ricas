@@ -1,6 +1,7 @@
 ---
-slug: home-page-main
 title: Honestly Delicious
+excerpt: content for homepage
+date: 2019-07-21T03:48:06.835Z
 ---
 
 
@@ -11,7 +12,7 @@ Que Ricas brings to you authentic and inspired South American cuisine using only
 <br>
 <br>
 
-As a business, we have the responsibility to serve food that brings health and prosperity to the individual as well as to our community and planet. This belief translates clearly in our menu that offers many healthy farm-to-table options that are free from harmful chemicals. We also do our best to reduce waste in our kitchen and have swapped out Styrofoam for biodegradable containers. This is our commitment to you: to be responsible to our planet and to treat you like we would our family...because you are!
+As a business, we have the responsibility to serve food that brings health to the individual as well as prosperity to our community and planet. This belief translates clearly in our menu that offers many healthy farm-to-table options that are free from harmful chemicals. We also do our best to reduce waste in our kitchen and have swapped out Styrofoam for biodegradable containers. This is our commitment to you: to be responsible to our planet and to treat you like we would our family...because you are!
 <br>
 <br>
 <br>
