@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: mflamb/que-ricas
+  name: git-gateway
+  repo: master
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
