@@ -29,6 +29,7 @@
         class="white--text"
         flat
         icon
+        :alt="item"
         :href="item.link"
         target="_blank"
         color="orange darken-2"

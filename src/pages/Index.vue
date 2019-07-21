@@ -4,10 +4,9 @@
       Carousel(
         class="hidden-sm-and-down"
       )
-    LazyHydrate(when-visible)
-      MobileHomepageImage(
-        class="hidden-md-and-up"
-      )
+    MobileHomepageImage(
+      class="hidden-md-and-up"
+    )
     .index-content-container 
       //- .title.mb-3
     
@@ -20,6 +19,7 @@
           v-card-title(primary-title)
             g-image(
               :src="hdImage"
+              alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
               class="hd-image-class"
               width="auto"
               height="auto"

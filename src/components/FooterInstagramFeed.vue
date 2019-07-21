@@ -25,6 +25,7 @@
           )
             v-img(
               :src="post.node.display_url"
+              :alt="post.node.accessibility_caption"
               style="max-width:100%;"
             )
 </template>

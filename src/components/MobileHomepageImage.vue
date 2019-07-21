@@ -4,6 +4,7 @@
   )
     v-img(
       :src="mobileImage"
+      alt="A banquet table of Venezuelan plantains, Arepas, cheeses, black beans and guacamole"
     )
 </template>
 
