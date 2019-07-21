@@ -8,11 +8,13 @@
       v-btn(outline large color="orange" aria-label="Our Story Page Icon" :to="{ path: '/story' }") Our Story
     LazyHydrate(when-visible)
       v-menu(class="hidden-md-and-up")
-        v-toolbar-side-icon(slot="activator")
+        v-toolbar-side-icon(
+          slot="activator"
+          aria-label="Hamburger Menu"
+        )
           v-icon(
             x-large
             color="black"
-            aria-label="Hamburger Menu"
           ) reorder
         v-list
           v-list-tile(:to="{ path: '/' }")
