@@ -29,7 +29,7 @@
         class="white--text"
         flat
         icon
-        :alt="item"
+        :aria-label="item.a11yTitle"
         :href="item.link"
         target="_blank"
         color="orange darken-2"
@@ -66,12 +66,14 @@ export default {
                 facebook: {
                     id: 1,
                     config: ['fab', 'facebook'],
-                    link: 'https://www.facebook.com/quericashaddon/'
+                    link: 'https://www.facebook.com/quericashaddon/',
+                    a11yTitle: "Click to visit Que Ricas on Facebook"
                 },
                 instagram: {
                     id: 2,
                     config: ['fab', 'instagram'],
-                    link: 'https://www.instagram.com/quericas_haddon/?hl=en'
+                    link: 'https://www.instagram.com/quericas_haddon/?hl=en',
+                    a11yTitle: "Click to visit Que Ricas on Instagram"
                 }
             }
         }

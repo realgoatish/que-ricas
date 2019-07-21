@@ -21,7 +21,7 @@
             tile
             target="_blank"
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
-            alt="Instagram Image.  Click to visit in a new Tab"
+            aria-label="Instagram Image.  Click to visit in a new Tab"
             class="igImages"
           )
             v-img(
