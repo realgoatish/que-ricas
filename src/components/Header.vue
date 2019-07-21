@@ -4,9 +4,8 @@
     v-spacer
     div(class="text-md-center hidden-sm-and-down")
       v-btn(outline large color="orange" :to="{ path: '/' }") Home
-      v-btn(outline large color="orange" :to="{ path: '/story' }") Our Story
       v-btn(outline large color="orange" :to="{ path: '/menu' }") Menu
-      //- v-btn(outline color="orange" :to="{ path: '/contact' }") Contact Us
+      v-btn(outline large color="orange" :to="{ path: '/story' }") Our Story
     v-menu(class="hidden-md-and-up")
       v-toolbar-side-icon(slot="activator")
         v-icon(x-large color="black") reorder
