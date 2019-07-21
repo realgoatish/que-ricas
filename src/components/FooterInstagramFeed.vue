@@ -23,8 +23,9 @@
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
             class="igImages"
           )
-            v-img(
+            g-image(
               :src="post.node.display_url"
+              style="max-width:100%;"
             )
 </template>
 
