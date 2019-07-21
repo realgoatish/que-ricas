@@ -67,7 +67,7 @@ query {
 <script>
 
 export default {
-  name: 'InstagramFeed'
+  name: 'FooterInstagramFeed'
 }
 
 </script>
