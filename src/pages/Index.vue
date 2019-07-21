@@ -10,25 +10,25 @@
     .index-content-container 
       //- .title.mb-3
     
-
-      v-flex(xs12 md8 offset-md2)
-        v-card(
-          v-for="(post, index) in posts"
-          :key="index"
-        )
-          v-card-title(primary-title)
-            g-image(
-              :src="hdImage"
-              alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
-              class="hd-image-class"
-              width="auto"
-              height="auto"
-              fit="outside"
-            )
-            div(
-              v-html="post.node.content"
-              class="text-content-styles"
-            )
+      main
+        v-flex(xs12 md8 offset-md2)
+          v-card(
+            v-for="(post, index) in posts"
+            :key="index"
+          )
+            v-card-title(primary-title)
+              g-image(
+                :src="hdImage"
+                alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
+                class="hd-image-class"
+                width="auto"
+                height="auto"
+                fit="outside"
+              )
+              div(
+                v-html="post.node.content"
+                class="text-content-styles"
+              )
 
 </template>
 
