@@ -19,9 +19,7 @@
         v-list-tile(:to="{ path: '/menu' }")
           v-list-tile-content
             v-list-tile-title Menu
-        //- v-list-tile(:to="{ path: '/contact' }")
-        //-   v-list-tile-content
-        //-     v-list-tile-title Contact Us
+
 </template>
 
 

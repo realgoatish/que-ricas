@@ -6,7 +6,8 @@
     v-container(grid-list-sm style="max-width:1300px")
       v-layout(row wrap)
         v-flex(xs12 md4 order-xs1)
-          FooterContact
+          LazyHydrate(ssr-only)
+            FooterContact
 
 
         v-flex(xs12 md4 order-md2 order-xs3)
@@ -16,13 +17,15 @@
           
       
         v-flex(xs12 md4 order-md3 order-xs2)
-          FooterInstagramFeed
+          LazyHydrate(when-visible)
+            FooterInstagramFeed
 </template>
 
 <script>
 
 // import FooterContact from '~/components/FooterContact.vue'
 // import FooterInstagramFeed from '~/components/FooterInstagramFeed.vue'
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
     name: 'Footer',
@@ -33,6 +36,7 @@ export default {
         }
     },
     components: {
+      LazyHydrate,
       FooterContact: () => import('~/components/FooterContact.vue'),
       FooterInstagramFeed: () => import('~/components/FooterInstagramFeed.vue')
     }

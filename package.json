@@ -25,6 +25,7 @@
     "sass-loader": "^7.1.0",
     "sharp": "^0.22.1",
     "vue": "^2.6.10",
+    "vue-lazy-hydration": "^1.0.0-beta.9",
     "vue-svg-loader": "^0.12.0",
     "vuetify": "^1.5.16"
   },

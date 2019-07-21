@@ -1,11 +1,13 @@
 <template lang="pug">
   layout
-    Carousel(
-      class="hidden-sm-and-down"
-    )
-    MobileHomepageImage(
-      class="hidden-md-and-up"
-    )
+    LazyHydrate(when-visible)
+      Carousel(
+        class="hidden-sm-and-down"
+      )
+    LazyHydrate(when-visible)
+      MobileHomepageImage(
+        class="hidden-md-and-up"
+      )
     .index-content-container 
       //- .title.mb-3
     
@@ -49,6 +51,7 @@ query {
 
 // import MobileHomepageImage from '~/components/MobileHomepageImage.vue'
 // import Carousel from '~/components/Carousel.vue'
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   metaInfo: {
@@ -65,6 +68,7 @@ export default {
     }
   },
   components: {
+    LazyHydrate,
     Carousel: () => import('~/components/Carousel.vue'),
     MobileHomepageImage: () => import('~/components/MobileHomepageImage.vue')
   }

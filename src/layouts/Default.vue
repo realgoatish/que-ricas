@@ -7,16 +7,19 @@
       class="parent-content-container"
     )
       slot
-    Footer
+    LazyHydrate(when-visible)
+      Footer
 </template>
 
 <script>
 
 // import Header from '~/components/Header.vue'
 // import Footer from '~/components/Footer.vue'
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   components: {
+    LazyHydrate,
     Header: () => import('~/components/Header.vue'),
     Footer: () => import('~/components/Footer.vue')
   }
