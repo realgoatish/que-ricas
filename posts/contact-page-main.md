@@ -5,7 +5,7 @@ date: 2019-07-19T19:17:27.987Z
 ---
 # Contact Us
 
-46A Haddon Avenue Westmont Twp, New Jersey 08033 quericas2019@gmail.com | 123 456 7891
+46A Haddon Avenue Haddon Township, New Jersey 08033 quericas2019@gmail.com | 856 220 9961
 
-Sunday – Thursday 5 pm to 9 pm
-Friday – Saturday 5 pm to 10 pm
+Monday – Saturday 11 am to 9 pm
+Sunday closed
