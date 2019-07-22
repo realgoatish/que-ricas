@@ -1,10 +1,10 @@
 <template lang="pug">
   layout
-    LazyHydrate(ssr-only)
+    LazyHydrate(when-idle)
       IndexCarousel(
         class="hidden-sm-and-down"
       )
-    LazyHydrate(ssr-only)
+    LazyHydrate(when-idle)
       IndexMobileImage(
         class="hidden-md-and-up"
       )
