@@ -2,7 +2,7 @@
 title: Story - Dar
 excerpt: Autobiographical section for Dar
 date: 2019-07-22T01:16:58.421Z
-image1: /uploads/dar-elsie-cropped.jpg
+featured image: /uploads/dar-elsie-cropped.jpg
 ---
 
 <br>
