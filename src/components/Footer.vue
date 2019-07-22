@@ -23,8 +23,8 @@
 
 <script>
 
-// import FooterContact from '~/components/FooterContact.vue'
-// import FooterInstagramFeed from '~/components/FooterInstagramFeed.vue'
+import FooterContact from '~/components/FooterContact.vue';
+import FooterInstagramFeed from '~/components/FooterInstagramFeed.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
@@ -37,8 +37,10 @@ export default {
     },
     components: {
       LazyHydrate,
-      FooterContact: () => import('~/components/FooterContact.vue'),
-      FooterInstagramFeed: () => import('~/components/FooterInstagramFeed.vue')
+      FooterContact,
+      FooterInstagramFeed
+      // FooterContact: () => import('~/components/FooterContact.vue'),
+      // FooterInstagramFeed: () => import('~/components/FooterInstagramFeed.vue')
     }
 }
 

@@ -49,8 +49,8 @@ query {
 
 <script>
 
-// import MobileHomepageImage from '~/components/MobileHomepageImage.vue'
-// import Carousel from '~/components/Carousel.vue'
+import MobileHomepageImage from '~/components/MobileHomepageImage.vue';
+import Carousel from '~/components/Carousel.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
@@ -69,8 +69,10 @@ export default {
   },
   components: {
     LazyHydrate,
-    Carousel: () => import('~/components/Carousel.vue'),
-    MobileHomepageImage: () => import('~/components/MobileHomepageImage.vue')
+    Carousel,
+    MobileHomepageImage
+    // Carousel: () => import('~/components/Carousel.vue'),
+    // MobileHomepageImage: () => import('~/components/MobileHomepageImage.vue')
   }
 }
 </script>
