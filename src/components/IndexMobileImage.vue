@@ -21,7 +21,7 @@ export default {
 
 </script>
 
-<style>
+<style lanag="scss" scoped>
 
 .mobile-view-img {
   width: 100%;
