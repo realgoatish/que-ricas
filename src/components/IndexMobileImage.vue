@@ -11,7 +11,7 @@
 <script>
 
 export default {
-    name: 'MobileHomepageImage',
+    name: 'IndexMobileImage',
     data () {
         return {
           mobileImage: require('../../static/uploads/table.jpg')

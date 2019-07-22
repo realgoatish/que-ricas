@@ -1,31 +1,12 @@
 <template lang="pug">
   v-toolbar(class="header")
-    g-image(alt="Que Ricas Logo" class="header-logo" :src="logo" :width="width")
+    LazyHydrate(ssr-only)
+      HeaderLogo
     v-spacer
-    div(class="text-md-center hidden-sm-and-down")
-      v-btn(outline large color="orange" aria-label="Home Page Icon" :to="{ path: '/' }") Home
-      v-btn(outline large color="orange" aria-label="Menu Page Icon" :to="{ path: '/menu' }") Menu
-      v-btn(outline large color="orange" aria-label="Our Story Page Icon" :to="{ path: '/story' }") Our Story
-    LazyHydrate(when-visible)
-      v-menu(class="hidden-md-and-up")
-        v-toolbar-side-icon(
-          slot="activator"
-          aria-label="Hamburger Menu"
-        )
-          v-icon(
-            x-large
-            color="black"
-          ) reorder
-        v-list
-          v-list-tile(:to="{ path: '/' }")
-            v-list-tile-content
-              v-list-tile-title Home
-          v-list-tile(:to="{ path: '/story' }")
-            v-list-tile-content
-              v-list-tile-title Our Story
-          v-list-tile(:to="{ path: '/menu' }")
-            v-list-tile-content
-              v-list-tile-title Menu
+    LazyHydrate(on-interaction)
+      HeaderRegularMenu
+    LazyHydrate(on-interaction)
+      HeaderHamburger
 
 </template>
 
@@ -34,17 +15,17 @@
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
+import HeaderLogo from '~/components/HeaderLogo.vue';
+import HeaderRegularMenu from '~/components/HeaderRegularMenu.vue';
+import HeaderHamburger from '~/components/HeaderHamburger.vue';
 
 export default {
     name: 'Header',
-    data () {
-        return {
-            width: "200px",
-            logo: require("../../static/uploads/que-ricas-logo.png")
-        }
-    },
     components: {
-      LazyHydrate
+      LazyHydrate,
+      HeaderLogo,
+      HeaderRegularMenu,
+      HeaderHamburger
     }
 }
 

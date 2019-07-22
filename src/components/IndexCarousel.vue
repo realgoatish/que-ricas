@@ -18,7 +18,7 @@
 <script>
 
 export default {
-    name: 'Carousel',
+    name: 'IndexCarousel',
     data () {
         return {
         carouselImages: [require('../../static/uploads/v-loaded-arepas.jpg'), require('../../static/uploads/v-dinner.jpg'), require('../../static/uploads/v-emp.jpg'), require('../../static/uploads/v-yoyos.jpg')],
