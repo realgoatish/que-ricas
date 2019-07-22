@@ -2,7 +2,7 @@
 title: Story - Sahar
 excerpt: Autobiographical section for Sahar
 date: 2019-07-22T01:16:58.421Z
-image1: /uploads/sahar-mike-cropped.jpg
+featured image: /uploads/sahar-mike-cropped.jpg
 ---
 <br>
 <br>
