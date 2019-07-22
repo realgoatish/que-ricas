@@ -72,8 +72,6 @@ export default {
     LazyHydrate,
     Carousel,
     MobileHomepageImage
-    // Carousel: () => import('~/components/Carousel.vue'),
-    // MobileHomepageImage: () => import('~/components/MobileHomepageImage.vue')
   }
 }
 </script>

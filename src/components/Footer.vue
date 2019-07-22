@@ -39,8 +39,6 @@ export default {
       LazyHydrate,
       FooterContact,
       FooterInstagramFeed
-      // FooterContact: () => import('~/components/FooterContact.vue'),
-      // FooterInstagramFeed: () => import('~/components/FooterInstagramFeed.vue')
     }
 }
 
