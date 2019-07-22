@@ -8,17 +8,15 @@
 
     v-card-text(
       class="orange--text text--darken-2 pt-3"
-      v-for="(post, index) in posts"
-      :key="index"
     )
       strong(
-        v-html="post.node.excerpt"
+        v-html="$static.post.excerpt"
         style="font-size:18px;"
       )
       br
       br
       div(
-        v-html="post.node.content"
+        v-html="$static.post.content"
         style="font-size:16px;"
       )
 
@@ -42,16 +40,9 @@
 <static-query>
 
 query {
-  allPost(filter: { excerpt: { eq: "CONTACT" }}) {
-    edges {
-      node {
-        id
-        excerpt
-        title
-        content
-        path
-      }
-    }
+  post (path: "/posts/footer-contact-info"){
+    excerpt
+    content
   }
 }
 
@@ -77,11 +68,6 @@ export default {
                     a11yTitle: "Click to visit Que Ricas on Instagram"
                 }
             }
-        }
-    },
-    computed: {
-        posts() {
-            return this.$static.allPost.edges
         }
     }
 }

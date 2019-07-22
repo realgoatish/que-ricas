@@ -13,10 +13,7 @@
     
       main
         v-flex(xs12 md8 offset-md2)
-          v-card(
-            v-for="(post, index) in posts"
-            :key="index"
-          )
+          v-card
             br
             v-card-title(primary-title)
               g-image(
@@ -28,7 +25,7 @@
                 fit="outside"
               )
               div(
-                v-html="post.node.content"
+                v-html="$page.post.content"
                 class="text-content-styles"
               )
 
@@ -36,15 +33,10 @@
 
 <page-query>
 query {
-  allPost(filter: { title: { eq: "Honestly Delicious" }}) {
-    edges {
-      node {
-        id
-        title
-        content
-        path
-      }
-    }
+  post (path: "/posts/home-page-main"){
+    path
+    content
+    id
   }
 }
 </page-query>
@@ -62,11 +54,6 @@ export default {
   data () {
     return {
       hdImage: require("../../static/uploads/hd.png")
-    }
-  },
-  computed: {
-    posts() {
-      return this.$page.allPost.edges
     }
   },
   components: {
