@@ -18,7 +18,7 @@
 
 <page-query>
 query {
-  allPost(filter: { title: { eq: "Our Story" }}) {
+  allPost(filter: { title: { in: "Story" }}) {
     edges {
       node {
         id
@@ -49,6 +49,7 @@ export default {
 .text-content-styles {
   font-size:20px;
   font-family: 'Montserrat', sans-serif;
+  margin: 20px;
 }
 
 </style>
