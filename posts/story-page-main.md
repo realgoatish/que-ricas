@@ -1,6 +1,9 @@
 ---
-slug: story-page-main.md
+# slug: story-page-main.md
 title: "Our Story"
+excerpt: "Autobiographical section for Sahar and Dar"
+image1: ""
+image2: ""
 ---
 
 <br>
