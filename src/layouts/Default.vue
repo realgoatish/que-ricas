@@ -22,8 +22,6 @@ export default {
     LazyHydrate,
     Header,
     Footer
-    // Header: () => import('~/components/Header.vue'),
-    // Footer: () => import('~/components/Footer.vue')
   }
 }
 

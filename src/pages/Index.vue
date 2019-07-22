@@ -1,12 +1,13 @@
 <template lang="pug">
   layout
-    LazyHydrate(when-visible)
-      Carousel(
+    LazyHydrate(ssr-only)
+      IndexCarousel(
         class="hidden-sm-and-down"
       )
-    MobileHomepageImage(
-      class="hidden-md-and-up"
-    )
+    LazyHydrate(ssr-only)
+      IndexMobileImage(
+        class="hidden-md-and-up"
+      )
     .index-content-container 
       .title.mb-3
     
@@ -50,9 +51,9 @@ query {
 
 <script>
 
-import MobileHomepageImage from '~/components/MobileHomepageImage.vue';
-import Carousel from '~/components/Carousel.vue';
 import LazyHydrate from 'vue-lazy-hydration';
+import IndexMobileImage from '~/components/IndexMobileImage.vue';
+import IndexCarousel from '~/components/IndexCarousel.vue';
 
 export default {
   metaInfo: {
@@ -70,8 +71,8 @@ export default {
   },
   components: {
     LazyHydrate,
-    Carousel,
-    MobileHomepageImage
+    IndexCarousel,
+    IndexMobileImage
   }
 }
 </script>

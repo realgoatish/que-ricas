@@ -22,22 +22,23 @@
 </template>
 
 <page-query>
+
 query {
-  allPost(filter: { title: { in: ["Story Sahar", "Story Dar"] }}) {
+  allPost(filter: { title: { in: ["Story Sahar", "Story Dar"] }}
+    sort: [{ by: "title", order: DESC}]) {
     edges {
       node {
-        id
-        title
-        content
         featuredImage
-        path
+        content
       }
     }
   }
 }
+
 </page-query>
 
 <script>
+
 export default {
   metaInfo: {
     title: 'Our Story!'
