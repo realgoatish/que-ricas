@@ -8,7 +8,7 @@
       class="hidden-md-and-up"
     )
     .index-content-container 
-      //- .title.mb-3
+      .title.mb-3
     
       main
         v-flex(xs12 md8 offset-md2)

@@ -69,7 +69,8 @@ body, html {
 
 @supports (-webkit-overflow-scrolling: touch) {
   html {
-  background-attachment: scroll;
+    background: #05a831;
+    background-attachment: scroll;
   }
 }
 

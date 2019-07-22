@@ -1,10 +1,10 @@
 <template lang="pug">
   layout
     .story-content-container 
-      //- .title.mb-3
+      .title.mb-3
     
       main
-        v-flex(xs12 sm6 offset-sm3)
+        v-flex(xs12 md8 offset-md2)
           v-card(
             v-for="(post, index) in posts"
             :key="index"
