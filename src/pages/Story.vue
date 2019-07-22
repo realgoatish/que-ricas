@@ -57,14 +57,14 @@ export default {
   max-width: 40%;
   height: auto;
   float: left;
-  margin: 20px 20px 10px;
+  margin: 20px 10px 10px 15px;
 }
 
 .text-content-styles {
   font-size:18px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
-  margin-left: 18px;
+  margin-left: 13px;
   text-align: left;
   line-height: 2;
 }
