@@ -16,66 +16,33 @@
           v-card
             br
             v-card-title(primary-title)
-              g-image(
-                :src="hdImage"
-                alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
-                class="hd-image-class"
-                width="auto"
-                height="auto"
-                fit="outside"
-              )
-              div(
-                v-html="$page.post.content"
-                class="text-content-styles"
-              )
+              LazyHydrate(ssr-only)
+                IndexHdImage
+              LazyHydrate(ssr-only)
+                IndexTextContent
 
 </template>
-
-<page-query>
-query {
-  post (path: "/posts/home-page-main"){
-    path
-    content
-    id
-  }
-}
-</page-query>
 
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
 import IndexMobileImage from '~/components/IndexMobileImage.vue';
 import IndexCarousel from '~/components/IndexCarousel.vue';
+import IndexHdImage from '~/components/IndexHdImage.vue';
+import IndexTextContent from '~/components/IndexTextContent.vue';
 
 export default {
   metaInfo: {
     title: 'Bienvenidos!'
   },
-  data () {
-    return {
-      hdImage: require("../../static/uploads/hd.png")
-    }
-  },
   components: {
     LazyHydrate,
     IndexCarousel,
-    IndexMobileImage
+    IndexMobileImage,
+    IndexHdImage,
+    IndexTextContent
   }
 }
 </script>
-
-<style>
-
-.hd-image-class {
-  margin: 0 auto;
-}
-
-.text-content-styles {
-  font-size:20px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 30px;
-}
-
-</style>
 
 
