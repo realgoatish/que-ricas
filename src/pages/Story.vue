@@ -10,6 +10,10 @@
             :key="index"
           )
             v-card-title(primary-title)
+              //- div(
+              //-   v-html="post.node.featuredImage"
+              //-   class="featured-image-class"
+              //- )
               div(
                 v-html="post.node.content"
                 class="text-content-styles"
@@ -18,12 +22,13 @@
 
 <page-query>
 query {
-  allPost(filter: { title: { in: "Story" }}) {
+  allPost(filter: { title: { in: ["Story Dar", "Story Sahar"] }}) {
     edges {
       node {
         id
         title
         content
+        featuredImage
         path
       }
     }
