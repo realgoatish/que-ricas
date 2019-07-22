@@ -10,19 +10,20 @@
             :key="index"
           )
             v-card-title(primary-title)
-              //- div(
-              //-   v-html="post.node.featuredImage"
-              //-   class="featured-image-class"
-              //- )
-              div(
-                v-html="post.node.content"
-                class="text-content-styles"
-              )
+              div
+                g-image(
+                  :src="post.node.featuredImage"
+                  class="featured-image-class"
+                )
+                div(
+                  v-html="post.node.content"
+                  class="text-content-styles"
+                )
 </template>
 
 <page-query>
 query {
-  allPost(filter: { title: { in: ["Story Dar", "Story Sahar"] }}) {
+  allPost(filter: { title: { in: ["Story Sahar", "Story Dar"] }}) {
     edges {
       node {
         id
@@ -51,10 +52,17 @@ export default {
 
 <style>
 
+.featured-image-class {
+  max-width: 40%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
 .text-content-styles {
   font-size:20px;
   font-family: 'Montserrat', sans-serif;
-  margin: 20px;
+  margin: 5px;
 }
 
 </style>
