@@ -3,9 +3,9 @@
     LazyHydrate(ssr-only)
       HeaderLogo
     v-spacer
-    LazyHydrate(on-interaction)
+    LazyHydrate(when-idle)
       HeaderRegularMenu
-    LazyHydrate(on-interaction)
+    LazyHydrate(when-idle)
       HeaderHamburger
 
 </template>
