@@ -53,18 +53,19 @@ export default {
 
 <style>
 
+
 .featured-image-class {
   max-width: 40%;
   height: auto;
   float: left;
-  margin: 20px 10px 10px 15px;
+  margin: 20px 20px 10px;
 }
 
 .text-content-styles {
   font-size:18px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
-  margin-left: 13px;
+  margin-left: 18px;
   text-align: left;
   line-height: 2;
 }
