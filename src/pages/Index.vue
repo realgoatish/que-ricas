@@ -16,6 +16,7 @@
             v-for="(post, index) in posts"
             :key="index"
           )
+            br
             v-card-title(primary-title)
               g-image(
                 :src="hdImage"
@@ -86,6 +87,7 @@ export default {
 .text-content-styles {
   font-size:20px;
   font-family: 'Montserrat', sans-serif;
+  margin: 30px;
 }
 
 </style>
