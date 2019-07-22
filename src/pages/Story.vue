@@ -10,10 +10,10 @@
             :key="index"
           )
             v-card-title(primary-title)
-              div(
-                v-html="post.node.featuredImage"
-                class="featured-image-class"
-              )
+              //- div(
+              //-   v-html="post.node.featuredImage"
+              //-   class="featured-image-class"
+              //- )
               div(
                 v-html="post.node.content"
                 class="text-content-styles"
