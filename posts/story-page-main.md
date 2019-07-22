@@ -1,9 +1,9 @@
 ---
-# slug: story-page-main.md
-title: "Our Story"
-excerpt: "Autobiographical section for Sahar and Dar"
-image1: ""
-image2: ""
+title: Our Story
+excerpt: Autobiographical section for Sahar and Dar
+date: 2019-07-22T01:16:58.421Z
+image1: ''
+image2: /uploads/dar-elsie-cropped.jpg
 ---
 
 <br>
