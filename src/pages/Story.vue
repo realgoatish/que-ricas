@@ -64,12 +64,19 @@ export default {
 }
 
 .text-content-styles {
-  font-size:18px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
   margin-left: 18px;
   text-align: left;
   line-height: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .v-card__title {
+  padding: 20px 20px 20px 0px;
+  font-size: 14px;
+  }
 }
 
 </style>
