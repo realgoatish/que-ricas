@@ -19,6 +19,8 @@
                   v-html="post.node.content"
                   class="text-content-styles"
                 )
+            .title.mb-3
+      .title.mb-3
 </template>
 
 <page-query>
