@@ -1,6 +1,6 @@
 <template lang="pug">
   layout
-    LazyHydrate(on-interaction)
+    LazyHydrate(when-idle)
       IndexCarousel(
         class="hidden-sm-and-down"
       )
