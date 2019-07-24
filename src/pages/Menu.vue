@@ -24,7 +24,7 @@ export default {
   },
   data () {
     return {
-      menuImage: require("../../static/uploads/menu.jpg")
+      menuImage: 'https://res.cloudinary.com/caribou-images/image/upload/v1563934645/menu_ctermw.jpg'
     }
   }
 }

@@ -11,7 +11,7 @@ export default {
     data () {
         return {
             width: "200px",
-            logo: require("../../static/uploads/que-ricas-logo.png")
+            logo: "https://res.cloudinary.com/caribou-images/image/upload/q_auto/que-ricas-logo_zzg9p4.png"
         }
     }
 }

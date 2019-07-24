@@ -15,7 +15,7 @@ export default {
     name: 'IndexHdImage',
     data () {
       return {
-        hdImage: require("../../static/uploads/hd.png")
+        hdImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto/hd_gdskbd.png'
     }
   }
 }
