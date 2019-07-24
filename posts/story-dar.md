@@ -11,4 +11,4 @@ Born and raised in Iran, Dar Soleymani came to the United States in the late 70â
 While travelling all over the world, he was most inspired by the Central and South American way of life and cuisine. 
 <br>
 <br>
-After over 40 years in the food industry operating upwards of 70 restaurants, bars, and nightclubs, he has partnered with his daughter Sahar to pass along his expertise and continue to do what he does: cook with love.
+After over 40 years in the food industry operating upwards of 70 restaurants, bars, and nightclubs, he has partnered with his daughter Sahar to pass along his expertise and continue to do what he does: cook with love!
