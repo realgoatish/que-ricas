@@ -19,8 +19,6 @@
         v-html="$static.post.content"
         style="font-size:16px;"
       )
-
-    v-card-text
       v-btn(
         v-for="item in icons"
         :key="item.id"
@@ -32,7 +30,7 @@
         target="_blank"
         rel="noopener"
         color="orange darken-2"
-      )
+    )
         font-awesome(:icon="item.config" size="2x")
 
 </template>
