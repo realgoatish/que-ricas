@@ -52,21 +52,14 @@ query {
   {
     edges {
       node {
-        id
         shortcode
         display_url
-        thumbnail_src
-        edge_media_to_caption {
-          edges {
-            node {
-              text
-            }
-          }
-        }
+        accessibility_caption
       }
     }
   }
 }
+
 </static-query>
 
 <script>
