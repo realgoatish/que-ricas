@@ -21,9 +21,6 @@ export default {
 
 <style>
 .text-content-styles {
-  /* font-size:20px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 30px; */
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
