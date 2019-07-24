@@ -1,6 +1,6 @@
 <template lang="pug">
   layout
-    LazyHydrate(when-idle)
+    LazyHydrate(on-interaction)
       IndexCarousel(
         class="hidden-sm-and-down"
       )
@@ -20,6 +20,7 @@
                 IndexHdImage
               LazyHydrate(ssr-only)
                 IndexTextContent
+      .title.mb-3
 
 </template>
 
