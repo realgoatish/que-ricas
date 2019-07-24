@@ -46,4 +46,15 @@ export default {
 }
 </script>
 
+<style>
+
+@media only screen and (max-width: 600px) {
+  .v-card__title {
+  padding: 20px 16px 20px 3px;
+  font-size: 14px;
+  }
+}
+
+</style>
+
 
