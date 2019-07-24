@@ -14,7 +14,7 @@ export default {
     name: 'IndexMobileImage',
     data () {
         return {
-          mobileImage: require('../../static/uploads/table.jpg')
+          mobileImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto/table_uumliz.jpg'
         }
     }
 }
