@@ -14,6 +14,7 @@
                 height="auto"
                 fit="fill"
               )
+      .title.mb-3
 
 </template>
 
