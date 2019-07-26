@@ -1,12 +1,12 @@
 <template lang="pug">
   v-flex(xs12)
     v-toolbar(flat color="white")
-      v-toolbar-title(class="orange--text text--darken-4") FOLLOW US ON INSTAGRAM
+      v-toolbar-title(class="orange--text text--darken-3" style="font-weight:bold;") FOLLOW US ON INSTAGRAM
       v-spacer
       v-btn(
         flat
         icon
-        color="#F57C00"
+        color="pink"
         aria-label="Heart Icon"
       )
         v-icon favorite
