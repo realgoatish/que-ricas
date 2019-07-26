@@ -11,13 +11,13 @@
     )
       strong(
         v-html="$static.post.excerpt"
-        style="font-size:18px;"
+        style="font-size:18px;font-weight:bold;"
       )
       br
       br
       div(
         v-html="$static.post.content"
-        style="font-size:16px;"
+        style="font-size:16px;font-weight:bold;"
       )
       LazyHydrate(when-visible)
         FooterFbIcon
