@@ -19,19 +19,10 @@
         v-html="$static.post.content"
         style="font-size:16px;"
       )
-      v-btn(
-        v-for="item in icons"
-        :key="item.id"
-        class="white--text"
-        flat
-        icon
-        :aria-label="item.a11yTitle"
-        :href="item.link"
-        target="_blank"
-        rel="noopener"
-        color="orange darken-2"
-    )
-        font-awesome(:icon="item.config" size="2x")
+      LazyHydrate(when-visible)
+        FooterFbIcon
+      LazyHydrate(when-visible)
+        FooterIgIcon
 
 </template>
 
@@ -48,25 +39,17 @@ query {
 
 <script>
 
+import LazyHydrate from 'vue-lazy-hydration';
+import FooterFbIcon from '~/components/FooterFbIcon.vue';
+import FooterIgIcon from '~/components/FooterIgIcon.vue';
+
+
 export default {
     name: 'FooterContact',
-    data () {
-        return {
-            icons: {
-                facebook: {
-                    id: 1,
-                    config: ['fab', 'facebook'],
-                    link: 'https://www.facebook.com/quericashaddon/',
-                    a11yTitle: "Click to visit Que Ricas on Facebook"
-                },
-                instagram: {
-                    id: 2,
-                    config: ['fab', 'instagram'],
-                    link: 'https://www.instagram.com/quericas_haddon/?hl=en',
-                    a11yTitle: "Click to visit Que Ricas on Instagram"
-                }
-            }
-        }
+    components: {
+        LazyHydrate,
+        FooterFbIcon,
+        FooterIgIcon
     }
 }
 
