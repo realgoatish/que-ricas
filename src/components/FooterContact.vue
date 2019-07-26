@@ -3,11 +3,11 @@
   v-card(
     flat
     tile
-    class="white orange--text text--darken-2"
+    class="white orange--text text--darken-4"
   )
 
     v-card-text(
-      class="orange--text text--darken-2 pt-3"
+      class="orange--text text--darken-4 pt-3"
     )
       strong(
         v-html="$static.post.excerpt"
