@@ -6,7 +6,7 @@
     v-container(grid-list-sm style="max-width:1300px")
       v-layout(row wrap)
         v-flex(xs12 md4 order-xs1)
-          LazyHydrate(ssr-only)
+          LazyHydrate(when-visible)
             FooterContact
 
 
