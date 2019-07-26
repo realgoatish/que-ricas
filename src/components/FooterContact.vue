@@ -3,21 +3,21 @@
   v-card(
     flat
     tile
-    class="white orange--text text--darken-4"
+    class="white orange--text text--darken-3"
   )
 
     v-card-text(
-      class="orange--text text--darken-4 pt-3"
+      class="orange--text text--darken-3 pt-3"
     )
       strong(
         v-html="$static.post.excerpt"
-        style="font-size:18px;"
+        style="font-size:20px;"
       )
       br
       br
       div(
         v-html="$static.post.content"
-        style="font-size:16px;"
+        style="font-size:17px;"
       )
       LazyHydrate(when-visible)
         FooterFbIcon
