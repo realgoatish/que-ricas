@@ -56,7 +56,7 @@ body, html {
 
  html {
   /* background: url('../../static/uploads/palm-bg.jpeg'); */
-  background: url('https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/palm-bg_gwni8s.jpg');
+  background: url('https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/newest-bg_mismes.jpg');
   height: 100%; 
   width: 100%;
 
