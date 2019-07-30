@@ -25,7 +25,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   margin: 10px 14px 0px 18px;
   text-align: left;
-  line-height: 2;
+  line-height: 1.75;
 }
 
 </style>
