@@ -25,6 +25,7 @@
     "vuetify": "^1.5.16"
   },
   "devDependencies": {
+    "gridsome-plugin-purgecss": "^1.0.12",
     "material-design-icons-iconfont": "^5.0.1",
     "webpack-node-externals": "^1.7.2"
   }
