@@ -21,7 +21,7 @@ export default {
     name: 'IndexCarousel',
     data () {
         return {
-        carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/v-emp_fnibqq.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/v-dinner_nkhuvf.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/v-loaded-arepas_t9o98w.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/v-yoyos_ldpobr.jpg'],
+        carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/empanada-basket.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/rice-beans-beef-plantains.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/loaded-arepas.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/yoyos.jpg'],
         currentNumber: 0,
         timer: null
       }
