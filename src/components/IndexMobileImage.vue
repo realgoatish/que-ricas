@@ -14,7 +14,7 @@ export default {
     name: 'IndexMobileImage',
     data () {
         return {
-          mobileImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/arepas-plantains-beans-cheeses.jpg'
+          mobileImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/sahar-dinner.jpg'
         }
     }
 }
