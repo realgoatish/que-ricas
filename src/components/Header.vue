@@ -39,16 +39,16 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 240px;
+  height: 120px;
   border-bottom-style: outset;
   border-color: #4f86f7;
 }
 
-.header-logo {
+/* .header-logo {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 200px;
-}
+} */
 
 .v-toolbar__content {
   height: 100%;
