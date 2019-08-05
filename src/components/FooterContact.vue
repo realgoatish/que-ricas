@@ -22,7 +22,7 @@
       LazyHydrate(when-visible)
         FooterFbIcon
       LazyHydrate(when-visible)
-        FooterIgIcon
+        FooterGmail
 
 </template>
 
@@ -41,7 +41,7 @@ query {
 
 import LazyHydrate from 'vue-lazy-hydration';
 import FooterFbIcon from '~/components/FooterFbIcon.vue';
-import FooterIgIcon from '~/components/FooterIgIcon.vue';
+import FooterGmail from '~/components/FooterGmail.vue';
 
 
 export default {
@@ -49,7 +49,7 @@ export default {
     components: {
         LazyHydrate,
         FooterFbIcon,
-        FooterIgIcon
+        FooterGmail
     }
 }
 
