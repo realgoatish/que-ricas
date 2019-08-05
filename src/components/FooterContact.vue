@@ -54,3 +54,15 @@ export default {
 }
 
 </script>
+
+<style>
+
+a {
+    color: blue;
+    /* text-decoration: none; */
+}
+a:hover {
+    color: #4f86f7;
+}
+
+</style>
