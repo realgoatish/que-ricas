@@ -3,13 +3,8 @@
     v-toolbar(flat color="white")
       v-toolbar-title(class="orange--text text--darken-3" style="font-weight:bold;") FOLLOW US ON INSTAGRAM
       v-spacer
-      v-btn(
-        flat
-        icon
-        color="pink"
-        aria-label="Heart Icon"
-      )
-        v-icon favorite
+      LazyHydrate(when-visible)
+        FooterIgIcon
     v-container(grid-list-xs fluid xs10)    
       v-layout(row wrap)
         v-flex(
@@ -64,8 +59,15 @@ query {
 
 <script>
 
+import LazyHydrate from 'vue-lazy-hydration';
+import FooterIgIcon from '~/components/FooterIgIcon.vue';
+
 export default {
-  name: 'FooterInstagramFeed'
+  name: 'FooterInstagramFeed',
+  components: {
+    LazyHydrate,
+    FooterIgIcon
+  }
 }
 
 </script>
