@@ -44,12 +44,6 @@ export default {
   border-color: #4f86f7;
 }
 
-/* .header-logo {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 200px;
-} */
-
 .v-toolbar__content {
   height: 100%;
   width: 100%;
@@ -60,7 +54,7 @@ export default {
 }
 
 .v-menu--inline {
-  margin-bottom: 10em;
+  margin-bottom: 2em;
 }
 
 div.text-md-center.hidden-sm-and-down {
