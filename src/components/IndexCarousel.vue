@@ -7,7 +7,7 @@
     )
       v-parallax(
         class="images"
-        style="height:400px;"
+        style="height:560px;"
         :src="currentImage"
         alt="Large slider images of Venezuelan food"
         v-on:mouseover="stopRotation"
@@ -21,7 +21,7 @@ export default {
     name: 'IndexCarousel',
     data () {
         return {
-        carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/empanada-basket.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/rice-beans-beef-plantains.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/loaded-arepas.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/yoyos.jpg'],
+        carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/empanada-basket.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/rice-beans-beef-plantains.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/loaded-arepas.jpg'],
         currentNumber: 0,
         timer: null
       }
@@ -62,7 +62,7 @@ export default {
 
 .slider, .images, .image-wrapper {
   width: 100%;
-  height: 400px;
+  height: 560px;
   display: block;
   border-radius: 0px 0px 15px 15px;
 }
