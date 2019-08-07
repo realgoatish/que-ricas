@@ -12,7 +12,7 @@
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
     "@zefman/gridsome-source-instagram": "^0.1.2",
-    "gridsome": "^0.6.6",
+    "gridsome": "^0.6.7",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-netlify-cms-paths": "^0.3.0",
     "netlify-cms": "^2.9.6",
