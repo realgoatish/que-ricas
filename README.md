@@ -1,6 +1,6 @@
-# Default starter for Gridsome
+# Que Ricas
 
-This is the project you get when you run `gridsome create new-project`.
+Traditional and inspired South American fare with a funky vibe.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
