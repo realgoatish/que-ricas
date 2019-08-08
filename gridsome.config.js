@@ -35,7 +35,7 @@ module.exports = {
         typeName: 'Post',
         remark: {
           plugins: [
-            // ...local remark plugins
+            // ...local plugins
           ]
         }
       }
@@ -43,7 +43,7 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        publicPath: `/admin`
+        publicPath: `/bowser`
       }
     },
     {
