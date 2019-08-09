@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "material-design-icons-iconfont": "^5.0.1",
+    "webpack-bundle-analyzer": "^3.4.1",
     "webpack-node-externals": "^1.7.2"
   }
 }

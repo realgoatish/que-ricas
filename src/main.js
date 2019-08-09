@@ -2,11 +2,13 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 // Self-host Material Design Icons
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
-import Vuetify from 'vuetify'
-import DefaultLayout from '~/layouts/Default.vue'
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
+import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css'
+import DefaultLayout from '~/layouts/Default.vue';
+
+
 
 export default function (Vue, { router, head, isClient }) {
 
