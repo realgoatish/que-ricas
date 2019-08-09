@@ -15,7 +15,7 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        // ...global remark plugins
+        // ...global plugins
       ]
     }
   },
