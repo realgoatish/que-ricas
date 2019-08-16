@@ -10,11 +10,9 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
     if (isServer) {
-      config
-        .target('node')
-        .externals([
+      config.externals([
         nodeExternals({
-          whitelist: [/^vuetify/, 'material-design-icons-iconfont/dist/material-design-icons.css']
+          whitelist: [/^vuetify/, /\.css$/, /\?vue&type=style/]
         })
       ])
     }
