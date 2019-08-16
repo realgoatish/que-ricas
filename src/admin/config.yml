@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: mflamb/que-ricas
-  branch: master
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
