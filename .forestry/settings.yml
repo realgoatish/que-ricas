@@ -1,4 +1,3 @@
-
 ---
 new_page_extension: md
 auto_deploy: false
@@ -13,14 +12,11 @@ sections:
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_command: gridsome build
-  publish_command: gridsome build
   preview_output_directory: dist
-  output_directory: dist
-  instant_preview_command: npm run develop
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
+  instant_preview_command: npm run develop
