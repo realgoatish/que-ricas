@@ -11,7 +11,7 @@ export default {
     data () {
         return {
             width: "300px",
-            logo: require("~/../static/uploads/qrNewLogo.png")
+            logo: require("~/../uploads/qrNewLogo.png")
         }
     }
 }
