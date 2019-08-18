@@ -2,7 +2,7 @@
 title: Story Sahar
 excerpt: Autobiographical section for Sahar
 date: 2019-07-22T01:16:58.421Z
-image: /uploads/sahar-our-story.jpeg
+image: ./../uploads/sahar-our-story.jpeg
 ---
 Sahar Soleymani learned her way around the kitchen at an early age, as much of her home life was centered on the pride and tradition that came with preparing food of her rich Venezuelan heritage.
 <br>
