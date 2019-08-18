@@ -1,9 +1,8 @@
 ---
 title: Story Dar
 excerpt: Autobiographical section for Dar
-date: 2019-07-22T01:16:58.421+00:00
-image: v-dar-elsie.jpg
-
+date: 2019-07-22T01:16:58.421Z
+image: ./../uploads/v-dar-elsie.jpg
 ---
 Born and raised shopping in outdoor markets and farm stands across the world, Dar Soleymani came to the United States in the late 70’s as a student where he met his beautiful South American wife Elsie.  The rest was history! 
 <br>
