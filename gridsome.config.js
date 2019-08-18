@@ -8,48 +8,27 @@ module.exports = {
   siteName: 'Que Ricas',
   siteDescription: 'Traditional and inspired South American fare with a funky vibe',
   siteUrl: 'https://modest-leakey-1f0828.netlify.com/',
+  host: "0.0.0.0",
   icon: './uploads/que-ricas-logo.png',
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        // ...global plugins
-      ]
-    }
-  },
   plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'posts/**/*.md',
+        typeName: 'Post',
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+        }
+      }
+    },
     {
       use: '@gridsome/plugin-critical',
       options: {
         paths: ['/'],
         width: 1300,
         height: 900
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'posts/**/*.md',
-        typeName: 'Post',
-        remark: {
-          plugins: [
-            // ...local plugins
-          ]
-        }
-      }
-    },
-    {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/admin`
-      }
-    },
-    {
-      use: `gridsome-plugin-netlify-cms-paths`,
-      options: {
-        contentTypes: ['Post']
       }
     },
     {

@@ -7,7 +7,7 @@
         v-card
           v-card-title(primary-title)
             g-image(
-              src="~/../static/uploads/trabajador.png"
+              src="~/../uploads/trabajador.png"
               alt="Image of Que Ricas Menu"
               width="150"
               height="200"
@@ -22,7 +22,7 @@ export default {
   name: 'MenuUnderConstruction',
   data () {
     return {
-      menuImage: require('~/../static/uploads/trabajador.png')
+      menuImage: require('~/../uploads/trabajador.png')
     }
   }
 }
