@@ -17,3 +17,19 @@ export default {
 }
 
 </script>
+
+<style>
+
+@media only screen and (min-width: 959px) {
+  .header-logo {
+    margin-left: 9em;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .header-logo {
+    margin-left: 0;
+  }
+}
+
+</style>
