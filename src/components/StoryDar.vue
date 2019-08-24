@@ -4,7 +4,7 @@
       v-card-title(primary-title)
         div
           g-image(
-            :src="$static.post.image"
+            src="~/../uploads/v-dar-elsie.jpg"
             class="dar-featured-image-class"
           )
           div(
@@ -17,7 +17,6 @@
 <static-query>
 query {
   post (path: "/posts/story-dar"){
-    image
     content
   }
 }
