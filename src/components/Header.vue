@@ -58,7 +58,19 @@ export default {
 }
 
 div.text-md-center.hidden-sm-and-down {
-  margin-right: 10em;
+  margin-right: 9em;
+}
+
+@media only screen and (min-width: 959px) {
+  .v-toolbar__content>:first-child, .v-toolbar__extension>:first-child {
+    margin-left: 9em;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .v-toolbar__content>:first-child, .v-toolbar__extension>:first-child {
+    margin-left: 0;
+  }
 }
 
 
