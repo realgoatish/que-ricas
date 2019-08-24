@@ -61,17 +61,4 @@ div.text-md-center.hidden-sm-and-down {
   margin-right: 9em;
 }
 
-@media only screen and (min-width: 959px) {
-  .v-toolbar__content>:first-child img, .v-toolbar__extension>:first-child img {
-    margin-left: 9em;
-  }
-}
-
-@media only screen and (max-width: 959px) {
-  .v-toolbar__content>:first-child img, .v-toolbar__extension>:first-child img {
-    margin-left: 0;
-  }
-}
-
-
 </style>
