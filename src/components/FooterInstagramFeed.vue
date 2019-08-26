@@ -26,6 +26,8 @@
               :alt="post.node.accessibility_caption"
               style="max-width:100%;"
             )
+
+
 </template>
 
 <static-query>
@@ -36,10 +38,10 @@ query {
         in: [
           "By-p7czAsLe"
           "By-r3OZg2lW"
+          "B1kl8AGHPy3"
           "Bz09MVwnT1O"
-          "BzdOF-0nN1_"
+          "B0Ka7K3Ht5A"
           "Bzj1MXlgqIu"
-          "Bz0-Hoon2dl"
         ]
       }
     }
