@@ -9,5 +9,4 @@ Haddon Township, New Jersey 08033](https://www.google.com/maps/place/46+Haddon+A
 
 quericas2019@gmail.com
 
-Monday - Saturday 11 am to 9 pm  
-Sunday 11 am to 4 pm
+Opening Fall 2019
