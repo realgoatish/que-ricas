@@ -34,7 +34,10 @@ import IndexTextContent from '~/components/IndexTextContent.vue';
 
 export default {
   metaInfo: {
-    title: 'Bienvenidos!'
+    title: 'Bienvenidos!',
+    script: [
+      { innerHTML: '{ "@context" : "http://schema.org", "@type" : "Restaurant", "name" : "Que Ricas", "email" : "quericas2019@gmail.com", "address" : { "@type" : "PostalAddress", "streetAddress" : "46A Haddon Avenue", "addressLocality" : "Haddon Township", "addressRegion" : "New Jersey", "postalCode" : "08033" }, "menu" : "https://www.que-ricas.com/menu" }', type: 'application/ld+json' }
+    ]
   },
   components: {
     LazyHydrate,
