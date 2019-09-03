@@ -37,7 +37,7 @@ export default {
 
 .custom-font {
   font-family: "Beach Resort";
-  font-size: 5em;
+  font-size: 4em;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -56,7 +56,7 @@ export default {
 }
 
 .sub-text {
-  font-size: 3em;
+  font-size: 2.2em;
   /* width: 100%; */
   text-align: center;
   /* margin: 0 auto; */
