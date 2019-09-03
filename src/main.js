@@ -12,6 +12,11 @@ import DefaultLayout from '~/layouts/Default.vue';
 
 export default function (Vue, { router, head, isClient }) {
 
+  head.meta.push({
+    name: 'google-site-verification',
+    content: 'lSkgvmZFVpT1PSa-HD1driBcKzJdPiepFh3dtcAKFCg'
+  })
+
   Vue.use(Vuetify, {
     iconfont: 'md'
   })
