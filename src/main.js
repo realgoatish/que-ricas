@@ -12,9 +12,19 @@ import DefaultLayout from '~/layouts/Default.vue';
 
 export default function (Vue, { router, head, isClient }) {
 
+  head.link.push({
+    rel: 'canonical',
+    href: 'https://www.que-ricas.com/'
+  })
+
   head.meta.push({
     name: 'google-site-verification',
-    content: 'lSkgvmZFVpT1PSa-HD1driBcKzJdPiepFh3dtcAKFCg'
+    content: '0hx-doVB8lRgf57e9KmtL8yE4fbehtdGAybDCeBNhYs'
+  })
+
+  head.meta.push({
+    name: 'keywords',
+    content: 'arepas, spanish food near me, south jersey spanish food, collingswood spanish food, venezuelan food, traditional venezuelan, south american food, que ricas, quericas, que-ricas'
   })
 
   Vue.use(Vuetify, {

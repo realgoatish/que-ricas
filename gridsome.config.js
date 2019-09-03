@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Que Ricas',
   siteDescription: 'Traditional and inspired South American fare with a funky vibe',
-  siteUrl: 'https://modest-leakey-1f0828.netlify.com/',
+  siteUrl: 'https://www.que-ricas.com/',
   host: "0.0.0.0",
   icon: './uploads/que-ricas-logo.png',
   plugins: [
