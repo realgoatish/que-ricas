@@ -19,7 +19,7 @@ export default {
     name: 'FooterIgIcon',
     data () {
       return {
-        link: 'https://www.instagram.com/quericas_haddon/?hl=en',
+        link: 'https://www.instagram.com/quericas_haddon/',
         a11yTitle: "Click to visit Que Ricas on Instagram"
       }
     }
