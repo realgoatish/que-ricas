@@ -23,6 +23,11 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
+    name: 'google-site-verification',
+    content: 'lSkgvmZFVpT1PSa-HD1driBcKzJdPiepFh3dtcAKFCg'
+  })
+
+  head.meta.push({
     name: 'keywords',
     content: 'arepas, spanish food near me, south jersey spanish food, collingswood spanish food, venezuelan food, traditional venezuelan, south american food, que ricas, quericas, que-ricas'
   })
