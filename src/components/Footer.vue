@@ -17,7 +17,7 @@
           
       
         v-flex(xs12 md4 order-md3 order-xs2)
-          LazyHydrate(when-visible)
+          LazyHydrate(when-idle)
             FooterInstagramFeed
 </template>
 
