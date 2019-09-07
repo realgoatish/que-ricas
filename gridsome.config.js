@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Que Ricas',
-  siteDescription: 'Traditional and inspired South American fare with a funky vibe',
+  siteDescription: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options',
   siteUrl: 'https://www.que-ricas.com/',
   host: "0.0.0.0",
   icon: './uploads/que-ricas-logo.png',
