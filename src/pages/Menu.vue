@@ -10,7 +10,7 @@ import MenuUnderConstruction from '~/components/MenuUnderConstruction.vue';
 
 export default {
   metaInfo: {
-    title: 'Menu'
+    title: 'Que Ricas Menu'
   },
   components: {
     MenuUnderConstruction
