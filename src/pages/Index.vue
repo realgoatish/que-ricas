@@ -36,7 +36,7 @@ export default {
   metaInfo: {
     title: 'Venezuelan Food in Haddon Township, New Jersey',
     script: [
-      { innerHTML: '{ "@context" : "http://schema.org", "@type" : "Restaurant", "name" : "Que Ricas", "email" : "quericas2019@gmail.com", "address" : { "@type" : "PostalAddress", "streetAddress" : "46A Haddon Avenue", "addressLocality" : "Haddon Township", "addressRegion" : "New Jersey", "postalCode" : "08033" }, "menu" : "https://www.que-ricas.com/menu" }', type: 'application/ld+json' }
+      { innerHTML: '{ "@context" : "http://schema.org", "@type" : "Restaurant", "name" : "Que Ricas", "email" : "sahar@que-ricas.com", "address" : { "@type" : "PostalAddress", "streetAddress" : "46A Haddon Avenue", "addressLocality" : "Haddon Township", "addressRegion" : "New Jersey", "postalCode" : "08033" }, "menu" : "https://www.que-ricas.com/menu" }', type: 'application/ld+json' }
     ]
   },
   components: {
