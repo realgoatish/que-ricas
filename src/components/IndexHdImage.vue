@@ -15,7 +15,7 @@ export default {
     name: 'IndexHdImage',
     data () {
       return {
-        hdImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto,w_328/honestly-delicious.png'
+        hdImage: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto,w_328/honestly-delicious.jpg'
     }
   }
 }
