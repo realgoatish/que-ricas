@@ -23,7 +23,7 @@ export default {
 .text-content-styles {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  margin: 10px 14px 0px 18px;
+  margin: 10px 12px 0px 12px;
   text-align: left;
   line-height: 1.75;
 }
