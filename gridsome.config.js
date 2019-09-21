@@ -61,6 +61,12 @@ module.exports = {
         username: 'quericas_haddon',
         typeName: 'InstagramPhoto'
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-148334920-1'
+      }
     }
   ],
   chainWebpack: config => {
