@@ -9,7 +9,7 @@
           )
           div(
             v-html="$static.post.content"
-            class="text-content-styles"
+            class="story-text-content-styles"
           )
       .title.mb-3
 </template>
@@ -39,7 +39,7 @@ export default {
   margin: 20px 20px 10px;
 }
 
-.text-content-styles {
+.story-text-content-styles {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   margin-top: 10px;
