@@ -5,7 +5,7 @@
         div
           g-image(
             src="~/../uploads/sahar-our-story.jpeg"
-            class="sahar-featured-image-class"
+            id="sahar-featured-image-class"
           )
           div(
             v-html="$static.post.content"
@@ -32,7 +32,7 @@ export default {
 
 <style>
 
-.sahar-featured-image-class {
+#sahar-featured-image-class {
   max-width: 40%;
   height: auto;
   float: left;

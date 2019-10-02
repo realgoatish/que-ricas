@@ -5,7 +5,7 @@
         div
           g-image(
             src="~/../uploads/v-dar-elsie.jpg"
-            class="dar-featured-image-class"
+            id="dar-featured-image-class"
           )
           div(
             v-html="$static.post.content"
@@ -32,7 +32,7 @@ export default {
 
 <style>
 
-.dar-featured-image-class {
+#dar-featured-image-class {
   max-width: 40%;
   height: auto;
   float: right;
