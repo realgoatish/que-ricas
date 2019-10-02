@@ -54,8 +54,8 @@ body, html {
   border-radius: 15px 15px 15px 15px;
 }
 
- html {
-  /* background: url('../../static/uploads/palm-bg.jpeg'); */
+/* Settings for background image with parallax effect */
+html {
   background: url('https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/palm-tree-background.jpg');
   height: 100%; 
   width: 100%;
@@ -66,6 +66,7 @@ body, html {
   background-size: cover;
 }
 
+/* iOS devices are built in such a way that they can't handle the parallax background image well.  This sets a default green background only for those cases */
 @supports (-webkit-overflow-scrolling: touch) {
   html {
     background: #05a831;
