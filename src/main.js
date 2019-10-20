@@ -17,19 +17,29 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://www.que-ricas.com/'
   })
 
+  // head.meta.push({
+  //   name: 'google-site-verification',
+  //   content: '0hx-doVB8lRgf57e9KmtL8yE4fbehtdGAybDCeBNhYs'
+  // })
+
+  // head.meta.push({
+  //   name: 'google-site-verification',
+  //   content: 'lSkgvmZFVpT1PSa-HD1driBcKzJdPiepFh3dtcAKFCg'
+  // })
+
   head.meta.push({
-    name: 'google-site-verification',
-    content: '0hx-doVB8lRgf57e9KmtL8yE4fbehtdGAybDCeBNhYs'
+    property: 'og:locale',
+    content: 'en-US'
   })
 
   head.meta.push({
-    name: 'google-site-verification',
-    content: 'lSkgvmZFVpT1PSa-HD1driBcKzJdPiepFh3dtcAKFCg'
+    property: 'og:type',
+    content: 'website'
   })
 
   head.meta.push({
-    name: 'keywords',
-    content: 'que ricas, quericas, arepas, collingswood spanish food, venezuelan food'
+    property: 'og:site_name',
+    content: 'Que Ricas'
   })
 
   Vue.use(Vuetify, {

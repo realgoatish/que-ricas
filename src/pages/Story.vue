@@ -18,7 +18,7 @@ import StoryDar from '~/components/StoryDar.vue'
 
 export default {
   metaInfo: {
-    title: 'Owner Biography'
+    title: 'Our Story - Owner Biography'
   },
   components: {
     StorySahar,

@@ -35,8 +35,14 @@ import IndexTextContent from '~/components/IndexTextContent.vue';
 export default {
   metaInfo: {
     title: 'Venezuelan Food in Haddon Township, New Jersey',
+    meta: [
+      { property: 'og:title', content: 'Venezuelan Food in Haddown Township, NJ' },
+      { property: 'og: description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
+      { property: 'og:url', content: 'https://www.que-ricas.com'},
+      { property: 'og:image', content: 'https://www.que-ricas.com/uploads/cartel.JPEG' }
+    ],
     script: [
-      { innerHTML: '{ "@context": "http://schema.org", "@type": "Restaurant", "name": "Que Ricas", "url": "https://www.que-ricas.com", "latitude": "39.9120391", "longitude": "-75.0561297", "email": "info@que-ricas.com", "address": { "@type": "PostalAddress", "streetAddress": "46A Haddon Avenue", "addressLocality": "Haddon Township", "addressRegion": "NJ", "postalCode": "08033", "addressCountry": "US" }, "servesCuisine": "South American", "priceRange": "$$", "hasMenu": "https://www.que-ricas.com/menu", "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options" }', type: 'application/ld+json' }
+      { innerHTML: '{ "@context": "http://schema.org", "@type": "Restaurant", "image": "https://www.que-ricas.com/uploads/que-ricas-logo.png","name": "Que Ricas", "url": "https://www.que-ricas.com", "geo": { "@type": "GeoCoordinates", "latitude": 39.911812, "longitude": -75.053937 }, "email": "info@que-ricas.com", "address": { "@type": "PostalAddress", "streetAddress": "46A Haddon Avenue", "addressLocality": "Haddon Township", "addressRegion": "NJ", "postalCode": "08033", "addressCountry": "US" }, "servesCuisine": [ "Venezuelan", "Latin American", "South American"], "priceRange": "$", "paymentAccepted": "Cash, Credit Card", "currenciesAccepted": "USD", "acceptsReservations": "No", "hasMenu": "https://www.que-ricas.com/menu", "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options" }', type: 'application/ld+json' }
     ]
   },
   components: {
