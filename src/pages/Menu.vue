@@ -10,7 +10,7 @@ import MenuUnderConstruction from '~/components/MenuUnderConstruction.vue';
 
 export default {
   metaInfo: {
-    title: 'Que Ricas Menu'
+    title: 'Menu - Venezuelan Food in Haddon Township, NJ'
   },
   components: {
     MenuUnderConstruction
