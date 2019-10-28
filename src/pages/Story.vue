@@ -13,12 +13,15 @@
 
 <script>
 
-import StorySahar from '~/components/StorySahar.vue'
-import StoryDar from '~/components/StoryDar.vue'
+import StorySahar from '~/components/story/StorySahar.vue'
+import StoryDar from '~/components/story/StoryDar.vue'
 
 export default {
   metaInfo: {
-    title: 'Our Story - Owner Biography'
+    title: 'Our Story - Owner Biography',
+    link: [
+      { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
+    ]
   },
   components: {
     StorySahar,
