@@ -15,9 +15,9 @@
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
-import HeaderLogo from '~/components/HeaderLogo.vue';
-import HeaderRegularMenu from '~/components/HeaderRegularMenu.vue';
-import HeaderHamburger from '~/components/HeaderHamburger.vue';
+import HeaderLogo from '~/components/header/HeaderLogo.vue';
+import HeaderRegularMenu from '~/components/header/HeaderRegularMenu.vue';
+import HeaderHamburger from '~/components/header/HeaderHamburger.vue';
 
 export default {
     name: 'Header',

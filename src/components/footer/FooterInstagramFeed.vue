@@ -62,7 +62,7 @@ query {
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
-import FooterIgIcon from '~/components/FooterIgIcon.vue';
+import FooterIgIcon from '~/components/footer/FooterIgIcon.vue';
 
 export default {
   name: 'FooterInstagramFeed',

@@ -40,8 +40,8 @@ query {
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
-import FooterFbIcon from '~/components/FooterFbIcon.vue';
-import FooterGmail from '~/components/FooterGmail.vue';
+import FooterFbIcon from '~/components/footer/FooterFbIcon.vue';
+import FooterGmail from '~/components/footer/FooterGmail.vue';
 
 
 export default {
