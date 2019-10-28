@@ -27,17 +27,20 @@
 <script>
 
 import LazyHydrate from 'vue-lazy-hydration';
-import IndexMobileImage from '~/components/IndexMobileImage.vue';
-import IndexCarousel from '~/components/IndexCarousel.vue';
-import IndexHdImage from '~/components/IndexHdImage.vue';
-import IndexTextContent from '~/components/IndexTextContent.vue';
+import IndexMobileImage from '~/components/homepage/IndexMobileImage.vue';
+import IndexCarousel from '~/components/homepage/IndexCarousel.vue';
+import IndexHdImage from '~/components/homepage/IndexHdImage.vue';
+import IndexTextContent from '~/components/homepage/IndexTextContent.vue';
 
 export default {
   metaInfo: {
     title: 'Venezuelan Food in Haddon Township, New Jersey',
+    link: [
+      { rel: 'canonical', href: 'https://www.que-ricas.com' }
+    ],
     meta: [
       { property: 'og:title', content: 'Venezuelan Food in Haddown Township, NJ' },
-      { property: 'og: description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
+      { property: 'og:description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
       { property: 'og:url', content: 'https://www.que-ricas.com'},
       { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/cartel.jpg' }
     ],
