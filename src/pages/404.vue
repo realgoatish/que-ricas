@@ -12,7 +12,7 @@
                   p(class="custom-font") Woops!
               g-image(
                 src="~/../uploads/woops-pusheen-cat.png"
-                alt="Image of Que Ricas Menu"
+                alt="Picture of pusheen cat who put his face through a loaf of bread trying to find a page that doesn't exist"
                 width="200"
                 height="200"
                 fit="fill"
@@ -30,12 +30,7 @@
 
 export default {
   metaInfo: {
-    title: '404 Error | Page Not Found!',
-    link: [
-      {
-        rel: 'canonical', href: 'https://wwww.que-ricas.com/404'
-      }
-    ]
+    title: '404 Error | Page Not Found!'
   }
 }
 </script>
