@@ -47,10 +47,6 @@ module.exports = {
           '/story': {
             changefreq: 'monthly',
             priority: 0.6
-          },
-          '/posts/*': {
-            changefreq: 'weekly',
-            priority: 0.0
           }
         }
       }
