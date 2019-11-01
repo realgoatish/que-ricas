@@ -1,26 +1,21 @@
 <template lang="pug">
-  .index-content-container
-    .title.mb-3
 
-    main
-      v-flex(xs12 md8 offset-md2)
-        v-card
-          v-card-title(primary-title)
-            div(class="container")
-              div
-                p(class="custom-font") Coming Soon!
-            g-image(
-              src="~/../uploads/trabajador.png"
-              alt="Image of Que Ricas Menu"
-              width="150"
-              height="200"
-              fit="fill"
-            )
-            div(class="container")
-              div
-                p(class="sub-text") Our menu is still under construction...
+  v-card
+    v-card-title(primary-title)
+      div(class="container")
+        div
+          p(class="custom-font") Coming Soon!
+      g-image(
+        src="~/../uploads/trabajador.png"
+        alt="Cartoon Venezuelan worker carrying a pickaxe"
+        width="150"
+        height="200"
+        fit="fill"
+      )
+      div(class="container")
+        div
+          p(class="sub-text") Our menu is still under construction...
             
-    .title.mb-3
 
 </template>
 
@@ -51,15 +46,11 @@ export default {
 
 .container {
   display: inline-block;
-  /* width: 100%;
-  margin: 0 auto; */
 }
 
 .sub-text {
   font-size: 2.2em;
-  /* width: 100%; */
   text-align: center;
-  /* margin: 0 auto; */
 }
 
 </style>
