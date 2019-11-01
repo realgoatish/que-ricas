@@ -14,6 +14,7 @@
     "@gridsome/transformer-remark": "^0.3.2",
     "@zefman/gridsome-source-instagram": "^0.1.2",
     "gridsome": "^0.7.4",
+    "gridsome-source-google-sheets": "^0.3.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "sharp": "^0.22.1",
