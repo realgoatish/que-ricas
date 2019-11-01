@@ -12,6 +12,13 @@ module.exports = {
   icon: './uploads/que-ricas-logo.png',
   plugins: [
     {
+      use: 'gridsome-source-google-sheets',
+      options: {
+        sheetId: process.env.SHEET_ID,
+        apiKey: process.env.GOOGLE_API_KEY
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'posts/**/*.md',
