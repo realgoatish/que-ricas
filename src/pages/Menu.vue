@@ -1,6 +1,14 @@
 <template lang="pug">
-  layout
-    MenuUnderConstruction
+  layout  
+    .index-content-container
+      .title.mb-3
+
+      main
+        v-flex(xs12 md8 offset-md2)
+          MenuUnderConstruction
+
+    .title.mb-3
+    
 
 </template>
 

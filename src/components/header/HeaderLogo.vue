@@ -7,13 +7,13 @@
 <script>
 
 export default {
-    name: 'HeaderLogo',
-    data () {
-        return {
-            width: "300px",
-            logo: require("~/../uploads/qrNewLogo.png")
-        }
+  name: 'HeaderLogo',
+  data () {
+    return {
+      width: "300px",
+      logo: require("~/../uploads/qrNewLogo.png")
     }
+  }
 }
 
 </script>

@@ -56,15 +56,11 @@ export default {
 
 .container {
   display: inline-block;
-  /* width: 100%;
-  margin: 0 auto; */
 }
 
 .sub-text {
   font-size: 2.2em;
-  /* width: 100%; */
   text-align: center;
-  /* margin: 0 auto; */
 }
 
 </style>
