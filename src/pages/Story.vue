@@ -4,8 +4,9 @@
       .title.mb-3
     
       main
-        StorySahar
-        StoryDar
+        v-flex(xs12 md8 offset-md2)
+          StorySahar
+          StoryDar
       .title.mb-3
       
 
