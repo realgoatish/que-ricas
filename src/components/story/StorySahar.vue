@@ -1,17 +1,16 @@
 <template lang="pug">
-  v-flex(xs12 md8 offset-md2)
-    v-card
-      v-card-title(primary-title)
-        div
-          g-image(
-            src="~/../uploads/sahar-our-story.jpeg"
-            id="sahar-featured-image-class"
-          )
-          div(
-            v-html="$static.post.content"
-            class="story-text-content-styles"
-          )
-      .title.mb-3
+  v-card
+    v-card-title(primary-title)
+      div
+        g-image(
+          src="~/../uploads/sahar-our-story.jpeg"
+          id="sahar-featured-image-class"
+        )
+        div(
+          v-html="$static.post.content"
+          class="story-text-content-styles"
+        )
+    .title.mb-3
 </template>
 
 <static-query>
