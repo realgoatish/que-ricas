@@ -15,7 +15,7 @@ query {
 
 <script>
 export default {
-    name: 'IndexTextContent'
+  name: 'IndexTextContent'
 }
 </script>
 

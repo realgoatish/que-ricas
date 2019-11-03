@@ -5,7 +5,7 @@
 
       main
         v-flex(xs12 md8 offset-md2)
-          MenuUnderConstruction
+          NoticeWidget
 
     .title.mb-3
     
@@ -14,7 +14,7 @@
 
 <script>
 
-import MenuUnderConstruction from '~/components/menu/MenuUnderConstruction.vue';
+import NoticeWidget from '~/components/menu/MenuNoticeWidget.vue';
 
 export default {
   metaInfo: {
@@ -26,7 +26,7 @@ export default {
     ]
   },
   components: {
-    MenuUnderConstruction
+    NoticeWidget
   }
 }
 </script>

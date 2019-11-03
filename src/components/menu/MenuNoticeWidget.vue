@@ -4,24 +4,31 @@
     v-card-title(primary-title)
       div(class="container")
         div
-          p(class="custom-font") Coming Soon!
+          p(class="custom-font") {{ headerText }}
       g-image(
         src="~/../uploads/trabajador.png"
-        alt="Cartoon Venezuelan worker carrying a pickaxe"
+        :alt="imageAlt"
         width="150"
         height="200"
         fit="fill"
       )
       div(class="container")
         div
-          p(class="sub-text") Our menu is still under construction...
+          p(class="sub-text") {{ mainText }}
             
 
 </template>
 
 <script>
 export default {
-  name: 'MenuUnderConstruction'
+  name: 'MenuNoticeWidget',
+  data () {
+    return {
+      headerText: "Coming Soon!",
+      imageAlt: "Cartoon Venezuelan worker carrying a pickaxe",
+      mainText: "Our menu is still under construction..."
+    }
+  }
 }
 </script>
 
