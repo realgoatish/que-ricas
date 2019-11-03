@@ -5,7 +5,7 @@
 
       main
         v-flex(xs12 md8 offset-md2)
-          NoticeWidget
+          MenuNoticeWidget
 
     .title.mb-3
     
@@ -14,7 +14,7 @@
 
 <script>
 
-import NoticeWidget from '~/components/menu/MenuNoticeWidget.vue';
+import MenuNoticeWidget from '~/components/menu/MenuNoticeWidget.vue';
 
 export default {
   metaInfo: {
@@ -26,7 +26,7 @@ export default {
     ]
   },
   components: {
-    NoticeWidget
+    MenuNoticeWidget
   }
 }
 </script>
