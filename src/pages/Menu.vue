@@ -30,6 +30,11 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 export default {
   metaInfo: {
     title: 'Menu',
+    link: [
+      {
+        rel: 'canonical', href: 'https://wwww.que-ricas.com/menu'
+      }
+    ],
     meta: [
       { property: 'og:title', content: 'Haddon Township Venezuelan Street Food Menu' },
       { property: 'og:type', content: 'article' },
@@ -38,11 +43,9 @@ export default {
       { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/hangver-bowl.jpg' },
       { name: 'description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love'}
     ],
-    link: [
-      {
-        rel: 'canonical', href: 'https://wwww.que-ricas.com/menu'
-      }
-    ]
+  //   script: [
+  //     { innerHTML: '{ "@context": "http://schema.org", "@type": "Menu", "mainEntityOfPage": "https://www.que-ricas.com/menu", "inLanguage": "English", "offers": { "@type": "Offer"}, "hasMenuSection": [ { "@type": "MenuSection", "name": "Starters", "hasMenuItem": [ { "@type": "MenuItem", "name": "Tajadas", "description": "sweet plantains topped with crema and cotija cheese", "offers": { "@type": "Offer", "price": "$5", "priceCurrency": "USD" }}, { "@type": "MenuItem", "name": "Yuca Fries", "description": "tender, crispy fried yuca wedges"}]}]}'}
+  //   ]
   },
   components: {
     MenuStartersSection,
@@ -72,6 +75,7 @@ export default {
   text-align: center;
   margin: 0 auto;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .menu-item-text-content-styles {
@@ -79,9 +83,10 @@ export default {
   font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid;
   border-color: #eae7db;
-  margin-top: 10px;
+  margin: 10px 18px 0px 18px;
+  /* margin-top: 10px;
   margin-left: 18px;
-  margin-right: 18px;
+  margin-right: 18px; */
   text-align: left;
   line-height: 1.75;
 }
