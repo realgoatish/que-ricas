@@ -4,8 +4,16 @@
     v-card-title(primary-title)
       h2(class="menu-section-header") Churros
       h2(class="sub-header-text") Step One: Choose Homemade Churro (vegan)
+      br
+      br
+      br
+      br
       MenuChurrosStepOne
       h2(class="sub-header-text") Step Two: Choose Dipping Sauce (included)
+      br
+      br
+      br
+      br
       MenuChurrosStepTwo
 
     .title.mb-3
