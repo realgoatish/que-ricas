@@ -30,10 +30,10 @@ import LazyHydrate from 'vue-lazy-hydration';
 export default {
     name: 'Footer',
     data () {
-        return {
-            logo: "https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/que-ricas-logo_zzg9p4.png",
-            width: "300px" 
-        }
+      return {
+        logo: "https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/que-ricas-logo_zzg9p4.png",
+        width: "300px" 
+      }
     },
     components: {
       LazyHydrate,

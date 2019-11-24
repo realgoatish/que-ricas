@@ -19,7 +19,14 @@ import StoryDar from '~/components/story/StoryDar.vue'
 
 export default {
   metaInfo: {
-    title: 'Our Story - Owner Biography',
+    title: 'Owner Biography',
+    meta: [
+      { property: 'og:title', content: 'Our Story - The Owners of Que Ricas Venezuelan Street Food in Haddon Township' },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:description', content: 'Our Story - Que Ricas Venezuelan Street Food in Haddon Township.  Local to Haddonfield and Collingswood' },
+      { property: 'og:url', content: 'https://www.que-ricas.com/story'},
+      { name: 'description', content: 'Our Story - Que Ricas Venezuelan Street Food in Haddon Township.  Local to Haddonfield and Collingswood' }
+    ],
     link: [
       { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
     ]
