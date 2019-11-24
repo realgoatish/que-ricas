@@ -29,7 +29,12 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 
 export default {
   metaInfo: {
-    title: 'Menu - Venezuelan Food in Haddon Township, NJ',
+    title: 'Menu',
+    meta: [
+      {
+        name: 'description', content: 'Haddon Township Venezuelan Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American food you will love'
+      }
+    ],
     link: [
       {
         rel: 'canonical', href: 'https://wwww.que-ricas.com/menu'
