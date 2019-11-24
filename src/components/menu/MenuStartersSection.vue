@@ -47,7 +47,7 @@ export default {
   name: 'MenuStartersSection',
   data () {
     return {
-      dataIndexArray: [4,0,3,2,1]
+      dataIndexArray: [3,0,2,1]
     }
   }
 }
