@@ -20,6 +20,13 @@ import StoryDar from '~/components/story/StoryDar.vue'
 export default {
   metaInfo: {
     title: 'Owner Biography',
+    meta: [
+      { property: 'og:title', content: 'Our Story - The owners of Que Ricas Venezuelan Street Food in Haddon Township' },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:description', content: 'Haddon Township Venezuelan Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American food you will love' },
+      { property: 'og:url', content: 'https://www.que-ricas.com/story'},
+      { name: 'description', content: 'Haddon Township Venezuelan Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American food you will love'}
+    ],
     link: [
       { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
     ]

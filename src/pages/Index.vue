@@ -34,12 +34,12 @@ import IndexTextContent from '~/components/homepage/IndexTextContent.vue';
 
 export default {
   metaInfo: {
-    title: 'Venezuelan Food in Haddon Township, New Jersey',
+    title: 'Venezuelan Street Food in Haddon Township, New Jersey',
     link: [
       { rel: 'canonical', href: 'https://www.que-ricas.com' }
     ],
     meta: [
-      { property: 'og:title', content: 'Venezuelan Food in Haddown Township, NJ' },
+      { property: 'og:title', content: 'Venezuelan Street Food in Haddown Township' },
       { property: 'og:type', content: 'website' },
       { property: 'og:description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
       { property: 'og:url', content: 'https://www.que-ricas.com'},
