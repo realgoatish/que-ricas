@@ -18,11 +18,6 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
-    property: 'og:type',
-    content: 'website'
-  })
-
-  head.meta.push({
     property: 'og:site_name',
     content: 'Que Ricas'
   })
