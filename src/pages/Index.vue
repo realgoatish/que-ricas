@@ -42,7 +42,8 @@ export default {
       { property: 'og:title', content: 'Venezuelan Food in Haddown Township, NJ' },
       { property: 'og:description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
       { property: 'og:url', content: 'https://www.que-ricas.com'},
-      { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/cartel.jpg' }
+      { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/cartel.jpg' },
+      { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options'}
     ],
     script: [
       { innerHTML: '{ "@context": "http://schema.org", "@type": "Restaurant", "image": "https://www.que-ricas.com/uploads/que-ricas-logo.png","name": "Que Ricas", "url": "https://www.que-ricas.com", "geo": { "@type": "GeoCoordinates", "latitude": 39.911812, "longitude": -75.053937 }, "email": "info@que-ricas.com", "address": { "@type": "PostalAddress", "streetAddress": "46A Haddon Avenue", "addressLocality": "Haddon Township", "addressRegion": "NJ", "postalCode": "08033", "addressCountry": "US" }, "servesCuisine": [ "Venezuelan", "Latin American", "South American"], "priceRange": "$", "paymentAccepted": "Cash, Credit Card", "currenciesAccepted": "USD", "acceptsReservations": "No", "hasMenu": "https://www.que-ricas.com/menu", "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options" }', type: 'application/ld+json' }
