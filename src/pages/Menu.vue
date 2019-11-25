@@ -84,11 +84,14 @@ export default {
   border-bottom: 1px solid;
   border-color: #eae7db;
   margin: 10px 18px 0px 18px;
-  /* margin-top: 10px;
-  margin-left: 18px;
-  margin-right: 18px; */
   text-align: left;
   line-height: 1.75;
+}
+
+article>div.menu-section-header {
+  font-size: 1.2em;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .menu-item-text-content-styles:last-child {

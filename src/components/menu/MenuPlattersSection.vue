@@ -4,11 +4,11 @@
     v-card-title(primary-title)
       h2(class="menu-section-header") Platters
       article
-        div(class="menu-section-header" style="font-size:1.2em;")
+        div(class="menu-section-header")
           p Customize your own delicious platter with your choice of protein and style!
       h2(class="sub-header-text") Step One: Choose Your Protein
       MenuPlattersStepOne
-      h2(class="sub-header-text") Step Two: Choose Your Style
+      h2(class="sub-header-text" id="platters-step-two-header") Step Two: Choose Your Style
       MenuPlattersStepTwo
 
     .title.mb-3
@@ -30,4 +30,12 @@ export default {
 }
 
 </script>
+
+<style>
+
+h2#platters-step-two-header {
+  padding-top: 2em;
+}
+
+</style>
 

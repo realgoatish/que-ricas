@@ -45,6 +45,7 @@ export default {
 
 #churros-two-text-content-styles {
   text-align: center;
+  padding-bottom: 2em;
 }
 
 </style>

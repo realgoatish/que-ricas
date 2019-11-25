@@ -4,7 +4,7 @@
     v-card-title(primary-title)
       h2(class="menu-section-header") Empanadas
       article
-        div(class="menu-section-header" style="font-size:1.2em;")
+        div(class="menu-section-header")
           p Naturally GF.  Served with cilantro mojo on the side.  Ask about our daily empanada specials!
 
       article
