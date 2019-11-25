@@ -5,7 +5,7 @@
       h2(class="menu-section-header") Churros
       h2(class="sub-header-text") Step One: Choose Homemade Churro (vegan)
       MenuChurrosStepOne
-      h2(class="sub-header-text") Step Two: Choose Dipping Sauce (included)
+      h2(class="sub-header-text" style="padding-top:2em;") Step Two: Choose Dipping Sauce (included)
       MenuChurrosStepTwo
 
     .title.mb-3

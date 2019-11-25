@@ -8,7 +8,7 @@
           p Customize your own delicious platter with your choice of protein and style!
       h2(class="sub-header-text") Step One: Choose Your Protein
       MenuPlattersStepOne
-      h2(class="sub-header-text") Step Two: Choose Your Style
+      h2(class="sub-header-text" style="padding-top:2em;") Step Two: Choose Your Style
       MenuPlattersStepTwo
 
     .title.mb-3
