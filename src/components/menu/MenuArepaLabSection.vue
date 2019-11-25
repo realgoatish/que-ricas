@@ -4,7 +4,7 @@
     v-card-title(primary-title)
       h2(class="menu-section-header") Arepa Lab
       article
-        div(class="menu-section-header" style="font-size:1.2em;")
+        div(class="menu-section-header")
           p The staple of Venezuelan cuisine.  These fluffy, hand-made corn arepas are GF, made daily with only three ingredients, and are stuffed with dynamite fillings.
       article
         div(
@@ -56,3 +56,5 @@ export default {
 }
 
 </script>
+
+
