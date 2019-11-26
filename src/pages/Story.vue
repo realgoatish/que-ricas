@@ -21,11 +21,14 @@ export default {
   metaInfo: {
     title: 'Owner Biography',
     meta: [
-      { property: 'og:title', content: 'Our Story - The Owners of Que Ricas Venezuelan Street Food in Haddon Township' },
+      { property: 'og:title', content: 'Our Story - Que Ricas' },
       { property: 'og:type', content: 'article' },
-      { property: 'og:description', content: 'Our Story - Que Ricas Venezuelan Street Food in Haddon Township.  Local to Haddonfield and Collingswood' },
+      { property: 'og:description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' },
       { property: 'og:url', content: 'https://www.que-ricas.com/story/'},
-      { name: 'description', content: 'Our Story - Que Ricas Venezuelan Street Food in Haddon Township.  Local to Haddonfield and Collingswood' }
+      { property: 'og:url', content: 'https://www.que-ricas.com/uploads/que-ricas-logo.png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' }
     ],
     link: [
       { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
