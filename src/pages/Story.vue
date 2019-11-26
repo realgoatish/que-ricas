@@ -25,7 +25,7 @@ export default {
       { property: 'og:type', content: 'article' },
       { property: 'og:description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' },
       { property: 'og:url', content: 'https://www.que-ricas.com/story/'},
-      { property: 'og:url', content: 'https://www.que-ricas.com/uploads/que-ricas-logo.png' },
+      { property: 'og:image', content: 'https://www.que-ricas.com/uploads/sahar-our-story.png' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' }
