@@ -38,8 +38,8 @@ export default {
     meta: [
       { property: 'og:title', content: 'Haddon Township Venezuelan Street Food Menu' },
       { property: 'og:type', content: 'article' },
-      { property: 'og:description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love' },
-      { property: 'og:url', content: 'https://www.que-ricas.com/menu'},
+      { property: 'og:description', content: 'Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love' },
+      { property: 'og:url', content: 'https://www.que-ricas.com/menu/'},
       { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/hangover-bowl.jpg' },
       { name: 'description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love'}
     ],
