@@ -20,7 +20,7 @@ import StoryDar from '~/components/story/StoryDar.vue'
 export default {
   metaInfo: {
     title: 'Owner Biography',
-        link: [
+    link: [
       { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
     ],
     meta: [
