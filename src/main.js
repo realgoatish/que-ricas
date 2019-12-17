@@ -14,7 +14,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     property: 'og:locale',
-    content: 'en-US'
+    content: 'en_US'
   })
 
   head.meta.push({
