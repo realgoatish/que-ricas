@@ -9,4 +9,6 @@ Haddon Township, New Jersey 08033](https://www.google.com/maps/place/46+Haddon+A
 
 info@que-ricas.com
 
-Opening Fall 2019
+Monday - Saturday 11 AM - 8 PM 
+
+Closed Sunday
