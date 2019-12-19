@@ -69,7 +69,7 @@ export default {
           "streetAddress": "46A Haddon Avenue",
           "addressLocality": "Haddon Township",
           "addressRegion": "NJ",
-          "postalCode": "08033",
+          "postalCode": "08108",
           "addressCountry": "US" },
         "servesCuisine": [ "Venezuelan", "Latin American", "South American" ], 
         "priceRange": "$",
