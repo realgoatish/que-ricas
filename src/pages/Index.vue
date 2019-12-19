@@ -58,15 +58,33 @@ export default {
         "openingHours": [ "Mo-Sa 11:00-20:00" ], 
         "telephone": "856-858-8500",
         "url": "https://www.que-ricas.com",
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sean Walsh"
+          },
+          "reviewBody": "Awesome food!! The empanadas and chorizo are excellent.  I read about this place last week and had to try it out on day one.  I would highly recommend this place."
+        },
+        "aggregateRating": {
+          "ratingValue": "4.3",
+          "bestRating": "5",
+          "ratingCount": "4"
+        },
         "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 39.9118024,
-          "longitude": -75.0560624 },
+          "longitude": -75.0560624 
+          },
         "email": "info@que-ricas.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "46A Haddon Avenue",
+          "streetAddress": "46 A Haddon Avenue",
           "addressLocality": "Haddon Township",
           "addressRegion": "NJ",
           "postalCode": "08108",
