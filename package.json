@@ -7,11 +7,11 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/plugin-critical": "^0.1.3",
+    "@gridsome/plugin-critical": "^0.1.6",
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/plugin-sitemap": "^0.2.1",
+    "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-filesystem": "^0.5.0",
-    "@gridsome/transformer-remark": "^0.3.2",
+    "@gridsome/transformer-remark": "^0.3.4",
     "@zefman/gridsome-source-instagram": "^0.1.2",
     "gridsome": "^0.7.12",
     "gridsome-source-google-sheets": "^0.3.1",
@@ -21,7 +21,7 @@
     "vue": "^2.6.11",
     "vue-lazy-hydration": "^1.0.0-beta.9",
     "vue-svg-loader": "^0.12.0",
-    "vuetify": "^1.5.16"
+    "vuetify": "^1.5.21"
   },
   "devDependencies": {
     "material-design-icons-iconfont": "^5.0.1",
