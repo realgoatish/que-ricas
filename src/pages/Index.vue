@@ -48,9 +48,38 @@ export default {
       { property: 'og:image:height', content: '630' },
       { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options'}
     ],
-    script: [
-      { innerHTML: '{ "@context": "http://schema.org", "@type": "Restaurant", "image": "https://www.que-ricas.com/uploads/que-ricas-logo.png", "name": "Que Ricas", "openingHours": [ "Mo-Sa 11:00-20:00" ], "telephone": "856-858-8500", "url": "https://www.que-ricas.com", "geo": { "@type": "GeoCoordinates", "latitude": 39.9118024, "longitude": -75.0560624 }, "email": "info@que-ricas.com", "address": { "@type": "PostalAddress", "streetAddress": "46A Haddon Avenue", "addressLocality": "Haddon Township", "addressRegion": "NJ", "postalCode": "08033", "addressCountry": "US" }, "servesCuisine": [ "Venezuelan", "Latin American", "South American" ], "priceRange": "$", "paymentAccepted": "Cash, Credit Card", "currenciesAccepted": "USD", "acceptsReservations": "No", "hasMenu": "https://www.que-ricas.com/menu", "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options" }', type: 'application/ld+json' }
-    ]
+    script: [{
+      type: 'application/ld+json',
+      json: {
+        "@context": "http://schema.org", 
+        "@type": "Restaurant", 
+        "image": "https://www.que-ricas.com/uploads/que-ricas-logo.png", 
+        "name": "Que Ricas", 
+        "openingHours": [ "Mo-Sa 11:00-20:00" ], 
+        "telephone": "856-858-8500",
+        "url": "https://www.que-ricas.com",
+        "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.9118024,
+          "longitude": -75.0560624 },
+        "email": "info@que-ricas.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "46A Haddon Avenue",
+          "addressLocality": "Haddon Township",
+          "addressRegion": "NJ",
+          "postalCode": "08033",
+          "addressCountry": "US" },
+        "servesCuisine": [ "Venezuelan", "Latin American", "South American" ], 
+        "priceRange": "$",
+        "paymentAccepted": "Cash, Credit Card",
+        "currenciesAccepted": "USD",
+        "acceptsReservations": "No",
+        "hasMenu": "https://www.que-ricas.com/menu",
+        "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
+      }
+    }]
   },
   components: {
     LazyHydrate,
