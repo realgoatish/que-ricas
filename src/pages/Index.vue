@@ -58,23 +58,10 @@ export default {
         "openingHours": [ "Mo-Sa 11:00-20:00" ], 
         "telephone": "856-858-8500",
         "url": "https://www.que-ricas.com",
-        "review": {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Sean Walsh"
-          },
-          "reviewBody": "Awesome food!! The empanadas and chorizo are excellent.  I read about this place last week and had to try it out on day one.  I would highly recommend this place."
-        },
-        "aggregateRating": {
-          "ratingValue": "4.3",
-          "bestRating": "5",
-          "ratingCount": "4"
-        },
+        "sameAs": [
+          "https://www.instagram.com/quericas_haddon/",
+          "https://www.facebook.com/quericashaddon/"
+        ],
         "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
         "geo": {
           "@type": "GeoCoordinates",
@@ -88,7 +75,8 @@ export default {
           "addressLocality": "Haddon Township",
           "addressRegion": "NJ",
           "postalCode": "08108",
-          "addressCountry": "US" },
+          "addressCountry": "US"
+          },
         "servesCuisine": [ "Venezuelan", "Latin American", "South American" ], 
         "priceRange": "$",
         "paymentAccepted": "Cash, Credit Card",
