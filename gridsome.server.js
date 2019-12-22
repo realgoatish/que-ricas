@@ -19,7 +19,8 @@ module.exports = function (api) {
   })
 
 
-  api.loadSource(store  => {
+  api.loadSource( store  => {
+    store.addMetadata('homePageImage', require.resolve('./uploads/qrNewLogo.png'))
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
   })
 }
