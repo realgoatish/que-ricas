@@ -20,7 +20,10 @@ module.exports = function (api) {
 
 
   api.loadSource( store  => {
-    store.addMetadata('homePageImage', require.resolve('./uploads/qrNewLogo.png'))
+    store.addMetadata('seoImages', {
+      homePageImage: require.resolve('./uploads/qrNewLogo.png'),
+      storyPageImage: require.resolve('./uploads/sahar-our-story.jpeg')
+    })
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api
   })
 }
