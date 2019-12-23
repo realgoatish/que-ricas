@@ -12,27 +12,41 @@
 
 </template>
 
+<page-query>
+
+query {
+  metadata {
+    seoImages {
+      storyPageImage
+    }
+  }
+}
+
+</page-query>
+
 <script>
 
 import StorySahar from '~/components/story/StorySahar.vue'
 import StoryDar from '~/components/story/StoryDar.vue'
 
 export default {
-  metaInfo: {
-    title: 'Owner Biography',
-    link: [
-      { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
-    ],
-    meta: [
-      { property: 'og:title', content: 'Our Story - Que Ricas' },
-      { property: 'og:type', content: 'article' },
-      { property: 'og:description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' },
-      { property: 'og:url', content: 'https://www.que-ricas.com/story/'},
-      { property: 'og:image', content: 'https://www.que-ricas.com/uploads/sahar-our-story.png' },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-      { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' }
-    ]
+  metaInfo() {
+    return {
+      title: 'Owner Biography',
+      link: [
+        { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
+      ],
+      meta: [
+        { property: 'og:title', content: 'Our Story - Que Ricas' },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' },
+        { property: 'og:url', content: 'https://www.que-ricas.com/story/'},
+        { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.storyPageImage.src}` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' }
+      ]
+    }
   },
   components: {
     StorySahar,
