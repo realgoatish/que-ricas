@@ -40,23 +40,25 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 
 
 export default {
-  metaInfo: {
-    title: 'Menu',
-    link: [
-      {
-        rel: 'canonical', href: 'https://wwww.que-ricas.com/menu'
-      }
-    ],
-    meta: [
-      { property: 'og:title', content: 'Haddon Township Venezuelan Street Food Menu' },
-      { property: 'og:type', content: 'article' },
-      { property: 'og:description', content: 'Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love' },
-      { property: 'og:url', content: 'https://www.que-ricas.com/menu/'},
-      { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}` },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-      { name: 'description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love'}
-    ],
+  metaInfo() {
+    return {
+      title: 'Menu',
+      link: [
+        {
+          rel: 'canonical', href: 'https://wwww.que-ricas.com/menu'
+        }
+      ],
+      meta: [
+        { property: 'og:title', content: 'Haddon Township Venezuelan Street Food Menu' },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:description', content: 'Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love' },
+        { property: 'og:url', content: 'https://www.que-ricas.com/menu/'},
+        { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love'}
+      ]
+    }
   //   script: [
   //     { innerHTML: '{ "@context": "http://schema.org", "@type": "Menu", "mainEntityOfPage": "https://www.que-ricas.com/menu", "inLanguage": "English", "offers": { "@type": "Offer"}, "hasMenuSection": [ { "@type": "MenuSection", "name": "Starters", "hasMenuItem": [ { "@type": "MenuItem", "name": "Tajadas", "description": "sweet plantains topped with crema and cotija cheese", "offers": { "@type": "Offer", "price": "$5", "priceCurrency": "USD" }}, { "@type": "MenuItem", "name": "Yuca Fries", "description": "tender, crispy fried yuca wedges"}]}]}'}
   //   ]
