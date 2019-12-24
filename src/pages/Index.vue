@@ -28,7 +28,9 @@
 
 query {
   metadata {
-    homePageImage
+    seoImages {
+      homePageImage
+    }
   }
 }
 
@@ -57,14 +59,14 @@ export default {
         { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/cartel.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options'}
+        { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' }
       ],
       script: [{
         type: 'application/ld+json',
         json: {
           "@context": "http://schema.org", 
           "@type": "Restaurant", 
-          "image": `https://www.que-ricas.com${this.$page.metadata.homePageImage.src}`,
+          "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`,
           "name": "Que Ricas", 
           "openingHours": [ "Mo-Sa 11:00-20:00" ], 
           "telephone": "856-858-8500",
