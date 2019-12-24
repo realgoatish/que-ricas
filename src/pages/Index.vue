@@ -86,7 +86,7 @@ export default {
             "postalCode": "08108",
             "addressCountry": "US"
             },
-          "servesCuisine": [ "Venezuelan", "Latin American", "South American" ], 
+          "servesCuisine": [ "Venezuelan", "South American" ], 
           "priceRange": "$",
           "paymentAccepted": "Cash, Credit Card",
           "currenciesAccepted": "USD",
