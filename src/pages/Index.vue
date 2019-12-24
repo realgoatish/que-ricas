@@ -73,7 +73,8 @@ export default {
           "url": "https://www.que-ricas.com",
           "sameAs": [
             "https://www.instagram.com/quericas_haddon/",
-            "https://www.facebook.com/quericashaddon/"
+            "https://www.facebook.com/quericashaddon/",
+            "https://www.yelp.com/biz/que-ricas-haddon-township"
           ],
           "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
           "geo": {
