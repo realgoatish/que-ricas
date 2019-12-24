@@ -34,7 +34,7 @@ export default {
     return {
       title: 'Owner Biography',
       link: [
-        { rel: 'canonical', href: 'https://www.que-ricas.com/story'}
+        { rel: 'canonical', href: 'https://www.que-ricas.com/story' }
       ],
       meta: [
         { property: 'og:title', content: 'Our Story - Que Ricas' },
