@@ -87,10 +87,10 @@ export default {
             "addressCountry": "US"
             },
           "servesCuisine": [ "Venezuelan", "South American" ], 
-          "priceRange": "$",
-          "paymentAccepted": "Cash, Credit Card",
-          "currenciesAccepted": "USD",
-          "acceptsReservations": "No",
+          // "priceRange": "$",
+          // "paymentAccepted": "Cash, Credit Card",
+          // "currenciesAccepted": "USD",
+          // "acceptsReservations": "No",
           "hasMenu": "https://www.que-ricas.com/menu",
           "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
         }
