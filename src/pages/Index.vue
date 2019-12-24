@@ -77,11 +77,6 @@ export default {
             "https://www.yelp.com/biz/que-ricas-haddon-township"
           ],
           "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.9118024,
-            "longitude": -75.0560624 
-            },
           "email": "info@que-ricas.com",
           "address": {
             "@type": "PostalAddress",
