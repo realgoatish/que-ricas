@@ -1,10 +1,15 @@
 <template lang="pug">
   layout
-    LazyHydrate(when-idle)
+    LazyHydrate(
+      when-idle
+      v-if="userScreenWidth >= 960"
+      )
       IndexCarousel(
         class="hidden-sm-and-down"
       )
-    LazyHydrate(when-idle)
+    LazyHydrate(
+      when-idle
+      v-if="userScreenWidth <= 959")
       IndexMobileImage(
         class="hidden-md-and-up"
       )
@@ -45,6 +50,23 @@ import IndexHdImage from '~/components/homepage/IndexHdImage.vue';
 import IndexTextContent from '~/components/homepage/IndexTextContent.vue';
 
 export default {
+  data() {
+    return {
+      userScreenWidth: 0
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.userScreenWidth = window.innerWidth;
+    }
+  },
   metaInfo() {
     return {
       title: 'Venezuelan Street Food in Haddon Township, New Jersey',
