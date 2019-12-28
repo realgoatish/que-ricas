@@ -1,10 +1,15 @@
 <template lang="pug">
   layout
-    LazyHydrate(when-idle)
+    LazyHydrate(
+      when-idle
+      v-if="userScreenWidth >= 960"
+      )
       IndexCarousel(
         class="hidden-sm-and-down"
       )
-    LazyHydrate(when-idle)
+    LazyHydrate(
+      when-idle
+      v-if="userScreenWidth <= 959")
       IndexMobileImage(
         class="hidden-md-and-up"
       )
@@ -45,6 +50,23 @@ import IndexHdImage from '~/components/homepage/IndexHdImage.vue';
 import IndexTextContent from '~/components/homepage/IndexTextContent.vue';
 
 export default {
+  data() {
+    return {
+      userScreenWidth: 0
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.userScreenWidth = window.innerWidth;
+    }
+  },
   metaInfo() {
     return {
       title: 'Venezuelan Street Food in Haddon Township, New Jersey',
@@ -56,7 +78,7 @@ export default {
         { property: 'og:type', content: 'website' },
         { property: 'og:description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' },
         { property: 'og:url', content: 'https://www.que-ricas.com/'},
-        { property: 'og:image', content: 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/cartel.jpg' },
+        { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' }
