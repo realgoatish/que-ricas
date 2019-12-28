@@ -25,6 +25,5 @@ module.exports = function (api) {
       menuPageImage: require.resolve('./uploads/hangover-bowl.jpeg'),
       storyPageImage: require.resolve('./uploads/sahar-our-story.jpeg')
     })
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api
   })
 }
