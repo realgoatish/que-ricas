@@ -1,6 +1,6 @@
 <template lang="pug">
   v-toolbar(class="header")
-    LazyHydrate(ssr-only)
+    LazyHydrate(when-idle)
       HeaderLogo
     v-spacer
     LazyHydrate(when-idle)
