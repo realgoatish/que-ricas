@@ -8,6 +8,9 @@ module.exports = {
   siteName: 'Que Ricas',
   titleTemplate: 'Que Ricas - %s',
   siteUrl: 'https://www.que-ricas.com',
+  permalinks: {
+    trailingSlash: true
+  },
   host: "0.0.0.0",
   icon: './uploads/que-ricas-logo.png',
   plugins: [
