@@ -42,6 +42,18 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000,
+        staticUrls: [
+          {
+            url: '/assets/static/',
+            img: [
+              {
+                url: require.resolve('./uploads/cartel.jpeg').src,
+                caption: 'The Cartel Arepa',
+                title: 'The Cartel Arepa'
+              }
+            ]
+          }
+        ],
         config: {
           '/': {
             changefreq: 'weekly',
