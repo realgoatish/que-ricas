@@ -44,12 +44,37 @@ module.exports = {
         cacheTime: 600000,
         staticUrls: [
           {
-            url: '/assets/static/',
+            url: '/',
             img: [
               {
                 url: '/assets/static/cartel.09b17d9.84cd0cf5572e6dd571ede737e6427cd5.jpeg',
-                caption: 'The Cartel Arepa',
+                caption: 'chorizo, carmelized peppers, onions, smoked gouda',
                 title: 'The Cartel Arepa'
+              }
+            ]
+          },
+          {
+            url: '/menu',
+            img: [
+              {
+                url: '/assets/static/hangover-bowl.09b17d9.54dbf4efe6f2dfbbd5930c10fb1a3748.jpeg',
+                caption: 'shredded beef, yuca hash browns, fried egg, cilantro mojo',
+                title: 'The Shredded Beef Hangover Bowl Platter'
+              }
+            ]
+          },
+          {
+            url: '/story',
+            img: [
+              {
+                url: '/assets/static/sahar-our-story.09b17d9.af141ba626217e0822a79c7598953243.jpeg',
+                caption: 'Sahar Soleymani',
+                title: 'Que Ricas Founder Sahar Soleymani'
+              },
+              {
+                url: '/assets/static/v-dar-elsie.e18b67c.e2c7e697046ee47f7693d2eade00d302.jpg',
+                caption: 'Dar and Elsie Soleymani',
+                title: 'Dar and Elsie Soleymani'
               }
             ]
           }
