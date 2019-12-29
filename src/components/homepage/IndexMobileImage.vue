@@ -1,11 +1,10 @@
 <template lang="pug">
-  img(
-    :src="mobileImage"
-    width="500"
-    height="500"
-    class="mobile-view-img"
-    alt="A banquet table of Venezuelan plantains, Arepas, cheeses, black beans and guacamole"
-  )
+  figure
+    g-image(
+      src="~/../uploads/cartel.jpeg"
+      class="mobile-view-img"
+      alt="Que Ricas' Cartel Arepa"
+    )
 </template>
 
 <script>
