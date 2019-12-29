@@ -5,6 +5,7 @@
         g-image(
           src="~/../uploads/sahar-our-story.jpeg"
           id="sahar-featured-image-class"
+          alt="Que Ricas Founder and Head Chef, Sahar Soleymani"
         )
         div(
           v-html="$static.post.content"

@@ -3,8 +3,9 @@
     v-card-title(primary-title)
       div
         g-image(
-          src="~/../uploads/v-dar-elsie.jpg"
+          src="~/../uploads/v-dar-elsie.jpeg"
           id="dar-featured-image-class"
+          alt="Sahar's parents, Dar and Elsie Soleymani"
         )
         div(
           v-html="$static.post.content"
