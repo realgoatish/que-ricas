@@ -1,19 +1,12 @@
 <template lang="pug">
-
-  g-image(alt="Que Ricas Logo" class="header-logo" :src="logo" :width="width" height="100px")
-
+  figure(class="header-logo")
+    g-image(alt="Que Ricas Logo" src="~/../uploads/qrNewLogo.png")
 </template>
 
 <script>
 
 export default {
-  name: 'HeaderLogo',
-  data () {
-    return {
-      width: "300px",
-      logo: require("~/../uploads/qrNewLogo.png")
-    }
-  }
+  name: 'HeaderLogo'
 }
 
 </script>
