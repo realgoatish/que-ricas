@@ -71,7 +71,7 @@ export default {
     return {
       title: 'Venezuelan Street Food in Haddon Township, New Jersey',
       link: [
-        { rel: 'canonical', href: 'https://www.que-ricas.com' }
+        { rel: 'canonical', href: 'https://www.que-ricas.com/' }
       ],
       meta: [
         { property: 'og:title', content: 'Venezuelan Street Food in Haddon Township' },
