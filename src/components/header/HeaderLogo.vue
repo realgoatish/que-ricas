@@ -1,5 +1,5 @@
 <template lang="pug">
-  picture(class="header-logo")
+  figure(class="header-logo")
     g-image(alt="Que Ricas Logo" src="~/../uploads/qrNewLogo.png")
 </template>
 
