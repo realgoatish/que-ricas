@@ -13,10 +13,10 @@
         v-list-tile(:to="{ path: '/' }")
           v-list-tile-content
             v-list-tile-title Home
-        v-list-tile(:to="{ path: '/menu' }")
+        v-list-tile(:to="{ path: '/menu/' }")
           v-list-tile-content
             v-list-tile-title Menu
-        v-list-tile(:to="{ path: '/story' }")
+        v-list-tile(:to="{ path: '/story/' }")
           v-list-tile-content
             v-list-tile-title Our Story
 
