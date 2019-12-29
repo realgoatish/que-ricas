@@ -1,11 +1,11 @@
 <template lang="pug">
-  div(
+  img(
+    :src="mobileImage"
+    width="500"
+    height="500"
     class="mobile-view-img"
+    alt="A banquet table of Venezuelan plantains, Arepas, cheeses, black beans and guacamole"
   )
-    v-img(
-      :src="mobileImage"
-      alt="A banquet table of Venezuelan plantains, Arepas, cheeses, black beans and guacamole"
-    )
 </template>
 
 <script>
@@ -25,7 +25,7 @@ export default {
 
 .mobile-view-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   border-radius: 0px 0px 15px 15px;
 }
