@@ -47,7 +47,7 @@ module.exports = {
             url: '/assets/static/',
             img: [
               {
-                url: require.resolve('./uploads/cartel.jpeg').src,
+                url: '/assets/static/cartel.09b17d9.84cd0cf5572e6dd571ede737e6427cd5.jpeg',
                 caption: 'The Cartel Arepa',
                 title: 'The Cartel Arepa'
               }
