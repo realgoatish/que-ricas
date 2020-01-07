@@ -99,7 +99,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid;
   border-color: #eae7db;
-  margin: 10px 18px 0px 18px;
+  margin: 10px 2px 0px 2px;
   text-align: left;
   line-height: 1.75;
 }
