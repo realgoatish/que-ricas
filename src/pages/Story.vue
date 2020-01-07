@@ -57,9 +57,25 @@ export default {
 
 <style>
 
+.story-text-content-styles {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  line-height: 1.75;
+}
+
+/* uber-specificity to override Vuetify defaults and control content layout with padding, then only use a margin or two as needed on child elements */
+div.story-content-container > main > div > div > div.v-card__title.v-card__title--primary {
+  padding: 24px 20px 20px 20px;
+}
+
+/* Vuetify default style: 'margin-bottom: 16px;' override; plus adding negative top margin to compensate for 1.75 line-height and pull text even with img */
+div.story-text-content-styles > p {
+  margin: -5px 0px 0px 0px;
+}
+
 @media only screen and (max-width: 600px) {
-  .v-card__title {
-  padding: 20px 20px 20px 0px;
+  div.story-content-container > main > div > div > div.v-card__title.v-card__title--primary {
   font-size: 14px;
   }
 }

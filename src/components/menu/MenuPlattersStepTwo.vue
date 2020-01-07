@@ -51,6 +51,8 @@ export default {
 
 <style>
 
+/* This ID #platters-step-two-grid is being added to all Menu Items in the Platters Step Two Section.  Temporary hack until we start adding images to other sections and figure out the best way to organize styles for those sections.  As it stands right now these styles may not be able to be dumped into the main class .menu-item-text-content-styles on the page-level CSS.  I'll figure it out sometime soon when I'm not so tired :) */
+
 #platters-step-two-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr auto;

@@ -1,6 +1,6 @@
 <template lang="pug">
   layout  
-    .index-content-container
+    .menu-content-container
       .title.mb-3
 
       main
@@ -99,13 +99,13 @@ export default {
   font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid;
   border-color: #eae7db;
-  margin: 10px 2px 0px 2px;
+  margin: 10px 0px 0px 0px;
   text-align: left;
   line-height: 1.75;
 }
 
 article>div.menu-section-header {
-  font-size: 1.2em;
+  font-size: 18px;
   padding-left: 18px;
   padding-right: 18px;
 }
@@ -117,5 +117,13 @@ article>div.menu-section-header {
 article {
   width: 100%;
 }
+
+/* 1.7.2020 - Override default Vuetify paddings for .v-card__title and .v-card__title--primary.  So far Story and Menu pages have slightly different custom paddings to set up their content layouts */
+
+div.menu-content-container > main > div > div > div.v-card__title.v-card__title--primary {
+  padding: 24px 18px 20px 18px;
+}
+
+/* 1.7.2020 - Keep in mind, on this page only, you're currently not doing a Media Query to change font-size to 14px on small screens.  See how you feel about it and change if needed */
 
 </style>
