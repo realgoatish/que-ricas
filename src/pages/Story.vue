@@ -74,6 +74,7 @@ div.story-text-content-styles > p {
   margin: -5px 0px 0px 0px;
 }
 
+/* 1.7.2020 - Note that this media query isn't working because .story-text-content-styles is setting font to 18px.  If you want to do this font change swap that in instead of targeting Vuetify classes */
 @media only screen and (max-width: 600px) {
   div.story-content-container > main > div > div > div.v-card__title.v-card__title--primary {
   font-size: 14px;
