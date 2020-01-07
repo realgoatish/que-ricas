@@ -64,7 +64,7 @@ export default {
   line-height: 1.75;
 }
 
-/* uber-specific to override Vuetify defaults and control content layout with padding, then only use a margin or two as needed on child elements */
+/* uber-specificity to override Vuetify defaults and control content layout with padding, then only use a margin or two as needed on child elements */
 div.story-content-container > main > div > div > div.v-card__title.v-card__title--primary {
   padding: 24px 20px 20px 20px;
 }
