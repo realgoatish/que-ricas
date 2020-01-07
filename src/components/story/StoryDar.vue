@@ -36,16 +36,8 @@ export default {
   max-width: 40%;
   height: auto;
   float: right;
-  margin: 20px 20px 10px;
-}
-
-.story-text-content-styles {
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 10px;
-  margin-left: 18px;
-  text-align: left;
-  line-height: 1.75;
+  border-radius: 8px;
+  margin: 0px 0px 15px 20px;
 }
 
 </style>
