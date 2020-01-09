@@ -129,9 +129,7 @@ export default {
 }
 </script>
 
-<style scoped>
-
-/* ^ Scoped this page's styles to prevent bleeding onto other pages */
+<style>
 
 /* COME BACK AND FIX PADDING/MARGIN ISSUES ON THIS PAGE AND IndexTextContent.vue ... implement override padding on .v-card__title and .v-card__title--primary, then use margins if needed on children to clean up mess */
 
