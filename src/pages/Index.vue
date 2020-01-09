@@ -139,12 +139,12 @@ div.index-content-container > main > div > div > div.v-card__title.v-card__title
   padding: 24px 20px 20px 20px;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .v-card__title {
   padding: 20px 3px 20px 3px;
   font-size: 14px;
   }
-}
+} */
 
 </style>
 
