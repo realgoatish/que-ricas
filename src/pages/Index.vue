@@ -135,9 +135,12 @@ export default {
 
 /* COME BACK AND FIX PADDING/MARGIN ISSUES ON THIS PAGE AND IndexTextContent.vue ... implement override padding on .v-card__title and .v-card__title--primary, then use margins if needed on children to clean up mess */
 
+div.index-content-container > main > div > div > div.v-card__title.v-card__title--primary {
+  padding: 24px 20px 20px 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .v-card__title {
-  /* padding: 20px 16px 20px 3px; */
   padding: 20px 3px 20px 3px;
   font-size: 14px;
   }
