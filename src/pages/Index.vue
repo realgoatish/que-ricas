@@ -21,7 +21,7 @@
           v-card
             br
             v-card-title(primary-title)
-              LazyHydrate(ssr-only)
+              LazyHydrate(when-idle)
                 IndexHdImage
               LazyHydrate(ssr-only)
                 IndexTextContent
