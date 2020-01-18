@@ -91,7 +91,44 @@ export default {
           "@id": "https://www.que-ricas.com/#westmont",
           "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`,
           "name": "Que Ricas", 
-          "openingHours": [ "Mo-Sa 11:00-20:00" ], 
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Monday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Tuesday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Wednesday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Thursday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Friday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Saturday"
+            }
+          ], 
           "telephone": "856-858-8500",
           "url": "https://www.que-ricas.com",
           "sameAs": [
@@ -114,7 +151,7 @@ export default {
           // "paymentAccepted": "Cash, Credit Card",
           // "currenciesAccepted": "USD",
           // "acceptsReservations": "No",
-          "hasMenu": "https://www.que-ricas.com/menu",
+          "menu": "https://www.que-ricas.com/menu",
           "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
         }
       }]
