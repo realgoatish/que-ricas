@@ -88,6 +88,7 @@ export default {
         json: {
           "@context": "http://schema.org", 
           "@type": "Restaurant", 
+          "@id": "https://www.que-ricas.com/#westmont",
           "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`,
           "name": "Que Ricas", 
           "openingHours": [ "Mo-Sa 11:00-20:00" ], 
