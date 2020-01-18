@@ -129,7 +129,7 @@ export default {
               "dayOfWeek": "http://schema.org/Saturday"
             }
           ], 
-          "telephone": "856-858-8500",
+          "telephone": "(856)-858-8500",
           "url": "https://www.que-ricas.com",
           "sameAs": [
             "https://www.instagram.com/quericas_haddon/",
@@ -146,8 +146,13 @@ export default {
             "postalCode": "08108",
             "addressCountry": "US"
             },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.911812",
+            "longitude": "-75.053812"
+          },
           "servesCuisine": [ "Venezuelan", "South American" ], 
-          // "priceRange": "$",
+          "priceRange": "$",
           // "paymentAccepted": "Cash, Credit Card",
           // "currenciesAccepted": "USD",
           // "acceptsReservations": "No",
