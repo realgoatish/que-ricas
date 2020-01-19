@@ -22,6 +22,7 @@
 query {
   metadata {
     seoImages {
+      homePageImage
       menuPageImage
     }
   }
@@ -61,554 +62,647 @@ export default {
       script: [{
         type: 'application/ld+json',
         json: {
-          "@context": "https://schema.org", 
-          "@type": "Menu", 
-          "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`,
-          "name": "Que Ricas Menu", 
-          "mainEntityOfPage": "https://www.que-ricas.com/menu/",
-          "inLanguage": "English",
-          "offers": {
-            "@type": "Offer",
-            "availabilityStarts": "T11:00",
-            "availabilityEnds": "T20:00"
-          },
-          "hasMenuSection": [
+          "@context": "https://schema.org",
+          "@graph": [
             {
-              "@type": "MenuSection",
-              "name": "Starters",
-              "hasMenuItem": [
-                {
-                  "@type": "MenuItem",
-                  "name": "Tajadas",
-                  "description": "sweet plantains topped with crema and cotija cheese",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "5",
-                    "priceCurrency": "USD"
+              "@type": "WebSite",
+              "@id": "https://www.que-ricas.com/#website",
+              "name": "Que Ricas - Venezuelan Street Food in Haddon Township, NJ",
+              "url": "https://www.que-ricas.com/",
+              "publisher": {
+                "@type": "Restaurant", 
+                "@id": "https://www.que-ricas.com/#westmont",
+                "name": "Que Ricas", 
+                "logo": "https://www.que-ricas.com/assets/static/qrNewLogo.e904f79.819f5522c7cd39ba76ef8cafecbbdede.png",
+                "menu": "https://www.que-ricas.com/menu",
+                "image": {
+                  "@type": "ImageObject",
+                  "@id": "https://www.que-ricas.com/#primaryimage",
+                  "url": `https://www.que-ricas.com${this.$page.metadata.seoImage.homePageImage.src}`
+              },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday"
+                    ],
+                    "opens": "11:00",
+                    "closes": "20:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Sunday",
+                    "opens": "00:00",
+                    "closes": "00:00"
                   }
+                ], 
+                "telephone": "(856)-858-8500",
+                "url": "https://www.que-ricas.com",
+                "sameAs": [
+                  "https://www.instagram.com/quericas_haddon/",
+                  "https://www.facebook.com/quericashaddon/",
+                  "https://www.yelp.com/biz/que-ricas-haddon-township",
+                  "https://www.happycow.net/reviews/que-ricas-haddon-township-191931"
+                ],
+                "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
+                "email": "info@que-ricas.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "46 A Haddon Avenue",
+                  "addressLocality": "Haddon Township",
+                  "addressRegion": "NJ",
+                  "postalCode": "08108",
+                  "addressCountry": "US"
+                  },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "39.911812",
+                  "longitude": "-75.053812"
                 },
-                {
-                  "@type": "MenuItem",
-                  "name": "Yuca Fries",
-                  "description": "tender, cripsy, fried yuca wedges",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "5",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Loaded Yuca Fries",
-                  "description": "shredded beef or chicken, beans, cheese, pico, sabroso sauce, house-pickled jalapeño",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "10",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Tequeños",
-                  "description": "meet the mozzarella stick's suave cousin, made with queso blanco and hand-wrapped in artisan dough",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "5",
-                    "priceCurrency": "USD"
-                  }
-                }
-              ]
+                "servesCuisine": [ "Venezuelan", "South American" ], 
+                "priceRange": "$",
+                "paymentAccepted": "Cash, Credit Card",
+                "currenciesAccepted": "USD",
+                "acceptsReservations": "No",
+                "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
+              }
             },
             {
-              "@type": "MenuSection",
-              "name": "Empanadas",
-              "hasMenuItem": [
+              "@type": "Menu", 
+              "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`,
+              "name": "Que Ricas Menu", 
+              "mainEntityOfPage": "https://www.que-ricas.com/menu/",
+              "inLanguage": "en-US",
+              "isPartOf": {
+                "@id": "https://www.que-ricas.com/menu/#webpage"
+              },
+              "offers": {
+                "@type": "Offer",
+                "availabilityStarts": "T11:00",
+                "availabilityEnds": "T20:00"
+              },
+              "hasMenuSection": [
                 {
-                  "@type": "MenuItem",
-                  "name": "Pollo",
-                  "description": "all-natural shredded chicken",
-                  "suitableForDiet": "http://schema.org/GlutenFreeDiet",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Carne",
-                  "description": "all-natural shredded beef",
-                  "suitableForDiet": "http://schema.org/GlutenFreeDiet",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3.25",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Jawn",
-                  "description": "cheesesteak, fried onions",
-                  "suitableForDiet": "http://schema.org/GlutenFreeDiet",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3.25",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Besitos",
-                  "description": "guava and mozzarella cheese",
-                  "suitableForDiet": "http://schema.org/GlutenFreeDiet",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Harvest",
-                  "description": "black beans, sweet potato, kale, vegan",
-                  "suitableForDiet": "http://schema.org/GlutenFreeDiet",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3",
-                    "priceCurrency": "USD"
-                  }
-                }
-              ]
-            },
-            {
-              "@type": "MenuSection",
-              "name": "Arepa Lab",
-              "hasMenuItem": [
-                {
-                  "@type": "MenuItem",
-                  "name": "Rica",
-                  "description": "shredded beef, sweet plantain, black beans and cotija cheese",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "9.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Sombrero",
-                  "description": "milanesa (fried steak), fried queso blanco, sweet pepper cabbage slaw, rosa sauce",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "9.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Shaggy",
-                  "description": "shredded chicken, sweet plantain, fried queso blanco, pico de gallo, cilantro mojo",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "9.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Curvy Queen",
-                  "description": "Venezuela's favorite - shredded chicken & avocado salad, sweet plantains, smoked gouda",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "9.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Cartel",
-                  "description": "chorizo, carmelized peppers, onions, smoked gouda",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "9.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Jersey",
-                  "description": "pork roll, fried cage-free egg, melted cotija cheese",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "8",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Elsita",
-                  "description": "scrambled eggs with tomato and onion topped with cotija cheese",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "8",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Black Betty",
-                  "description": "home-made black bean burger with sweet plantains, guasacaca, vegan",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "8.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Dario",
-                  "description": "falafel, hummus, sweet pepper cabbage slaw, pico de gallo, vegan",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "8.50",
-                    "priceCurrency": "USD"
-                  }
-                }
-              ]
-            },
-            {
-              "@type": "MenuSection",
-              "name": "Platters",
-              "hasMenuItem": [
-                {
-                  "@type": "MenuItem",
-                  "name": "Shredded Beef",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "13.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Beef Caracas Platter",
-                        "description": "shredded beef, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Beef Flower Power Platter",
-                        "description": "shredded beef, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Shredded Beef Hangover Platter",
-                        "description": "shredded beef, yuca hash browns, fried egg, cilantro mojo",
-                        "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Beef Cozy Platter",
-                        "description": "shredded beef, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Shredded Chicken",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "12.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Chicken Caracas Platter",
-                        "description": "shredded chicken, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Chicken Flower Power Platter",
-                        "description": "shredded chicken, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Shredded Chicken Hangover Platter",
-                        "description": "shredded chicken, yuca hash browns, fried egg, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Shredded Chicken Cozy Platter",
-                        "description": "shredded chicken, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Milanesa (fried steak)",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "13.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Milanesa Caracas Platter",
-                        "description": "milanesa, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Milanesa Flower Power Platter",
-                        "description": "milanesa, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Milanesa Hangover Platter",
-                        "description": "milanesa, yuca hash browns, fried egg, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Milanesa Cozy Platter",
-                        "description": "milanesa, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Chorizo",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "12.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Chorizo Caracas Platter",
-                        "description": "chorizo, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Chorizo Flower Power Platter",
-                        "description": "chorizo, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Chorizo Hangover Platter",
-                        "description": "chorizo, yuca hash browns, fried egg, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Chorizo Cozy Platter",
-                        "description": "chorizo, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Black Bean Burger",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "12.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Black Bean Burger Caracas Platter",
-                        "description": "black bean burger, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Black Bean Burger Flower Power Platter",
-                        "description": "black bean burger, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Black Bean Burger Hangover Platter",
-                        "description": "black bean burger, yuca hash browns, fried egg, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Black Bean Burger Cozy Platter",
-                        "description": "black bean burger, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Huevos (eggs)",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "12.50",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Huevos Caracas Platter",
-                        "description": "huevos, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Huevos Flower Power Platter",
-                        "description": "huevos, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
-                      },
-                      {
-                        "@type": "Offer",  
-                        "name": "Huevos Hangover Platter",
-                        "description": "huevos, yuca hash browns, fried egg, cilantro mojo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Huevos Cozy Platter",
-                        "description": "huevos, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
-                      }
-                    ]
-                  }
-                },
-              ]
-            },
-            {
-              "@type": "MenuSection",
-              "name": "Churros",
-              "hasMenuItem": [
-                {
-                  "@type": "MenuItem",
-                  "name": "Heritage",
-                  "description": "raw sugar, cinnamon",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "5",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Heritage with Chocolate Dipping Sauce",
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Heritage with Vegan Glaze Dipping Sauce"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Birds of Paradise",
-                  "description": "raw sugar, fruity cereal",
-                  "offers": [
+                  "@type": "MenuSection",
+                  "name": "Starters",
+                  "hasMenuItem": [
                     {
-                      "@type": "Offer",
-                      "name": "Heritage with Chocolate Dipping Sauce",
+                      "@type": "MenuItem",
+                      "name": "Tajadas",
+                      "description": "sweet plantains topped with crema and cotija cheese",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "5",
+                        "priceCurrency": "USD"
+                      }
                     },
                     {
-                      "@type": "Offer",
-                      "name": "Heritage with Vegan Glaze Dipping Sauce"
+                      "@type": "MenuItem",
+                      "name": "Yuca Fries",
+                      "description": "tender, cripsy, fried yuca wedges",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "5",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Loaded Yuca Fries",
+                      "description": "shredded beef or chicken, beans, cheese, pico, sabroso sauce, house-pickled jalapeño",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "10",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Tequeños",
+                      "description": "meet the mozzarella stick's suave cousin, made with queso blanco and hand-wrapped in artisan dough",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "5",
+                        "priceCurrency": "USD"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Empanadas",
+                  "hasMenuItem": [
+                    {
+                      "@type": "MenuItem",
+                      "name": "Pollo",
+                      "description": "all-natural shredded chicken",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Carne",
+                      "description": "all-natural shredded beef",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3.25",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Jawn",
+                      "description": "cheesesteak, fried onions",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3.25",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Besitos",
+                      "description": "guava and mozzarella cheese",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Harvest",
+                      "description": "black beans, sweet potato, kale, vegan",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3",
+                        "priceCurrency": "USD"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Arepa Lab",
+                  "hasMenuItem": [
+                    {
+                      "@type": "MenuItem",
+                      "name": "Rica",
+                      "description": "shredded beef, sweet plantain, black beans and cotija cheese",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "9.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Sombrero",
+                      "description": "milanesa (fried steak), fried queso blanco, sweet pepper cabbage slaw, rosa sauce",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "9.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Shaggy",
+                      "description": "shredded chicken, sweet plantain, fried queso blanco, pico de gallo, cilantro mojo",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "9.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Curvy Queen",
+                      "description": "Venezuela's favorite - shredded chicken & avocado salad, sweet plantains, smoked gouda",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "9.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Cartel",
+                      "description": "chorizo, carmelized peppers, onions, smoked gouda",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "9.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Jersey",
+                      "description": "pork roll, fried cage-free egg, melted cotija cheese",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "8",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Elsita",
+                      "description": "scrambled eggs with tomato and onion topped with cotija cheese",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "8",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Black Betty",
+                      "description": "home-made black bean burger with sweet plantains, guasacaca, vegan",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "8.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Dario",
+                      "description": "falafel, hummus, sweet pepper cabbage slaw, pico de gallo, vegan",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "8.50",
+                        "priceCurrency": "USD"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Platters",
+                  "hasMenuItem": [
+                    {
+                      "@type": "MenuItem",
+                      "name": "Shredded Beef",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "13.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Beef Caracas Platter",
+                            "description": "shredded beef, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Beef Flower Power Platter",
+                            "description": "shredded beef, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Shredded Beef Hangover Platter",
+                            "description": "shredded beef, yuca hash browns, fried egg, cilantro mojo",
+                            "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Beef Cozy Platter",
+                            "description": "shredded beef, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Shredded Chicken",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "12.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Chicken Caracas Platter",
+                            "description": "shredded chicken, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Chicken Flower Power Platter",
+                            "description": "shredded chicken, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Shredded Chicken Hangover Platter",
+                            "description": "shredded chicken, yuca hash browns, fried egg, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Shredded Chicken Cozy Platter",
+                            "description": "shredded chicken, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Milanesa (fried steak)",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "13.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Milanesa Caracas Platter",
+                            "description": "milanesa, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Milanesa Flower Power Platter",
+                            "description": "milanesa, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Milanesa Hangover Platter",
+                            "description": "milanesa, yuca hash browns, fried egg, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Milanesa Cozy Platter",
+                            "description": "milanesa, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Chorizo",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "12.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Chorizo Caracas Platter",
+                            "description": "chorizo, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Chorizo Flower Power Platter",
+                            "description": "chorizo, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Chorizo Hangover Platter",
+                            "description": "chorizo, yuca hash browns, fried egg, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Chorizo Cozy Platter",
+                            "description": "chorizo, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Black Bean Burger",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "12.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Black Bean Burger Caracas Platter",
+                            "description": "black bean burger, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Black Bean Burger Flower Power Platter",
+                            "description": "black bean burger, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Black Bean Burger Hangover Platter",
+                            "description": "black bean burger, yuca hash browns, fried egg, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Black Bean Burger Cozy Platter",
+                            "description": "black bean burger, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Huevos (eggs)",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "12.50",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Huevos Caracas Platter",
+                            "description": "huevos, black beans, Venezuelan white rice, sweet plantains, cotija cheese, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Huevos Flower Power Platter",
+                            "description": "huevos, seasoned cauliflower rice, peppers and onions, guacamole, pico, low carb"
+                          },
+                          {
+                            "@type": "Offer",  
+                            "name": "Huevos Hangover Platter",
+                            "description": "huevos, yuca hash browns, fried egg, cilantro mojo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Huevos Cozy Platter",
+                            "description": "huevos, rica fried rice with tomato, peppers and onions with sweet plantains on the side"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Churros",
+                  "hasMenuItem": [
+                    {
+                      "@type": "MenuItem",
+                      "name": "Heritage",
+                      "description": "raw sugar, cinnamon",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "5",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Heritage with Chocolate Dipping Sauce"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Heritage with Vegan Glaze Dipping Sauce"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Birds of Paradise",
+                      "description": "raw sugar, fruity cereal",
+                      "offers": [
+                        {
+                          "@type": "Offer",
+                          "name": "Birds of Paradise with Chocolate Dipping Sauce"
+                        },
+                        {
+                          "@type": "Offer",
+                          "name": "Birds of Paradise with Vegan Glaze Dipping Sauce"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Sides and Extras",
+                  "hasMenuItem": [
+                    {
+                      "@type": "MenuItem",
+                      "name": "Venezuelan White Rice",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Rica White Rice",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3.50",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Black Beans",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "3",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Add Guasacaca",
+                      "offers": {
+                        "@type": "Offer",
+                        "price": "2",
+                        "priceCurrency": "USD"
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Add Cheese",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "1",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Mozzarella"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Cotija"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Smoked Gouda"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "@type": "MenuItem",
+                      "name": "Extra Protein",
+                      "offers": {
+                        "@type": "AggregateOffer",
+                        "price": "3",
+                        "priceCurrency": "USD",
+                        "offers": [
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Beef"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Chicken"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Milanesa"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Chorizo"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Black Bean Burger"
+                          },
+                          {
+                            "@type": "Offer",
+                            "name": "Extra Huevos"
+                          }
+                        ]
+                      }
                     }
                   ]
                 }
               ]
             },
             {
-              "@type": "MenuSection",
-              "name": "Sides and Extras",
-              "hasMenuItem": [
-                {
-                  "@type": "MenuItem",
-                  "name": "Venezuelan White Rice",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Rica White Rice",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3.50",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Black Beans",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "3",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Add Guasacaca",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "2",
-                    "priceCurrency": "USD"
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Add Cheese",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "1",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Mozzarella",
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Cotija"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Smoked Gouda"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "@type": "MenuItem",
-                  "name": "Extra Protein",
-                  "offers": {
-                    "@type": "AggregateOffer",
-                    "price": "3",
-                    "priceCurrency": "USD",
-                    "offers": [
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Beef"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Chicken"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Milanesa"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Chorizo"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Black Bean Burger"
-                      },
-                      {
-                        "@type": "Offer",
-                        "name": "Extra Huevos"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "@type": "ImageObject",
+              "@id": "https://www.que-ricas.com/menu/#primaryimage",
+              "url": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.que-ricas.com/menu/#webpage",
+              "url": "https://www.que-ricas.com/menu/",
+              "inLanguage": "en-US",
+              "name": "Que Ricas - Menu",
+              "isPartOf": {
+                "@id": "https://www.que-ricas.com/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://www.que-ricas.com/menu/#primaryimage"
+              }
             }
           ]
         }
