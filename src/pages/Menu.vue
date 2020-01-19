@@ -78,7 +78,7 @@ export default {
                 "image": {
                   "@type": "ImageObject",
                   "@id": "https://www.que-ricas.com/#primaryimage",
-                  "url": `https://www.que-ricas.com${this.$page.metadata.seoImage.homePageImage.src}`
+                  "url": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`
               },
                 "openingHoursSpecification": [
                   {
