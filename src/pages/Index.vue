@@ -100,7 +100,8 @@ export default {
                 "logo": "https://www.que-ricas.com/assets/static/qrNewLogo.e904f79.819f5522c7cd39ba76ef8cafecbbdede.png",
                 "menu": "https://www.que-ricas.com/menu",
                 "image": {
-                "@id": "https://www.que-ricas.com/#primaryimage"
+                  "@type": "ImageObject",
+                  "@id": "https://www.que-ricas.com/#primaryimage"
               },
                 "openingHoursSpecification": [
                   {
@@ -157,7 +158,7 @@ export default {
             {
               "@type": "ImageObject",
               "@id": "https://www.que-ricas.com/#primaryimage",
-              "url": "https://www.que-ricas.com/assets/static/uploads/cartel.jpeg?width=2560&fit=cover&key=1b19c92"
+              "url": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`
             },
             {
               "@type": "WebPage",
