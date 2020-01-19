@@ -94,39 +94,22 @@ export default {
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Monday"
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "11:00",
+              "closes": "20:00",
             },
             {
               "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Tuesday"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Wednesday"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Thursday"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Friday"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "opens": "11:00:00",
-              "closes": "20:00:00",
-              "dayOfWeek": "http://schema.org/Saturday"
+              "dayOfWeek": "Sunday",
+              "opens": "00:00",
+              "closes": "00:00"
             }
           ], 
           "telephone": "(856)-858-8500",
