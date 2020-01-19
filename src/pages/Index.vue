@@ -88,15 +88,54 @@ export default {
         json: {
           "@context": "http://schema.org", 
           "@type": "Restaurant", 
+          "@id": "https://www.que-ricas.com/#westmont",
           "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}`,
           "name": "Que Ricas", 
-          "openingHours": [ "Mo-Sa 11:00-20:00" ], 
-          "telephone": "856-858-8500",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Monday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Tuesday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Wednesday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Thursday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Friday"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "opens": "11:00:00",
+              "closes": "20:00:00",
+              "dayOfWeek": "http://schema.org/Saturday"
+            }
+          ], 
+          "telephone": "(856)-858-8500",
           "url": "https://www.que-ricas.com",
           "sameAs": [
             "https://www.instagram.com/quericas_haddon/",
             "https://www.facebook.com/quericashaddon/",
-            "https://www.yelp.com/biz/que-ricas-haddon-township"
+            "https://www.yelp.com/biz/que-ricas-haddon-township",
+            "https://www.happycow.net/reviews/que-ricas-haddon-township-191931"
           ],
           "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
           "email": "info@que-ricas.com",
@@ -108,12 +147,17 @@ export default {
             "postalCode": "08108",
             "addressCountry": "US"
             },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.911812",
+            "longitude": "-75.053812"
+          },
           "servesCuisine": [ "Venezuelan", "South American" ], 
-          // "priceRange": "$",
+          "priceRange": "$",
           // "paymentAccepted": "Cash, Credit Card",
           // "currenciesAccepted": "USD",
           // "acceptsReservations": "No",
-          "hasMenu": "https://www.que-ricas.com/menu",
+          "menu": "https://www.que-ricas.com/menu",
           "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
         }
       }]
