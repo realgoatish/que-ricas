@@ -117,7 +117,9 @@ export default {
                     "priceCurrency": "USD"
                   }
                 }
-              ],
+              ]
+            },
+            {
               "@type": "MenuSection",
               "name": "Empanadas",
               "hasMenuItem": [
@@ -176,7 +178,9 @@ export default {
                     "priceCurrency": "USD"
                   }
                 }
-              ],
+              ]
+            },
+            {
               "@type": "MenuSection",
               "name": "Arepa Lab",
               "hasMenuItem": [
@@ -270,7 +274,9 @@ export default {
                     "priceCurrency": "USD"
                   }
                 }
-              ],
+              ]
+            },
+            {
               "@type": "MenuSection",
               "name": "Platters",
               "hasMenuItem": [
@@ -461,7 +467,9 @@ export default {
                     ]
                   }
                 },
-              ],
+              ]
+            },
+            {
               "@type": "MenuSection",
               "name": "Churros",
               "hasMenuItem": [
@@ -500,7 +508,9 @@ export default {
                     }
                   ]
                 }
-              ],
+              ]
+            },
+            {
               "@type": "MenuSection",
               "name": "Sides and Extras",
               "hasMenuItem": [
