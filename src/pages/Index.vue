@@ -134,7 +134,8 @@ export default {
           "sameAs": [
             "https://www.instagram.com/quericas_haddon/",
             "https://www.facebook.com/quericashaddon/",
-            "https://www.yelp.com/biz/que-ricas-haddon-township"
+            "https://www.yelp.com/biz/que-ricas-haddon-township",
+            "https://www.happycow.net/reviews/que-ricas-haddon-township-191931"
           ],
           "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
           "email": "info@que-ricas.com",
