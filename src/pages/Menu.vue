@@ -61,7 +61,7 @@ export default {
       script: [{
         type: 'application/ld+json',
         json: {
-          "@context": "http://schema.org", 
+          "@context": "https://schema.org", 
           "@type": "Menu", 
           "image": `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}`,
           "name": "Que Ricas Menu", 
