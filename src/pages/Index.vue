@@ -81,7 +81,7 @@ export default {
         { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.homePageImage.src}` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options' }
+        { name: 'description', content: 'Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, gluten free and vegan options' }
       ],
       script: [{
         type: 'application/ld+json',
