@@ -43,7 +43,7 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 export default {
   metaInfo() {
     return {
-      title: 'Menu',
+      title: 'Our Menu',
       link: [
         {
           rel: 'canonical', href: 'https://wwww.que-ricas.com/menu/'
@@ -104,6 +104,7 @@ export default {
                 "telephone": "(856)-858-8500",
                 "url": "https://www.que-ricas.com",
                 "sameAs": [
+                  "mailto:info@que-ricas.com",
                   "https://www.instagram.com/quericas_haddon/",
                   "https://www.facebook.com/quericashaddon/",
                   "https://www.yelp.com/biz/que-ricas-haddon-township",
@@ -702,7 +703,8 @@ export default {
               },
               "primaryImageOfPage": {
                 "@id": "https://www.que-ricas.com/menu/#primaryimage"
-              }
+              },
+              "description": "Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love"
             }
           ]
         }
