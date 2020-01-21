@@ -104,6 +104,7 @@ export default {
                 "telephone": "(856)-858-8500",
                 "url": "https://www.que-ricas.com",
                 "sameAs": [
+                  "mailto:info@que-ricas.com",
                   "https://www.instagram.com/quericas_haddon/",
                   "https://www.facebook.com/quericashaddon/",
                   "https://www.yelp.com/biz/que-ricas-haddon-township",
