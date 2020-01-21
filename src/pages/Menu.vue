@@ -43,7 +43,7 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 export default {
   metaInfo() {
     return {
-      title: 'Menu',
+      title: 'Que Ricas Menu',
       link: [
         {
           rel: 'canonical', href: 'https://wwww.que-ricas.com/menu/'
