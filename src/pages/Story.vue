@@ -45,7 +45,101 @@ export default {
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood' }
-      ]
+      ],
+      script: [{
+        type: 'application/ld+json',
+        json: {
+          "@context": "https://schema.org", 
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://www.que-ricas.com/#website",
+              "name": "Que Ricas - Venezuelan Street Food in Haddon Township, NJ",
+              "url": "https://www.que-ricas.com/",
+              "publisher": {
+                "@type": "Restaurant", 
+                "@id": "https://www.que-ricas.com/#westmont",
+                "name": "Que Ricas", 
+                "logo": "https://www.que-ricas.com/assets/static/qrNewLogo.e904f79.819f5522c7cd39ba76ef8cafecbbdede.png",
+                "menu": "https://www.que-ricas.com/menu",
+                "image": {
+                  "@type": "ImageObject",
+                  "@id": "https://www.que-ricas.com/#primaryimage"
+              },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday"
+                    ],
+                    "opens": "11:00",
+                    "closes": "20:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Sunday",
+                    "opens": "00:00",
+                    "closes": "00:00"
+                  }
+                ], 
+                "telephone": "(856)-858-8500",
+                "url": "https://www.que-ricas.com",
+                "sameAs": [
+                  "https://www.instagram.com/quericas_haddon/",
+                  "https://www.facebook.com/quericashaddon/",
+                  "https://www.yelp.com/biz/que-ricas-haddon-township",
+                  "https://www.happycow.net/reviews/que-ricas-haddon-township-191931"
+                ],
+                "hasMap": "https://goo.gl/maps/QCdVZf88xPeTprvL9",
+                "email": "info@que-ricas.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "46 A Haddon Avenue",
+                  "addressLocality": "Haddon Township",
+                  "addressRegion": "NJ",
+                  "postalCode": "08108",
+                  "addressCountry": "US"
+                  },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "39.911812",
+                  "longitude": "-75.053812"
+                },
+                "servesCuisine": [ "Venezuelan", "South American" ], 
+                "priceRange": "$",
+                "paymentAccepted": "Cash, Credit Card",
+                "currenciesAccepted": "USD",
+                "acceptsReservations": "No",
+                "description": "Authentic South American fare with a funky vibe.  Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, lunch specials, gluten free and vegan options"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "@id": "https://www.que-ricas.com/story/#primaryimage",
+              "url": `https://www.que-ricas.com${this.$page.metadata.seoImages.storyPageImage.src}`
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://www.que-ricas.com/story/#webpage",
+              "url": "https://www.que-ricas.com/story/",
+              "inLanguage": "en-US",
+              "name": "Que Ricas - Owner Biography",
+              "isPartOf": {
+                "@id": "https://www.que-ricas.com/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://www.que-ricas.com/story/#primaryimage"
+              },
+              "description": "Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.  Local to Haddonfield and Collingswood"
+            }
+          ]
+        }
+      }]
     }
   },
   components: {
