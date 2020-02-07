@@ -46,7 +46,7 @@ export default {
         { property: 'og:type', content: 'website' },
         { property: 'og:description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.' },
         { property: 'og:url', content: 'https://www.que-ricas.com/story/' },
-        { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.storyPageImage.srcset[0]}` },
+        { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.storyPageImage.srcset[0].substr(0,75)}` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { name: 'description', content: 'Get to know Sahar and Dar, the owners of Que Ricas Venezuelan Street Food.' }
