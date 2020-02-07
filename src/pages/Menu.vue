@@ -22,8 +22,16 @@
 query {
   metadata {
     seoImages {
-      homePageImage
-      menuPageImage
+      homePageImage(
+        width: 1200
+        height: 630
+        quality: 90
+      )
+      menuPageImage(
+        width: 1200
+        height: 630
+        quality: 90
+      )
     }
   }
 }
@@ -43,21 +51,21 @@ import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
 export default {
   metaInfo() {
     return {
-      title: 'Our Menu',
+      title: `Haddon Township's Only Venezuelan Street Food Menu`,
       link: [
         {
           rel: 'canonical', href: 'https://wwww.que-ricas.com/menu/'
         }
       ],
       meta: [
-        { property: 'og:title', content: 'Haddon Township Venezuelan Street Food Menu' },
-        { property: 'og:type', content: 'article' },
-        { property: 'og:description', content: 'Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love' },
+        { property: 'og:title', content: `Haddon Township's Only Venezuelan Street Food Menu` },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:description', content: 'Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, gluten free and vegan options' },
         { property: 'og:url', content: 'https://www.que-ricas.com/menu/'},
         { property: 'og:image', content: `https://www.que-ricas.com${this.$page.metadata.seoImages.menuPageImage.src}` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { name: 'description', content: 'Haddon Township Venezuelan Street Food Menu.  Whether you are in Collingswood, Audubon, Cherry Hill, Haddonfield or Pennsauken, Que Ricas has South American street food you will love'}
+        { name: 'description', content: 'Featuring Empanadas, Arepas, Pabellon Bowls, Churros, local specialties, gluten free and vegan options'}
       ],
       script: [{
         type: 'application/ld+json',
