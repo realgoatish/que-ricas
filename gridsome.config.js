@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Que Ricas',
-  titleTemplate: 'Que Ricas - %s',
+  titleTemplate: '%s - Que Ricas',
   siteUrl: 'https://www.que-ricas.com',
   permalinks: {
     trailingSlash: true
