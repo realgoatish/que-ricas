@@ -35,8 +35,6 @@ query {
   metadata {
     seoImages {
       homePageImage(
-        width: 1200
-        height: 630
         quality: 90
       )
     }
