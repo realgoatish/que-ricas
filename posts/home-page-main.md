@@ -2,6 +2,7 @@
 title: Honestly Delicious
 excerpt: content for homepage
 date: 2019-07-21T03:48:06.835+00:00
+honestlyDeliciousImage: "./../uploads/honestly-delicious.jpeg"
 
 ---
 <br>
