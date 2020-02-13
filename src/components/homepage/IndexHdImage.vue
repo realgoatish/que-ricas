@@ -1,7 +1,7 @@
 <template lang="pug">
   figure
     g-image(
-      :src="$static.post.honestlyDeliciousImage"
+      :src="$static.homePageContent.image"
       alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
     )
 </template>
@@ -9,8 +9,8 @@
 <static-query>
 
 query {
-  post (path: "/posts/home-page-main"){
-    honestlyDeliciousImage(
+  homePageContent (path: "/markdowns/home-page/content"){
+    image(
       width: 500
       height: 188
       quality: 100
@@ -41,8 +41,4 @@ div.v-card__title.v-card__title--primary > figure {
   margin: 0 auto;
 }
 
-/* div.v-card__title.v-card__title--primary > figure > img {
-  width: auto;
-  height: auto;
-} */
 </style>
