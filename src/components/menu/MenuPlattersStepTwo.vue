@@ -10,7 +10,9 @@
       h3 {{ post.node.itemName }}
       p {{ post.node.description }}
       figure(v-if="post.node.itemName === 'Hangover'")
-        a(href="https://www.que-ricas.com/assets/static/hangover-bowl.1b91758.54dbf4efe6f2dfbbd5930c10fb1a3748.jpeg")
+        a(
+          :href="$static.metadata.seoImages.menuPageImage.src"
+          )
           g-image(alt="Beef Hangover Platter" src="~/../uploads/hangover-bowl.jpeg" width="120" height="120" quality="90" fit="outside")
         figcaption #[strong Protein:] Beef #[br] #[strong Style:] Hangover
 
@@ -36,6 +38,13 @@ query {
         itemName
         description
       }
+    }
+  }
+  metadata {
+    seoImages {
+      menuPageImage(
+        quality: 90
+      )
     }
   }
 }
