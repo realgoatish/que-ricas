@@ -15,43 +15,43 @@
       )
 </template>
 
+
 <script>
 
 export default {
     name: 'IndexCarousel',
     data () {
-        return {
+      return {
         carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/empanada-basket.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/rice-beans-beef-plantains.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/loaded-arepas.jpg'],
+        // carouselImages: ['https://res.cloudinary.com/caribou-images/image/upload/w_1300,h_1300,c_fill,q_auto,f_auto/shaggy-arepa.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/w_900,h_800,c_fill,q_auto,f_auto/shredded-chicken-caracas-platter.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/w_1300,h_1300,c_fill,q_auto,f_auto/graffiti-blt-arepa.jpg', 'https://res.cloudinary.com/caribou-images/image/upload/w_1300,h_1300,c_fill,q_auto,f_auto/arepa-tostada.jpg'],
         currentNumber: 0,
         timer: null
       }
     },
-
     async created() {
-        this.startRotation();
+      this.startRotation();
     },
-
     methods: {
-        startRotation: function() {
-            this.timer = setInterval(this.next, 3000);
-        },
+      startRotation: function() {
+        this.timer = setInterval(this.next, 3000);
+      },
 
-        stopRotation: function() {
-            clearTimeout(this.timer);
-            this.timer = null;
-        },
+      stopRotation: function() {
+        clearTimeout(this.timer);
+        this.timer = null;
+      },
 
-        next: function() {
-          if (this.currentNumber === (this.carouselImages.length - 1)) {
-            this.currentNumber = 0
+      next: function() {
+        if (this.currentNumber === (this.carouselImages.length - 1)) {
+          this.currentNumber = 0
         } else {
-            this.currentNumber += 1            
+          this.currentNumber += 1            
         }
       },
     },
     computed: {
     	currentImage: function() {
-      	return this.carouselImages[Math.abs(this.currentNumber) % this.carouselImages.length];
+        return this.carouselImages[Math.abs(this.currentNumber) % this.carouselImages.length];
       }
     }
 }
