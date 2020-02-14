@@ -1,7 +1,7 @@
 <template lang="pug">
   figure
     g-image(
-      :src="$static.homePageContent.image"
+      :src="$static.homePageContent.honestlyDeliciousImage"
       alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
     )
 </template>
@@ -10,7 +10,7 @@
 
 query {
   homePageContent (path: "/markdowns/home-page/content"){
-    image(
+    honestlyDeliciousImage(
       width: 500
       height: 188
       quality: 100
