@@ -1,13 +1,13 @@
 <template lang="pug">
   div(
-    v-html="$static.post.content"
+    v-html="$static.homePageContent.content"
     class="text-content-styles"
   )
 </template>
 
 <static-query>
 query {
-  post (path: "/posts/home-page-main"){
+  homePageContent (path: "/markdowns/home-page/content"){
     content
   }
 }

@@ -1,12 +1,26 @@
 <template lang="pug">
   figure
     g-image(
-      src="~/../uploads/honestly-delicious.jpg"
+      :src="$static.homePageContent.honestlyDeliciousImage"
       alt="Honestly Delicious.  Local.  Better ingredients.  Authentic."
-      quality="100"
-      fit="outside"
     )
 </template>
+
+<static-query>
+
+query {
+  homePageContent (path: "/markdowns/home-page/content"){
+    honestlyDeliciousImage(
+      width: 500
+      height: 188
+      quality: 100
+      fit: outside
+    )
+  }
+}
+
+</static-query>
+
 
 <script>
 
@@ -26,4 +40,5 @@ div.v-card__title.v-card__title--primary > figure > img {
 div.v-card__title.v-card__title--primary > figure {
   margin: 0 auto;
 }
+
 </style>

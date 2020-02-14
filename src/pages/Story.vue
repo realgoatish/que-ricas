@@ -18,8 +18,6 @@ query {
   metadata {
     seoImages {
       storyPageImage(
-        width: 1200
-        height: 630
         quality: 90
         fit: contain
       )

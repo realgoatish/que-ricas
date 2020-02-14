@@ -2,8 +2,13 @@
   v-card
     v-card-title(primary-title)
       div
+        //- g-image(
+        //-   src="~/../uploads/v-dar-elsie.jpeg"
+        //-   id="dar-featured-image-class"
+        //-   alt="Sahar's parents, Dar and Elsie Soleymani"
+        //- )
         g-image(
-          src="~/../uploads/v-dar-elsie.jpeg"
+          :src="$static.post.image"
           id="dar-featured-image-class"
           alt="Sahar's parents, Dar and Elsie Soleymani"
         )
@@ -17,6 +22,12 @@
 <static-query>
 query {
   post (path: "/posts/story-dar"){
+    image(
+      width: 480
+      height: 480
+      quality: 90
+      fit: contain
+    )
     content
   }
 }
