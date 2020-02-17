@@ -272,6 +272,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Rica",
                       "description": "shredded beef, sweet plantain, black beans and cotija cheese",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "9.50",
@@ -292,6 +293,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Shaggy",
                       "description": "shredded chicken, sweet plantain, fried queso blanco, pico de gallo, cilantro mojo",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "9.50",
@@ -302,6 +304,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Curvy Queen",
                       "description": "Venezuela's favorite - shredded chicken & avocado salad, sweet plantains, smoked gouda",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "9.50",
@@ -312,6 +315,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Cartel",
                       "description": "chorizo, carmelized peppers, onions, smoked gouda",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "9.50",
@@ -322,6 +326,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Jersey",
                       "description": "pork roll, fried cage-free egg, melted cotija cheese",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "8",
@@ -332,6 +337,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Elsita",
                       "description": "scrambled eggs with tomato and onion topped with cotija cheese",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "8",
@@ -342,6 +348,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Black Betty",
                       "description": "home-made black bean burger with sweet plantains, guasacaca, vegan",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "8.50",
@@ -352,6 +359,7 @@ export default {
                       "@type": "MenuItem",
                       "name": "Dario",
                       "description": "falafel, hummus, sweet pepper cabbage slaw, pico de gallo, vegan",
+                      "suitableForDiet": "https://schema.org/GlutenFreeDiet",
                       "offers": {
                         "@type": "Offer",
                         "price": "8.50",

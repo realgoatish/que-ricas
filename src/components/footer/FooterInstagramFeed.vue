@@ -16,7 +16,7 @@
             flat
             tile
             target="_blank"
-            rel="noopener"
+            rel="nofollow noopener noreferrer"
             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
             aria-label="Instagram Image.  Click to visit in a new Tab"
           )
