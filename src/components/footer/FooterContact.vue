@@ -10,13 +10,13 @@
       class="orange--text text--darken-3 pt-3"
     )
       strong(
-        v-html="$static.post.excerpt"
+        v-html="$static.footerContent.title"
         style="font-size:20px;"
       )
       br
       br
       div(
-        v-html="$static.post.content"
+        v-html="$static.footerContent.content"
         style="font-size:17px;"
       )
       LazyHydrate(when-visible)
@@ -29,7 +29,7 @@
 <static-query>
 
 query {
-  post (path: "/posts/footer-contact-info"){
+  footerContent (path: "/markdowns/footer/contact-info"){
     excerpt
     content
   }
