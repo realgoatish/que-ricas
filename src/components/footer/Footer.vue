@@ -11,7 +11,7 @@
 
 
         v-flex(xs12 md4 order-md2 order-xs3)
-          v-img(alt="Que Ricas Logo" :src="logo" :width="width" class="mx-auto")
+          v-img(:alt="$static.footerIcons.accessibilityCaption" :src="$static.footerIcons.image" width="300px" class="mx-auto")
           v-card(flat tile)
             v-card-text &copy;2019 - #[strong Que Ricas]
           
@@ -21,6 +21,22 @@
             FooterInstagramFeed
 </template>
 
+<static-query>
+
+query {
+  footerIcons (path: "/markdowns/footer/icons/logo"){
+    image(
+      width: 480
+      height: 480
+      quality: 100
+      fit: contain
+    )
+    accessibilityCaption
+  }
+}
+
+</static-query>
+
 <script>
 
 import FooterContact from '~/components/footer/FooterContact.vue';
@@ -29,12 +45,6 @@ import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
     name: 'Footer',
-    data () {
-      return {
-        logo: "https://res.cloudinary.com/caribou-images/image/upload/q_auto,f_auto/que-ricas-logo_zzg9p4.png",
-        width: "300px" 
-      }
-    },
     components: {
       LazyHydrate,
       FooterContact,
