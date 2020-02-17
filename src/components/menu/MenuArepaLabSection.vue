@@ -5,7 +5,8 @@
       h2(class="menu-section-header") Arepa Lab
       article
         div(class="menu-section-header")
-          p The staple of Venezuelan cuisine.  These fluffy, hand-made corn arepas are GF, made daily with only three ingredients, and are stuffed with dynamite fillings.
+          p The staple of Venezuelan cuisine.  These fluffy, hand-made corn arepas are GF, made daily with only three ingredients, and are stuffed with dynamite fillings. 
+          p #[strong #[em ***Please note that the Sombrero contains lightly breaded steak and is not GF]]
       article
         div(
           v-for="(number, index) in this.dataIndexArray"
