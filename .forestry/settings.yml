@@ -14,6 +14,11 @@ sections:
   label: Home Page
   create: documents
   match: "*.md"
+- type: directory
+  path: markdowns/footer
+  label: Footer
+  create: documents
+  match: "*.md"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
