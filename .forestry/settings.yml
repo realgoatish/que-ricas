@@ -19,6 +19,11 @@ sections:
   label: Footer
   create: documents
   match: "*.md"
+- type: directory
+  path: markdowns/footer/icons
+  label: Footer Icons
+  create: documents
+  match: "*.md"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
