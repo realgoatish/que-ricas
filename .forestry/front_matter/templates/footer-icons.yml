@@ -1,0 +1,19 @@
+---
+label: Footer Icons
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: file
+  name: image
+  label: image
+- type: text
+  name: link
+  label: link
+- type: text
+  name: accessibilityCaption
+  label: Accessibility Caption (for screen readers)
