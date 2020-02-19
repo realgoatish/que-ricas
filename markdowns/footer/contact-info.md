@@ -13,9 +13,11 @@ gmailAccessibilityCaption: Click to send an email to Que Ricas
 Haddon Township, New Jersey 08108](https://goo.gl/maps/QCdVZf88xPeTprvL9)
 
 
-Monday - Saturday 11 AM - 8 PM
+Tuesday - Saturday 11 AM - 8 PM
 
-Closed Sunday
+Sunday 11 AM - 6 PM
+
+Closed Monday
 
 (856)-858-8500
 
