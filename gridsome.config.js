@@ -58,6 +58,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'markdowns/our-story/*.md',
+        typeName: 'OurStoryContent',
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+        }
+      }
+    },
+    {
       use: '@gridsome/plugin-critical',
       options: {
         paths: ['/'],
