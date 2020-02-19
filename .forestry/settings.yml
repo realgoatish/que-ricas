@@ -9,11 +9,20 @@ sections:
   label: Posts
   create: documents
   match: "**/*.md"
+- type: heading
+  label: Pages
 - type: directory
   path: markdowns/home-page
   label: Home Page
   create: documents
   match: "*.md"
+- type: directory
+  path: markdowns/our-story
+  label: Our Story Page
+  create: documents
+  match: "*.md"
+- type: heading
+  label: Global Layout
 - type: directory
   path: markdowns/footer
   label: Footer
