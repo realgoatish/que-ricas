@@ -4,21 +4,50 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: posts
-  label: Posts
-  create: documents
-  match: "**/*.md"
 - type: heading
-  label: Pages
+  label: Home Page
 - type: directory
   path: markdowns/home-page
-  label: Home Page
+  label: Welcome to Que Ricas
+  create: documents
+  match: "*.md"
+- type: heading
+  label: Our Story Page
+- type: directory
+  path: markdowns/our-story
+  label: Biographical Content
+  create: documents
+  match: "*.md"
+- type: heading
+  label: Menu Page
+- type: directory
+  path: markdowns/menu/starters
+  label: Starters
   create: documents
   match: "*.md"
 - type: directory
-  path: markdowns/our-story
-  label: Our Story Page
+  path: markdowns/menu/empanadas
+  label: Empanadas
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/arepa-lab
+  label: Arepa Lab
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/platters
+  label: Platters
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/churros
+  label: Churros
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/sides-and-extras
+  label: Sides and Extras
   create: documents
   match: "*.md"
 - type: heading
