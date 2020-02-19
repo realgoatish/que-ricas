@@ -1,6 +1,12 @@
 ---
-title: CONTACT
-excerpt: Footer Contact Info
+title: Contact Info
+excerpt: CONTACT
+facebookIcon: ./../../uploads/iconFb.svg
+facebookLink: https://www.facebook.com/quericashaddon/
+facebookAccessibilityCaption: Click to visit Que Ricas on Facebook
+gmailIcon: ./../../uploads/iconGmail.svg
+gmailLink: "mailto: info@que-ricas.com"
+gmailAccessibilityCaption: Click to send an email to Que Ricas
 
 ---
 [46 A Haddon Avenue  
