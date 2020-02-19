@@ -11,9 +11,14 @@
 
 
         v-flex(xs12 md4 order-md2 order-xs3)
-          v-img(:alt="$static.footerIcons.accessibilityCaption" :src="$static.footerIcons.image" width="300px" class="mx-auto")
+          v-img(
+            :alt="$static.footerContent.logoAccessibilityCaption"
+            :src="$static.footerContent.logoImage"
+            width="300px"
+            class="mx-auto"
+          )
           v-card(flat tile)
-            v-card-text &copy;2019 - #[strong Que Ricas]
+            v-card-text(v-html="$static.footerContent.content")
           
       
         v-flex(xs12 md4 order-md3 order-xs2)
@@ -24,14 +29,15 @@
 <static-query>
 
 query {
-  footerIcons (path: "/markdowns/footer/icons/logo"){
-    image(
+  footerContent (path: "/markdowns/footer/logo"){
+    logoImage(
       width: 480
       height: 480
       quality: 100
       fit: contain
     )
-    accessibilityCaption
+    logoAccessibilityCaption
+    content
   }
 }
 

@@ -10,7 +10,7 @@
       class="orange--text text--darken-3 pt-3"
     )
       strong(
-        v-html="$static.footerContent.title"
+        v-html="$static.footerContent.excerpt"
         style="font-size:20px;"
       )
       br
