@@ -3,12 +3,12 @@
     class="white--text"
     flat
     icon
-    :aria-label="$static.footerIcons.accessibilityCaption"
-    :href="$static.footerIcons.link"
+    :aria-label="$static.footerContent.instagramAccessibilityCaption"
+    :href="$static.footerContent.instagramLink"
     target="_blank"
     rel="nofollow noopener noreferrer"
   >
-    <img :src="$static.footerIcons.image.src" />
+    <img :src="$static.footerContent.instagramIcon.src" />
   </v-btn>
 
 </template>
@@ -16,15 +16,15 @@
 <static-query>
 
 query {
-  footerIcons (path: "/markdowns/footer/icons/ig"){
-    image(
+  footerContent (path: "/markdowns/footer/instagram-feed"){
+    instagramIcon(
       width: 24
       height: 24
       quality: 10
       fit: contain
     )
-    link
-    accessibilityCaption
+    instagramLink
+    instagramAccessibilityCaption
   }
 }
 

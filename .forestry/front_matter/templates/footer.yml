@@ -1,5 +1,5 @@
 ---
-label: Footer
+label: Footer Content
 hide_body: false
 fields:
 - type: text
@@ -8,3 +8,36 @@ fields:
 - type: textarea
   name: excerpt
   label: excerpt
+- type: file
+  name: Facebook Icon
+  label: Facebook Icon
+- type: text
+  name: Facebook Link
+  label: Facebook Link
+- type: text
+  name: Facebook Icon Accessibility Caption (for screen readers)
+  label: Facebook Icon Accessibility Caption (for screen readers)
+- type: file
+  name: Gmail Icon
+  label: Gmail Icon
+- type: text
+  name: Gmail Link
+  label: Gmail Link
+- type: text
+  name: Gmail Icon Accessibility Caption (for screen readers)
+  label: Gmail Icon Accessibility Caption (for screen readers)
+- type: file
+  name: Instagram Icon
+  label: Instagram Icon
+- type: text
+  name: Instagram Link
+  label: Instagram Link
+- type: text
+  name: Instagram Icon Accessibility Caption (for screen readers)
+  label: Instagram Icon Accessibility Caption (for screen readers)
+- type: file
+  name: Logo Image
+  label: Logo Image
+- type: text
+  name: Logo Image Accessibility Caption (for screen readers)
+  label: Logo Image Accessibility Caption (for screen readers)
