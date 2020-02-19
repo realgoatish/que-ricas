@@ -1,7 +1,10 @@
 <template lang="pug">
   v-flex(xs12)
     v-toolbar(flat color="white" id="igFeedTitleParent")
-      v-toolbar-title(class="orange--text text--darken-3") FOLLOW US ON INSTAGRAM
+      v-toolbar-title(
+        class="orange--text text--darken-3"
+        v-html="$static.footerContent.excerpt"
+        )
       v-spacer
       LazyHydrate(when-visible)
         FooterIgIcon
@@ -40,7 +43,11 @@ query {
       }
     }
   }
+  footerContent (path: "/markdowns/footer/instagram-feed"){
+    excerpt
+  }
 }
+
 
 </static-query>
 
