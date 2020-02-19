@@ -2,18 +2,13 @@
   v-card
     v-card-title(primary-title)
       div
-        //- g-image(
-        //-   src="~/../uploads/sahar-our-story.jpeg"
-        //-   id="sahar-featured-image-class"
-        //-   alt="Que Ricas Founder and Head Chef, Sahar Soleymani"
-        //- )
         g-image(
-          :src="$static.post.image"
+          :src="$static.ourStoryContent.image.src"
           id="sahar-featured-image-class"
           alt="Que Ricas Founder and Head Chef, Sahar Soleymani"
         )
         div(
-          v-html="$static.post.content"
+          v-html="$static.ourStoryContent.content"
           class="story-text-content-styles"
         )
     .title.mb-3
@@ -21,7 +16,7 @@
 
 <static-query>
 query {
-  post (path: "/posts/story-sahar"){
+  ourStoryContent (path: "/markdowns/our-story/sahar"){
     image(
       width: 480
       height: 480
