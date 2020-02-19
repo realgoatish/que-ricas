@@ -2,6 +2,10 @@
 label: Menu Item
 hide_body: false
 fields:
+- type: number
+  name: Order of Appearance
+  label: Order of Appearance
+  hidden: true
 - type: text
   name: Item Name
   label: Item Name
@@ -12,8 +16,8 @@ fields:
   name: Description
   label: Description
 - type: file
-  name: Item Image
-  label: Item Image
+  name: Product Image
+  label: Product Image
 - type: file
   name: Gluten Free Image
   label: Gluten Free Image
