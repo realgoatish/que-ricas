@@ -24,18 +24,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'posts/**/*.md',
-        typeName: 'Post',
-        resolveAbsolutePaths: true,
-        remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
         path: 'markdowns/home-page/*.md',
         typeName: 'HomePageContent',
         resolveAbsolutePaths: true,
@@ -62,6 +50,18 @@ module.exports = {
       options: {
         path: 'markdowns/our-story/*.md',
         typeName: 'OurStoryContent',
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'markdowns/menu/**/*.md',
+        typeName: 'MenuContent',
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: '_blank',
