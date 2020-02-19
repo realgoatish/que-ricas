@@ -2,7 +2,9 @@
 
   v-card
     v-card-title(primary-title)
-      h2(class="menu-section-header") Starters
+      h2(
+        class="menu-section-header"
+      ) Starters
       article
         div(
           v-for="(item, index) in $static.allMenuContent.edges"
@@ -27,7 +29,7 @@ query {
           eq: "markdowns/menu/starters"
         }
       }
-    }, sortBy: "name", order: ASC) {
+    }, sortBy: "number", order: ASC) {
     edges {
       node {
         itemName
