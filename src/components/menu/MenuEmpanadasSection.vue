@@ -2,20 +2,23 @@
 
   v-card
     v-card-title(primary-title)
-      h2(class="menu-section-header") Empanadas
+      h2(
+        v-html="$static.menuContent.menuSectionTitle"
+        class="menu-section-header"
+        )
       article
         div(class="menu-section-header")
-          p Naturally GF.  Served with cilantro mojo on the side.  Ask about our daily empanada specials!
+          p(v-html="$static.menuContent.menuSectionPrimarySubtext")
 
       article
         div(
-          v-for="(post, index) in $static.allGoogleSheet.edges"
+          v-for="(item, index) in $static.allMenuContent.edges"
           :key="index"
           class="menu-item-text-content-styles"
         )
-          h3 {{ post.node.itemName }}
-          h4 {{ post.node.price }}
-          p {{ post.node.description }}
+          h3 {{ item.node.itemName }}
+          h4 {{ item.node.price }}
+          p {{ item.node.description }}
     .title.mb-3
             
 
@@ -24,17 +27,18 @@
 <static-query>
 
 query {
-  allGoogleSheet(
-    filter: {
-      menuSection: {
-        in: [
-          "Empanadas"
-        ]
+  menuContent (path: "/markdowns/menu/empanadas/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+  }
+  allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/empanadas"
+        }
       }
-    },
-    order: ASC
-  )
-  {
+    }, sortBy: "number", skip: 1, order: ASC) {
     edges {
       node {
         itemName

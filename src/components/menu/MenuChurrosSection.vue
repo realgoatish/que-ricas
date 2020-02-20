@@ -2,16 +2,38 @@
 
   v-card
     v-card-title(primary-title)
-      h2(class="menu-section-header") Churros
-      h2(class="sub-header-text") Step One: Choose Homemade Churro (vegan)
+      h2(
+        v-html="$static.menuContent.menuSectionTitle"
+        class="menu-section-header"
+      )
+      h2(
+        v-html="$static.menuContent.menuStepOneTitle"
+        class="sub-header-text"
+      )
       MenuChurrosStepOne
-      h2(class="sub-header-text" id="churros-step-two-header") Step Two: Choose Dipping Sauce (included)
+      h2(
+        v-html="$static.menuContent.menuStepTwoTitle"
+        class="sub-header-text"
+        id="churros-step-two-header"
+      )
       MenuChurrosStepTwo
 
     .title.mb-3
             
 
 </template>
+
+<static-query>
+
+query {
+  menuContent (path: "/markdowns/menu/churros/headers") {
+    menuSectionTitle
+    menuStepOneTitle
+    menuStepTwoTitle
+  }
+}
+
+</static-query>
 
 <script>
 

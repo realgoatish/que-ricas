@@ -2,15 +2,18 @@
 
   v-card
     v-card-title(primary-title)
-      h2(class="menu-section-header") Sides & Extras
+      h2(
+        v-html="$static.menuContent.menuSectionTitle"
+        class="menu-section-header"
+      )
       article
         div(
-          v-for="(post, index) in $static.allGoogleSheet.edges"
+          v-for="(item, index) in $static.allMenuContent.edges"
           :key="index"
           class="menu-item-text-content-styles"
         )
-          h3 {{ post.node.itemName }}
-          h4 {{ post.node.price }}
+          h3 {{ item.node.itemName }}
+          h4 {{ item.node.price }}
     .title.mb-3
             
 
@@ -19,16 +22,17 @@
 <static-query>
 
 query {
-  allGoogleSheet(
-    filter: {
-      menuSection: {
-        in: [
-          "Sides & Extras"
-        ]
+  menuContent (path: "/markdowns/menu/sides-and-extras/headers") {
+    menuSectionTitle
+  }
+  allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/sides-and-extras"
+        }
       }
-    }, order: ASC
-  ) 
-  {
+    }, sortBy: "number", skip: 1, order: ASC) {
     edges {
       node {
         itemName
