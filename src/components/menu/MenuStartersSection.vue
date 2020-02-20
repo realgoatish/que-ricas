@@ -3,7 +3,7 @@
   v-card
     v-card-title(primary-title)
       h2(
-        v-html="$static.menuContent.itemName"
+        v-html="$static.menuContent.menuSectionTitle"
         class="menu-section-header"
       )
       article
@@ -23,6 +23,9 @@
 <static-query>
 
 query {
+  menuContent (path: "/markdowns/menu/starters/headers") {
+    menuSectionTitle
+  }
   allMenuContent(
     filter: { 
       fileInfo: {
@@ -38,9 +41,6 @@ query {
         description
       }
     }
-  }
-  menuContent (path: "/markdowns/menu/starters/headers") {
-    itemName
   }
 }
 
