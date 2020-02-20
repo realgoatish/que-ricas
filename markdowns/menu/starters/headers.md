@@ -1,2 +1,2 @@
 ---
-itemName: Starters
+menuSectionTitle: Starters
