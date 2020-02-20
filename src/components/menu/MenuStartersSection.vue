@@ -3,8 +3,9 @@
   v-card
     v-card-title(primary-title)
       h2(
+        v-html="$static.menuContent.itemName"
         class="menu-section-header"
-      ) Starters
+      )
       article
         div(
           v-for="(item, index) in $static.allMenuContent.edges"
@@ -29,7 +30,7 @@ query {
           eq: "markdowns/menu/starters"
         }
       }
-    }, sortBy: "number", order: ASC) {
+    }, sortBy: "number", skip: 1, order: ASC) {
     edges {
       node {
         itemName
@@ -37,6 +38,9 @@ query {
         description
       }
     }
+  }
+  menuContent (path: "/markdowns/menu/starters/headers") {
+    itemName
   }
 }
 
