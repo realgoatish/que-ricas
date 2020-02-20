@@ -33,6 +33,12 @@ fields:
 - type: file
   name: Product Image
   label: Product Image
+- type: text
+  name: Product Image Protein
+  label: Product Image Protein
+- type: text
+  name: Product Image Style
+  label: Product Image Style
 - type: file
   name: Gluten Free Image
   label: Gluten Free Image
