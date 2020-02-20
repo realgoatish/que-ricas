@@ -5,8 +5,8 @@
       class="menu-item-text-content-styles"
       id="churros-two-text-content-styles"
     )
-      h3 {{ $static.allGoogleSheet.edges[0].node.itemName }}
-      h3 {{ $static.allGoogleSheet.edges[1].node.itemName }}
+      h3 {{ $static.allMenuContent.edges[0].node.itemName }}
+      h3 {{ $static.allMenuContent.edges[1].node.itemName }}
             
 
 </template>
@@ -14,16 +14,14 @@
 <static-query>
 
 query {
-  allGoogleSheet(
-    filter: {
-      subHeader: {
-        in: [
-          "Step Two: Choose Dipping Sauce (included)"
-        ]
+  allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/churros"
+        }
       }
-    }
-  ) 
-  {
+    }, sortBy: "number", skip: 4, order: ASC) {
     edges {
       node {
         itemName

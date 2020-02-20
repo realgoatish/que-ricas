@@ -2,19 +2,19 @@
 
   article(id="menu-content-wrapper")
     div(
-      v-for="(post, index) in $static.allGoogleSheet.edges"
+      v-for="(item, index) in $static.allMenuContent.edges"
       :key="index"
       class="menu-item-text-content-styles"
       id="platters-step-two-grid"
     )
-      h3 {{ post.node.itemName }}
-      p {{ post.node.description }}
-      figure(v-if="post.node.itemName === 'Hangover'")
+      h3 {{ item.node.itemName }}
+      p {{ item.node.description }}
+      figure(v-if="item.node.productImage")
         a(
-          :href="$static.metadata.seoImages.menuPageImage.src"
+          :href="item.node.productImage.src"
           )
-          g-image(alt="Beef Hangover Platter" src="~/../uploads/hangover-bowl.jpeg" width="120" height="120" quality="90" fit="outside")
-        figcaption #[strong Protein:] Beef #[br] #[strong Style:] Hangover
+          g-image(:alt="item.node.itemName" :src="item.node.productImage")
+        figcaption #[strong Protein:] {{ item.node.productImageProtein }} #[br] #[strong Style:] {{ item.node.productImageStyle }}
 
             
 
@@ -23,28 +23,27 @@
 <static-query>
 
 query {
-  allGoogleSheet(
-    filter: {
-      subHeader: {
-        in: [
-          "Step Two: Choose Your Style"
-        ]
+  allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/platters"
+        }
       }
-    }, order: ASC
-  ) 
-  {
+    }, sortBy: "number", skip: 7, limit: 4, order: ASC) {
     edges {
       node {
         itemName
         description
+        productImage(
+          width: 120
+          height: 120
+          quality: 90
+          fit: outside
+        )
+        productImageProtein
+        productImageStyle
       }
-    }
-  }
-  metadata {
-    seoImages {
-      menuPageImage(
-        quality: 90
-      )
     }
   }
 }

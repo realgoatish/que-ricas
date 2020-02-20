@@ -2,14 +2,14 @@
 
   article
     div(
-      v-for="(post, index) in $static.allGoogleSheet.edges"
+      v-for="(item, index) in $static.allMenuContent.edges"
       :key="index"
       class="menu-item-text-content-styles"
       id="churros-one-text-content-styles"
     )
-      h3 {{ post.node.itemName }}
-      h4 {{ post.node.price }}
-      p {{ post.node.description }}
+      h3 {{ item.node.itemName }}
+      h4 {{ item.node.price }}
+      p {{ item.node.description }}
             
 
 </template>
@@ -17,21 +17,19 @@
 <static-query>
 
 query {
-  allGoogleSheet(
-    filter: {
-      subHeader: {
-        in: [
-          "Step One: Choose Homemade Churro (vegan)"
-        ]
+  allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/churros"
+        }
       }
-    }
-  ) 
-  {
+    }, sortBy: "number", skip: 1, limit: 3, order: ASC) {
     edges {
       node {
         itemName
-        description
         price
+        description
       }
     }
   }

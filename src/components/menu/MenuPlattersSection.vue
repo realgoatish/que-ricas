@@ -2,19 +2,42 @@
 
   v-card
     v-card-title(primary-title)
-      h2(class="menu-section-header") Platters
+      h2(
+        v-html="$static.menuContent.menuSectionTitle"
+        class="menu-section-header"
+      )
       article
         div(class="menu-section-header")
-          p Customize your own delicious platter with your choice of protein and style!
-      h2(class="sub-header-text") Step One: Choose Your Protein
+          p(v-html="$static.menuContent.menuSectionPrimarySubtext")
+      h2(
+        v-html="$static.menuContent.menuStepOneTitle"
+        class="sub-header-text"
+      )
       MenuPlattersStepOne
-      h2(class="sub-header-text" id="platters-step-two-header") Step Two: Choose Your Style
+      h2(
+        v-html="$static.menuContent.menuStepTwoTitle"
+        class="sub-header-text"
+        id="platters-step-two-header"
+      )
       MenuPlattersStepTwo
 
     .title.mb-3
             
 
 </template>
+
+<static-query>
+
+query {
+  menuContent (path: "/markdowns/menu/platters/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+    menuStepOneTitle
+    menuStepTwoTitle
+  }
+}
+
+</static-query>
 
 <script>
 
