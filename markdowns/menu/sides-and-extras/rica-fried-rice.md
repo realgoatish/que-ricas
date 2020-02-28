@@ -1,4 +1,6 @@
 ---
-number: 2
-itemName: Rice Fried Rice
-price: $3.50
+number: "2"
+itemName: Rica Fried Rice
+price: "$3.50"
+
+---
