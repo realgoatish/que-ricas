@@ -1,4 +1,6 @@
 ---
-number: 3
+number: "3"
 itemName: Milanesa (fried steak)
-price: $13.50
+price: "$14.50"
+
+---
