@@ -1,4 +1,6 @@
 ---
-number: 10
+number: "10"
 itemName: Cozy
-description: rica fried rice with tomato, peppers and onions with sweet plantains on the side
+description: rica fried rice with peppers and onions with sweet plantains on the side
+
+---
