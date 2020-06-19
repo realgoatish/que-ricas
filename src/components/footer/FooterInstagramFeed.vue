@@ -32,24 +32,7 @@
 
 </template>
 
-<static-query>
-query {
-  allInstagramPhoto(limit: 6, order: ASC) {
-    edges {
-      node {
-        shortcode
-        display_url
-        accessibility_caption
-      }
-    }
-  }
-  footerContent (path: "/markdowns/footer/instagram-feed"){
-    excerpt
-  }
-}
 
-
-</static-query>
 
 <script>
 

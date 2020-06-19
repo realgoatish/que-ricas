@@ -46,7 +46,7 @@ query {
 <script>
 
 import FooterContact from '~/components/footer/FooterContact.vue';
-import FooterInstagramFeed from '~/components/footer/FooterInstagramFeed.vue';
+// import FooterInstagramFeed from '~/components/footer/FooterInstagramFeed.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
@@ -54,7 +54,7 @@ export default {
     components: {
       LazyHydrate,
       FooterContact,
-      FooterInstagramFeed
+      // FooterInstagramFeed
     }
 }
 
