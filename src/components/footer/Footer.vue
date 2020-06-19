@@ -21,9 +21,9 @@
             v-card-text(v-html="$static.footerContent.content")
           
       
-        v-flex(xs12 md4 order-md3 order-xs2)
-          LazyHydrate(when-idle)
-            FooterInstagramFeed
+        //- v-flex(xs12 md4 order-md3 order-xs2)
+        //-   LazyHydrate(when-idle)
+        //-     FooterInstagramFeed
 </template>
 
 <static-query>
@@ -46,7 +46,7 @@ query {
 <script>
 
 import FooterContact from '~/components/footer/FooterContact.vue';
-import FooterInstagramFeed from '~/components/footer/FooterInstagramFeed.vue';
+// import FooterInstagramFeed from '~/components/footer/FooterInstagramFeed.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
@@ -54,7 +54,7 @@ export default {
     components: {
       LazyHydrate,
       FooterContact,
-      FooterInstagramFeed
+      // FooterInstagramFeed
     }
 }
 
