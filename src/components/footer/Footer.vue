@@ -21,9 +21,9 @@
             v-card-text(v-html="$static.footerContent.content")
           
       
-        v-flex(xs12 md4 order-md3 order-xs2)
-          LazyHydrate(when-idle)
-            FooterInstagramFeed
+        //- v-flex(xs12 md4 order-md3 order-xs2)
+        //-   LazyHydrate(when-idle)
+        //-     FooterInstagramFeed
 </template>
 
 <static-query>
