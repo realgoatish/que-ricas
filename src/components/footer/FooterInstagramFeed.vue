@@ -33,6 +33,7 @@
 </template>
 
 <static-query>
+
 query {
   allInstagramPhoto(limit: 6, order: ASC) {
     edges {
@@ -47,7 +48,6 @@ query {
     excerpt
   }
 }
-
 
 </static-query>
 
