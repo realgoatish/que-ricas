@@ -29,41 +29,38 @@ module.exports = function (api) {
 
     const INSTAGRAM_URL = 'https://www.instagram.com/';
 
-   function parseInstragramProfileHtml(html) {
-     const $ = cheerio.load(html);
-    //  console.info($)
-     const jsonData = $('html > body > script')
-       .get(0)
-       .children[0].data.replace(/window\._sharedData\s?=\s?{/, '{')
-       .replace(/;$/g, '');
-    //  console.info(`!!!!!!!!!!!!!!!jsonData AFTER REPLACE OPERATION ${jsonData}`)
-    //  console.info(`!!!!!!!!! PARSE THE JSON AND GET THE PROFILE PAGE ${JSON.parse(jsonData).entry_data.ProfilePage[0]}`)
-     return JSON.parse(jsonData).entry_data.ProfilePage[0];
+   function parseInstagramProfileHtml(html) {
+     const photos = html.graphql.user.edge_owner_to_timeline_media.edges
+      .filter(edge => edge.node)
+      .map(edge => edge.node);
+     console.log(photos)
+     return photos
    }
    
 
    async function getInstagramProfile(username) {
      const profileHtml = await axios
-       .get(`${INSTAGRAM_URL}${username}/`)
+       .get(`${INSTAGRAM_URL}${username}/?__a=1`)
        .then(({ data }) => data);
+       console.log(profileHtml)
       // console.info(profileHtml)
-   
-     return parseInstragramProfileHtml(profileHtml);
+    //  console.info(cheerio.load(profileHtml))
+     return parseInstagramProfileHtml(profileHtml)
    }
    
 
-   function parseInstagramPhotos(instragamProfile) {
-     const photos = instragamProfile.graphql.user.edge_owner_to_timeline_media.edges
-       .filter(edge => edge.node)
-       .map(edge => edge.node);
-       console.info(`PHOTOS: ${photos}`)
-     return photos;
-   }
+  //  function parseInstagramPhotos(instragamProfile) {
+  //    const photos = instragamProfile.graphql.user.edge_owner_to_timeline_media.edges
+  //      .filter(edge => edge.node)
+  //      .map(edge => edge.node);
+  //      console.info(`PHOTOS: ${photos}`)
+  //    return photos;
+  //  }
    
 
    async function getInstagramPhotos(username) {
      const profile = await getInstagramProfile(username);
-     return parseInstagramPhotos(profile);
+     return profile;
    }
 
     const contentType = addCollection({
