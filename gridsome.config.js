@@ -78,13 +78,13 @@ module.exports = {
         height: 900
       }
     },
-    {
-      use: '@zefman/gridsome-source-instagram',
-      options: {
-        username: 'quericas_haddon',
-        typeName: 'InstagramPhoto'
-      }
-    },
+    // {
+    //   use: '@zefman/gridsome-source-instagram',
+    //   options: {
+    //     username: 'quericas_haddon',
+    //     typeName: 'InstagramPhoto'
+    //   }
+    // },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
