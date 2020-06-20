@@ -1,4 +1,5 @@
 <template lang="pug">
+<!-- THIS COMPONENT IS NOT BEING USED FOR NOW.  ITS FUNCTIONALITY IS LIVING ON THE (FORMER) PARENT FOOTER COMPONENT.  NEED TO REFACTOR THIS WITH PROPS WHICH WILL EVENTUALLY BE PASSED IN FROM THE PARENT IN A FUTURE VERSION -->
   v-flex(xs12)
     v-toolbar(flat color="white" id="igFeedTitleParent")
       v-toolbar-title(
@@ -31,25 +32,6 @@
 
 
 </template>
-
-<static-query>
-
-query {
-  allInstagramPhoto(limit: 6, order: ASC) {
-    edges {
-      node {
-        shortcode
-        display_url
-        accessibility_caption
-      }
-    }
-  }
-  footerContent (path: "/markdowns/footer/instagram-feed"){
-    excerpt
-  }
-}
-
-</static-query>
 
 <script>
 
