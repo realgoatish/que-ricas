@@ -119,5 +119,22 @@ export default {
   border-color: #4f86f7!important;
 }
 
+#igImagesParentContainer > div > a {
+  height: 100%;
+}
+#igImagesParentContainer > div > a :hover {
+  opacity: 0.85;
+}
+
+#igFeedTitleParent > div > div {
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+
+.igImages {
+  max-width: 100%;
+  height: 100%;
+}
+
 </style>
 
