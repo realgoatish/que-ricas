@@ -22,36 +22,36 @@
           
       
         v-flex(xs12 md4 order-md3 order-xs2)
-          LazyHydrate(when-idle)
-              v-flex(xs12)
-                v-toolbar(flat color="white" id="igFeedTitleParent")
-                  v-toolbar-title(
-                    class="orange--text text--darken-3"
-                    v-html="$static.igFeedCta.excerpt"
+          //- LazyHydrate(when-idle)
+          v-flex(xs12)
+            v-toolbar(flat color="white" id="igFeedTitleParent")
+              v-toolbar-title(
+                class="orange--text text--darken-3"
+                v-html="$static.igFeedCta.excerpt"
+                )
+              v-spacer
+              LazyHydrate(when-visible)
+                FooterIgIcon
+            v-container(grid-list-xs fluid xs10)    
+              v-layout(v-if="photos" row wrap id="igImagesParentContainer")
+                v-flex(
+                  v-for="(post, index) in photos.edges"
+                  :key="index"
+                  xs4
+                )
+                  v-card(
+                    flat
+                    tile
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
+                    aria-label="Instagram Image.  Click to visit in a new Tab"
+                  )
+                    v-img(
+                      :src="post.node.display_url"
+                      :alt="post.node.accessibility_caption"
+                      class="igImages"
                     )
-                  v-spacer
-                  LazyHydrate(when-visible)
-                    FooterIgIcon
-                v-container(grid-list-xs fluid xs10)    
-                  v-layout(v-if="photos" row wrap id="igImagesParentContainer")
-                    v-flex(
-                      v-for="(post, index) in photos.edges.slice(0, 6)"
-                      :key="index"
-                      xs4
-                    )
-                      v-card(
-                        flat
-                        tile
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
-                        aria-label="Instagram Image.  Click to visit in a new Tab"
-                      )
-                        v-img(
-                          :src="post.node.display_url"
-                          :alt="post.node.accessibility_caption"
-                          class="igImages"
-                        )
 </template>
 
 <static-query>
@@ -95,8 +95,10 @@ export default {
         const test = await axios.get(
           `https://www.instagram.com/quericas_haddon/?__a=1`
         )
+        // Chop off the last 6 photos, since we only want the first 6
+        test.data.graphql.user.edge_owner_to_timeline_media.edges.splice(6, 6)
         this.photos = test.data.graphql.user.edge_owner_to_timeline_media
-        console.log(this.photos)
+        // console.log(this.photos)
       } catch (error) {
         console.log(error)
       }
