@@ -5,12 +5,50 @@
 
       main
         v-flex(xs12 md8 offset-md2)
-          MenuStartersSection
-          MenuEmpanadasSection
-          MenuArepaLabSection
-          MenuPlattersSection
-          MenuChurrosSection
-          MenuSidesExtrasSection
+          //- MenuStartersSection
+          MenuSection(
+            :sectionPrimaryTitle="$page.startersHeaders.menuSectionTitle"
+            :sectionMenuItems="$page.startersContent.edges"
+          )
+          //- MenuEmpanadasSection
+          MenuSection(
+            :sectionPrimaryTitle="$page.empanadasHeaders.menuSectionTitle"
+            :sectionPrimarySubtext="$page.empanadasHeaders.menuSectionPrimarySubtext"
+            :sectionMenuItems="$page.empanadasContent.edges"
+          )
+          //- MenuArepaLabSection
+          MenuSection(
+            :sectionPrimaryTitle="$page.arepasHeaders.menuSectionTitle"
+            :sectionPrimarySubtext="$page.arepasHeaders.menuSectionPrimarySubtext"
+            :sectionSecondarySubtext="$page.arepasHeaders.menuSectionSecondarySubtext"
+            :sectionMenuItems="$page.arepasContent.edges"
+          )
+          //- MenuPlattersSection
+          MenuSection(
+            id="platters-section"
+            twoSteps=true
+            :sectionPrimaryTitle="$page.plattersHeaders.menuSectionTitle"
+            :sectionPrimarySubtext="$page.plattersHeaders.menuSectionPrimarySubtext"
+            :stepOneTitle="$page.plattersHeaders.menuStepOneTitle"
+            :stepTwoTitle="$page.plattersHeaders.menuStepTwoTitle"
+            :stepOneItems="$page.plattersStepOneContent.edges"
+            :stepTwoItems="$page.plattersStepTwoContent.edges"
+          )
+          //- MenuChurrosSection
+          MenuSection(
+            id="churros-section"
+            twoSteps=true
+            :sectionPrimaryTitle="$page.churrosHeaders.menuSectionTitle"
+            :stepOneTitle="$page.churrosHeaders.menuStepOneTitle"
+            :stepTwoTitle="$page.churrosHeaders.menuStepTwoTitle"
+            :stepOneItems="$page.churrosStepOneContent.edges"
+            :stepTwoItems="$page.churrosStepTwoContent.edges"
+          )
+          //- MenuSidesExtrasSection
+          MenuSection(
+            :sectionPrimaryTitle="$page.sidesExtrasHeaders.menuSectionTitle"
+            :sectionMenuItems="$page.sidesExtrasContent.edges"
+          )
 
     .title.mb-3
     
@@ -30,19 +68,170 @@ query {
       )
     }
   }
+  startersHeaders: menuContent (path: "/markdowns/menu/starters/headers") {
+    menuSectionTitle
+  }
+  startersContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/starters"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  empanadasHeaders: menuContent (path: "/markdowns/menu/empanadas/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+  }
+  empanadasContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/empanadas"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  arepasHeaders: menuContent (path: "/markdowns/menu/arepa-lab/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+    menuSectionSecondarySubtext
+  }
+  arepasContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/arepa-lab"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  plattersHeaders: menuContent (path: "/markdowns/menu/platters/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+    menuStepOneTitle
+    menuStepTwoTitle
+  }
+  plattersStepOneContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/platters/proteins"
+        }
+      }
+    }, sortBy: "number", order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+      }
+    }
+  }
+  plattersStepTwoContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/platters/styles"
+        }
+      }
+    }, sortBy: "number", order: ASC) {
+    edges {
+      node {
+        itemName
+        description
+        productImage(
+          width: 120
+          height: 120
+          quality: 90
+          fit: outside
+        )
+        productImageProtein
+        productImageStyle
+      }
+    }
+  }
+  churrosHeaders: menuContent (path: "/markdowns/menu/churros/headers") {
+    menuSectionTitle
+    menuStepOneTitle
+    menuStepTwoTitle
+  }
+  churrosStepOneContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/churros/styles"
+        }
+      }
+    }, sortBy: "number", order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  churrosStepTwoContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/churros/sauces"
+        }
+      }
+    }, sortBy: "number", order: ASC) {
+    edges {
+      node {
+        itemName
+      }
+    }
+  }
+  sidesExtrasHeaders: menuContent (path: "/markdowns/menu/sides-and-extras/headers") {
+    menuSectionTitle
+  }
+  sidesExtrasContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/sides-and-extras"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+      }
+    }
+  }
 }
 
 </page-query>
 
 <script>
 
-import MenuStartersSection from '~/components/menu/MenuStartersSection.vue';
-import MenuEmpanadasSection from '~/components/menu/MenuEmpanadasSection.vue';
-import MenuArepaLabSection from '~/components/menu/MenuArepaLabSection.vue';
-import MenuSidesExtrasSection from '~/components/menu/MenuSidesExtrasSection.vue';
-import MenuPlattersSection from '~/components/menu/MenuPlattersSection.vue';
-import MenuChurrosSection from '~/components/menu/MenuChurrosSection.vue';
-
+import MenuSection from '~/components/menu/MenuSection.vue'
 
 export default {
   metaInfo() {
@@ -729,12 +918,7 @@ export default {
     }
   },
   components: {
-    MenuStartersSection,
-    MenuEmpanadasSection,
-    MenuArepaLabSection,
-    MenuSidesExtrasSection,
-    MenuPlattersSection,
-    MenuChurrosSection
+    MenuSection
   }
 }
 </script>
@@ -790,5 +974,55 @@ div.menu-content-container > main > div > div > div.v-card__title.v-card__title-
 }
 
 /* 1.7.2020 - Keep in mind, on this page only, you're currently not doing a Media Query to change font-size to 14px on small screens.  See how you feel about it and change if needed */
+
+/* #platters-step-two-grid */
+#platters-section article:nth-of-type(3) > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". . . image"
+    "header header . image"
+    "text text text image"
+    ". . . image";
+}
+
+#platters-section article:nth-of-type(3) > div h3 {
+  width: fit-content;
+  grid-area: header;
+}
+
+#platters-section article:nth-of-type(3) > div p {
+  width: fit-content;
+  grid-area: text;
+}
+
+#platters-section article:nth-of-type(3) > div figure {
+  margin: 0px 0px 5px 5px;
+  grid-area: image;
+}
+
+#platters-section article:nth-of-type(3) > div figure a img {
+  border-radius: 10px;
+}
+
+#platters-section article:nth-of-type(3) > div figcaption {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+#churros-section article:nth-of-type(2) > div {
+  text-align: center;
+}
+
+#churros-section article:nth-of-type(2) > div:first-child {
+  border-bottom: none;
+}
+
+#churros-section article:nth-of-type(2) > div:last-child {
+  padding-bottom: 2em;
+}
+
+
 
 </style>
