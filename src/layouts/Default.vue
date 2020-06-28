@@ -50,6 +50,12 @@ body, html {
   max-height: 100vh;
 }
 
+h1, h2 {
+  text-align: center;
+  color: #225A8C;
+  text-shadow: 1px 1px 2px #4F85F7;
+}
+
 .parent-content-container {
   border-radius: 15px 15px 15px 15px;
 }
