@@ -29,10 +29,4 @@ export default {
   line-height: 1.75;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #225A8C;
-  text-shadow: 1px 1px 2px #4F85F7;
-}
-
 </style>
