@@ -64,7 +64,7 @@
                 g-image(:alt="item.node.itemName" :src="item.node.productImage")
               figcaption #[strong Protein:] {{ item.node.productImageProtein }} #[br] #[strong Style:] {{ item.node.productImageStyle }}
       //
-        For Starters, Empanadas, Arepas, and Sides & Extras Sections, the below displays each menu item
+        For Starters, Empanadas, Arepas, Drinks, Specials, and Sides & Extras Sections, the below displays each menu item
       template(v-else)
         article
           div(
@@ -79,6 +79,8 @@
             p(
               v-if="item.node.description"
             ) {{ item.node.description }}
+            template(v-if="item.node.addOn")
+              h4 {{ item.node.addOn }}
 
     .title.mb-3
 
