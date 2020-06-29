@@ -5,26 +5,22 @@ fields:
 - type: number
   name: Order of Appearance
   label: Order of Appearance
+  hidden: true
 - type: text
   name: Menu Section Title
   label: Menu Section Title
-  hidden: true
 - type: textarea
   name: Menu Section Primary Subtext
   label: Menu Section Primary Subtext
-  hidden: true
 - type: textarea
   name: Menu Section Secondary Subtext
   label: Menu Section Secondary Subtext
-  hidden: true
 - type: text
   name: Menu Sub-Section (Step One) Title
   label: Menu Sub-Section (Step One) Title
-  hidden: true
 - type: text
   name: Menu Sub-Section (Step Two) Title
   label: Menu Sub-Section (Step Two) Title
-  hidden: true
 - type: text
   name: Item Name
   label: Item Name
@@ -37,18 +33,14 @@ fields:
 - type: file
   name: Product Image
   label: Product Image
-  hidden: true
 - type: text
   name: Product Image Protein
   label: Product Image Protein
-  hidden: true
 - type: text
   name: Product Image Style
   label: Product Image Style
-  hidden: true
 - type: file
   name: Gluten Free Image
   label: Gluten Free Image
-  hidden: true
 pages:
 - markdowns/menu/specials/patacon.md
