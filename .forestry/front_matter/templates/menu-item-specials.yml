@@ -1,5 +1,5 @@
 ---
-label: Menu Item
+label: Menu Item - Specials
 hide_body: false
 fields:
 - type: number
