@@ -39,7 +39,7 @@ sections:
   path: markdowns/menu/platters
   label: Platters
   create: documents
-  match: "*.md"
+  match: "**/*.md"
 - type: directory
   path: markdowns/menu/churros
   label: Churros
@@ -48,6 +48,16 @@ sections:
 - type: directory
   path: markdowns/menu/sides-and-extras
   label: Sides and Extras
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/drinks
+  label: Drinks
+  create: documents
+  match: "*.md"
+- type: directory
+  path: markdowns/menu/specials
+  label: Specials
   create: documents
   match: "*.md"
 - type: heading
