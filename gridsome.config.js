@@ -78,6 +78,7 @@ module.exports = {
         height: 900
       }
     },
+    // We're accomplishing the IG Feed with client side data scrape until Zefman fixes his plugin
     // {
     //   use: '@zefman/gridsome-source-instagram',
     //   options: {

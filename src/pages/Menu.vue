@@ -4,20 +4,33 @@
       .title.mb-3
 
       main
-        v-flex(xs12 md8 offset-md2)
+        v-flex(
+          xs12 md8 offset-md2
+          )
+          MenuSection(
+            id="menu-nav-buttons"
+            menuNav=true
+            @show-section="showSelectedSection"
+            :sectionNames="menuSectionTitles"
+            sectionPrimaryTitle="Our Menu"
+            sectionPrimarySubtext="Click on each section below to view items"
+          )
           //- MenuStartersSection
           MenuSection(
+            v-show="currentSection === $page.startersHeaders.menuSectionTitle"
             :sectionPrimaryTitle="$page.startersHeaders.menuSectionTitle"
             :sectionMenuItems="$page.startersContent.edges"
           )
           //- MenuEmpanadasSection
           MenuSection(
+            v-show="currentSection === $page.empanadasHeaders.menuSectionTitle"
             :sectionPrimaryTitle="$page.empanadasHeaders.menuSectionTitle"
             :sectionPrimarySubtext="$page.empanadasHeaders.menuSectionPrimarySubtext"
             :sectionMenuItems="$page.empanadasContent.edges"
           )
           //- MenuArepaLabSection
           MenuSection(
+            v-show="currentSection === $page.arepasHeaders.menuSectionTitle"
             :sectionPrimaryTitle="$page.arepasHeaders.menuSectionTitle"
             :sectionPrimarySubtext="$page.arepasHeaders.menuSectionPrimarySubtext"
             :sectionSecondarySubtext="$page.arepasHeaders.menuSectionSecondarySubtext"
@@ -25,6 +38,7 @@
           )
           //- MenuPlattersSection
           MenuSection(
+            v-show="currentSection === $page.plattersHeaders.menuSectionTitle"
             id="platters-section"
             twoSteps=true
             :sectionPrimaryTitle="$page.plattersHeaders.menuSectionTitle"
@@ -36,6 +50,7 @@
           )
           //- MenuChurrosSection
           MenuSection(
+            v-show="currentSection === $page.churrosHeaders.menuSectionTitle"
             id="churros-section"
             twoSteps=true
             :sectionPrimaryTitle="$page.churrosHeaders.menuSectionTitle"
@@ -46,8 +61,21 @@
           )
           //- MenuSidesExtrasSection
           MenuSection(
+            v-show="currentSection === $page.sidesExtrasHeaders.menuSectionTitle"
             :sectionPrimaryTitle="$page.sidesExtrasHeaders.menuSectionTitle"
             :sectionMenuItems="$page.sidesExtrasContent.edges"
+          )
+          MenuSection(
+            v-show="currentSection === $page.drinksHeaders.menuSectionTitle"
+            :sectionPrimaryTitle="$page.drinksHeaders.menuSectionTitle"
+            :sectionMenuItems="$page.drinksContent.edges"
+          )
+          MenuSection(
+            v-show="currentSection === $page.specialsHeaders.menuSectionTitle"
+            :sectionPrimaryTitle="$page.specialsHeaders.menuSectionTitle"
+            :sectionPrimarySubtext="$page.specialsHeaders.menuSectionPrimarySubtext"
+            :sectionSecondarySubtext="$page.specialsHeaders.menuSectionSecondarySubtext"
+            :sectionMenuItems="$page.specialsContent.edges"
           )
 
     .title.mb-3
@@ -222,6 +250,47 @@ query {
       node {
         itemName
         price
+      }
+    }
+  }
+  drinksHeaders: menuContent (path: "/markdowns/menu/drinks/headers") {
+    menuSectionTitle
+  }
+  drinksContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/drinks"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  specialsHeaders: menuContent (path: "/markdowns/menu/specials/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+    menuSectionSecondarySubtext
+  }
+  specialsContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/specials"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+        addOn
       }
     }
   }
@@ -915,6 +984,28 @@ export default {
           ]
         }
       }]
+    }
+  },
+  data() {
+    return {
+      menuSectionTitles: [],
+      currentSection: null
+    }
+  },
+  created() {
+    this.menuSectionTitles.push(this.$page.startersHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.empanadasHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.arepasHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.plattersHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.churrosHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.sidesExtrasHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.drinksHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.specialsHeaders.menuSectionTitle)
+    console.log(this.menuSectionTitles)
+  },
+  methods: {
+    showSelectedSection(sectionTitle) {
+      this.currentSection = sectionTitle
     }
   },
   components: {
