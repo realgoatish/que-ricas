@@ -65,6 +65,18 @@
             :sectionPrimaryTitle="$page.sidesExtrasHeaders.menuSectionTitle"
             :sectionMenuItems="$page.sidesExtrasContent.edges"
           )
+          MenuSection(
+            v-show="currentSection === $page.drinksHeaders.menuSectionTitle"
+            :sectionPrimaryTitle="$page.drinksHeaders.menuSectionTitle"
+            :sectionMenuItems="$page.drinksContent.edges"
+          )
+          MenuSection(
+            v-show="currentSection === $page.specialsHeaders.menuSectionTitle"
+            :sectionPrimaryTitle="$page.specialsHeaders.menuSectionTitle"
+            :sectionPrimarySubtext="$page.specialsHeaders.menuSectionPrimarySubtext"
+            :sectionSecondarySubtext="$page.specialsHeaders.menuSectionSecondarySubtext"
+            :sectionMenuItems="$page.specialsContent.edges"
+          )
 
     .title.mb-3
     
@@ -238,6 +250,47 @@ query {
       node {
         itemName
         price
+      }
+    }
+  }
+  drinksHeaders: menuContent (path: "/markdowns/menu/drinks/headers") {
+    menuSectionTitle
+  }
+  drinksContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/drinks"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+      }
+    }
+  }
+  specialsHeaders: menuContent (path: "/markdowns/menu/specials/headers") {
+    menuSectionTitle
+    menuSectionPrimarySubtext
+    menuSectionSecondarySubtext
+  }
+  specialsContent: allMenuContent(
+    filter: { 
+      fileInfo: {
+        directory: {
+          eq: "markdowns/menu/specials"
+        }
+      }
+    }, sortBy: "number", skip: 1, order: ASC) {
+    edges {
+      node {
+        itemName
+        price
+        description
+        addOn
       }
     }
   }
@@ -946,6 +999,8 @@ export default {
     this.menuSectionTitles.push(this.$page.plattersHeaders.menuSectionTitle)
     this.menuSectionTitles.push(this.$page.churrosHeaders.menuSectionTitle)
     this.menuSectionTitles.push(this.$page.sidesExtrasHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.drinksHeaders.menuSectionTitle)
+    this.menuSectionTitles.push(this.$page.specialsHeaders.menuSectionTitle)
     console.log(this.menuSectionTitles)
   },
   methods: {
