@@ -43,5 +43,4 @@ fields:
   name: Gluten Free Image
   label: Gluten Free Image
 pages:
-- markdowns/menu/specials/omg.md
 - markdowns/menu/specials/patacon.md
