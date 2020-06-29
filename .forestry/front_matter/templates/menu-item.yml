@@ -50,3 +50,5 @@ fields:
   name: Gluten Free Image
   label: Gluten Free Image
   hidden: true
+pages:
+- markdowns/menu/specials/patacon.md
