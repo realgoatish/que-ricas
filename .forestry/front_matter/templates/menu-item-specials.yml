@@ -19,6 +19,7 @@ fields:
   label: Add-On (optional)
 pages:
 - markdowns/menu/specials/Tamarind-juice.md
+- markdowns/menu/specials/banana-split.md
 - markdowns/menu/specials/guava-juice.md
 - markdowns/menu/specials/omg.md
 - markdowns/menu/specials/sampler.md
