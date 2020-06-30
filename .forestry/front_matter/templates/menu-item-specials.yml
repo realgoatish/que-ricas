@@ -19,3 +19,4 @@ fields:
   label: Add-On (optional)
 pages:
 - markdowns/menu/specials/omg.md
+- markdowns/menu/specials/sampler.md
