@@ -1,5 +1,7 @@
 ---
-number: 7
+number: "7"
 itemName: Cup of Coffee
-description: "Cup of Bliss Coffee Roasters: Que Ricas Blend"
-price: $
+description: '16 oz, Cup of Bliss Coffee Roasters: Que Ricas Blend'
+price: "$2.50"
+
+---
