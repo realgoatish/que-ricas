@@ -2,8 +2,8 @@
 number: "1"
 itemName: Cachapa
 price: "$8"
-description: shredded chicken, sweet plantain, fried queso blanco, pico de gallo,
-  cilantro mojo
+description: sweet corn pancake stuffed with fresh white cheese and topped with cream
+  and cotija cheese
 addOn: Add Beef - $2
 
 ---
