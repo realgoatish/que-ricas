@@ -1,6 +1,6 @@
 ---
 number: 6
-itemName: Guava juice
+itemName: Mango juice
 price: "$3.75"
 description: sweet and refreshing tropical fruit
 addOn: ''
