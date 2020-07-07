@@ -14,3 +14,5 @@ fields:
 - type: textarea
   name: description
   label: Description
+pages:
+- markdowns/menu/starters/yuca fries 2.md
