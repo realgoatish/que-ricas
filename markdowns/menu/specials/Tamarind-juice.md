@@ -1,8 +1,8 @@
 ---
 number: 5
-itemName: Tamarind Juice
+itemName: Mango Juice
 price: "$3.75"
-description: sour, tangy, sweet and served with lime
+description: Sweet and refreshing juice
 addOn: ''
 
 ---
