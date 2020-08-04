@@ -18,6 +18,7 @@ fields:
   name: addOn
   label: Add-On (optional)
 pages:
+- markdowns/menu/specials/Dulce.md
 - markdowns/menu/specials/Tamarind-juice.md
 - markdowns/menu/specials/bbq.md
 - markdowns/menu/specials/guava-juice.md
