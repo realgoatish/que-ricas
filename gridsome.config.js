@@ -14,14 +14,6 @@ module.exports = {
   host: "0.0.0.0",
   icon: './uploads/que-ricas-logo.png',
   plugins: [
-    // Commenting out Google sheets plugin config code until new menu sourcing from MD files is tested and confirmed OK.  Remember to delete this.
-    // {
-    //   use: 'gridsome-source-google-sheets',
-    //   options: {
-    //     sheetId: process.env.SHEET_ID,
-    //     apiKey: process.env.GOOGLE_API_KEY
-    //   }
-    // },
     {
       use: '@gridsome/source-filesystem',
       options: {
