@@ -44,7 +44,7 @@ sections:
   path: markdowns/menu/churros
   label: Churros
   create: documents
-  match: "*.md"
+  match: "**/*.md"
 - type: directory
   path: markdowns/menu/sides-and-extras
   label: Sides and Extras
