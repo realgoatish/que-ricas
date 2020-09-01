@@ -1,8 +1,8 @@
 ---
 number: 5
-itemName: Pineapple Juice
+itemName: Mango Juice
 price: "$3.75"
-description: Tangy, Sweet and refreshing juice
+description: Sweet and refreshing juice
 addOn: ''
 
 ---
