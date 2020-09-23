@@ -19,6 +19,7 @@ fields:
   label: Add-On (optional)
 pages:
 - markdowns/menu/specials/Avocado.md
+- markdowns/menu/specials/Chicha.md
 - markdowns/menu/specials/Tamarind-juice.md
 - markdowns/menu/specials/guava-juice.md
 - markdowns/menu/specials/omg.md
