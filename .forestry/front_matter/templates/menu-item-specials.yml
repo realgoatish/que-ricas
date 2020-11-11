@@ -19,7 +19,6 @@ fields:
   label: Add-On (optional)
 pages:
 - markdowns/menu/specials/Chicha.md
-- markdowns/menu/specials/Chickencachapa.md
 - markdowns/menu/specials/Paradise.md
 - markdowns/menu/specials/Pimento.md
 - markdowns/menu/specials/Tamarind-juice.md
