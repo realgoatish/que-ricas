@@ -19,6 +19,7 @@ fields:
   label: Add-On (optional)
 pages:
 - markdowns/menu/specials/Chicha.md
+- markdowns/menu/specials/Miss piggy.md
 - markdowns/menu/specials/Paradise.md
 - markdowns/menu/specials/Quesillo.md
 - markdowns/menu/specials/Tamarind-juice.md
