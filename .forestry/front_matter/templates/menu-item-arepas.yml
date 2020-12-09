@@ -14,3 +14,5 @@ fields:
 - type: textarea
   name: description
   label: Description
+pages:
+- markdowns/menu/arepa-lab/Combo.md
