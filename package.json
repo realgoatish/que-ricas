@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "core-js": "^3.6.5",
-    "gridsome": "^0.7.20",
+    "gridsome": "^0.7.23",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "sharp": "^0.22.1",

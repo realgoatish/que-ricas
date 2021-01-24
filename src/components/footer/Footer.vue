@@ -21,37 +21,37 @@
             v-card-text(v-html="$static.footerContent.content")
           
       
-        v-flex(xs12 md4 order-md3 order-xs2)
-          //- LazyHydrate(when-idle)
-          v-flex(xs12)
-            v-toolbar(flat color="white" id="igFeedTitleParent")
-              v-toolbar-title(
-                class="orange--text text--darken-3"
-                v-html="$static.igFeedCta.excerpt"
-                )
-              v-spacer
-              LazyHydrate(when-visible)
-                FooterIgIcon
-            v-container(grid-list-xs fluid xs10)    
-              v-layout(v-if="photos" row wrap id="igImagesParentContainer")
-                v-flex(
-                  v-for="(post, index) in photos.edges"
-                  :key="index"
-                  xs4
-                )
-                  v-card(
-                    flat
-                    tile
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
-                    aria-label="Instagram Image.  Click to visit in a new Tab"
-                  )
-                    v-img(
-                      :src="post.node.display_url"
-                      :alt="post.node.accessibility_caption"
-                      class="igImages"
-                    )
+        //- v-flex(xs12 md4 order-md3 order-xs2)
+        //-   //- LazyHydrate(when-idle)
+        //-   v-flex(xs12)
+        //-     v-toolbar(flat color="white" id="igFeedTitleParent")
+        //-       v-toolbar-title(
+        //-         class="orange--text text--darken-3"
+        //-         v-html="$static.igFeedCta.excerpt"
+        //-         )
+        //-       v-spacer
+        //-       LazyHydrate(when-visible)
+        //-         FooterIgIcon
+        //-     v-container(grid-list-xs fluid xs10)    
+        //-       v-layout(v-if="photos" row wrap id="igImagesParentContainer")
+        //-         v-flex(
+        //-           v-for="(post, index) in photos.edges"
+        //-           :key="index"
+        //-           xs4
+        //-         )
+        //-           v-card(
+        //-             flat
+        //-             tile
+        //-             target="_blank"
+        //-             rel="nofollow noopener noreferrer"
+        //-             :href="`https://www.instagram.com/p/${post.node.shortcode}/`"
+        //-             aria-label="Instagram Image.  Click to visit in a new Tab"
+        //-           )
+        //-             v-img(
+        //-               :src="post.node.display_url"
+        //-               :alt="post.node.accessibility_caption"
+        //-               class="igImages"
+        //-             )
 </template>
 
 <static-query>
@@ -90,19 +90,23 @@ export default {
         photos: null
       }
     },
-    async mounted () {
-      try {
-        const test = await axios.get(
-          `https://www.instagram.com/quericas_haddon/?__a=1`
-        )
-        // Chop off the last 6 photos, since we only want the first 6
-        test.data.graphql.user.edge_owner_to_timeline_media.edges.splice(6, 6)
-        this.photos = test.data.graphql.user.edge_owner_to_timeline_media
-        // console.log(this.photos)
-      } catch (error) {
-        console.log(error)
-      }
-    },
+    // async mounted () {
+    //   try {
+    //     const test = await axios.get(
+    //       `https://www.instagram.com/quericas_haddon/?__a=1`, { headers: { 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1'}}
+    //     ).then(response => {
+    //       console.log(response.data)
+    //     })
+    //     // Chop off the last 6 photos, since we only want the first 6
+    //     // test.graphql.user.edge_owner_to_timeline_media.edges.splice(6, 6)
+    //     // this.photos = test.graphql.user.edge_owner_to_timeline_media
+    //     // console.log(this.photos)
+
+        
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // },
     components: {
       LazyHydrate,
       FooterContact,

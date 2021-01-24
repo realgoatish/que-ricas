@@ -1,6 +1,6 @@
 <template lang="pug">
 
-    v-menu(class="hidden-md-and-up")
+    v-menu(class="hidden-lg-and-up")
       v-toolbar-side-icon(
         slot="activator"
         aria-label="Hamburger Menu"
@@ -10,6 +10,9 @@
         color="black"
         ) reorder
       v-list
+        v-list-tile(href="https://www.clover.com/online-ordering/que-ricas")
+          v-list-tile-content
+            v-list-tile-title Order Online
         v-list-tile(:to="{ path: '/' }")
           v-list-tile-content
             v-list-tile-title Home
