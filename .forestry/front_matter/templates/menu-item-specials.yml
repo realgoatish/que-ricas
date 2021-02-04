@@ -18,6 +18,7 @@ fields:
   name: addOn
   label: Add-On (optional)
 pages:
+- markdowns/menu/specials/Applepie.md
 - markdowns/menu/specials/Chicha.md
 - markdowns/menu/specials/Crabcake.md
 - markdowns/menu/specials/Freecard.md
