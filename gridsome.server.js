@@ -18,7 +18,7 @@ module.exports = function (api) {
     }
   })
 
-  api.loadSource(store  => {
+  api.loadSource( store  => {
     store.addMetadata('seoImages', {
       homePageImage: require.resolve('./uploads/cartel.jpeg'),
       menuPageImage: require.resolve('./uploads/hangover-bowl.jpeg'),
