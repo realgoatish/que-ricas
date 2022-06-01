@@ -18,7 +18,7 @@
     "gridsome": "^0.7.23",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "vue": "^2.6.12",
     "vue-lazy-hydration": "^1.0.0-beta.14",
     "vue-svg-loader": "^0.12.0",
